@@ -11,7 +11,7 @@ Free unlimited Emergence hosting is also available for civic projects on-request
 
 ## Installation from Git
 -  Create an emergence site that extends 8U6kydil36bl3vlJ@skeleton.emr.ge
--  Upload contents of git repository
+-  Upload contents of git repository using WebDAV client (CyberDuck is best open-source option)
 
 ## Installation via Emergence (linked child)
 -  Create an emergence site that extends X31ae9rYLBPEeeJa@codeforphilly.org

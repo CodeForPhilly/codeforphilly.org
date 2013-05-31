@@ -1,0 +1,2 @@
+<?php
+ProfileRequestHandler::$profileFields[]='Twitter';

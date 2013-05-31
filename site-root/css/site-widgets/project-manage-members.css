@@ -1,0 +1,9 @@
+#manage-members li {
+	text-align: center;
+	height: 130px;
+}
+
+#manage-members .role {
+	display: block;
+	font-size: 85%;
+}

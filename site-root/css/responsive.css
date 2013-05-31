@@ -1,0 +1,270 @@
+@media (min-width: 768px) {
+	.heroimage-and-caption {
+		width:100%;
+		height:500px;
+		margin-top:-65px;
+	}
+	
+	.heroimage2 {
+		width:100%;
+		height:100%;
+		position:relative;
+		z-index:-1000;
+	}
+	
+	.caption {
+		width: 550px;
+		padding-left: 25px;
+		padding-top: 5px;
+		position: relative;
+		top: -350px;
+		left: 0px;
+		z-index: 10;
+		
+		background-color: rgba(0, 0, 0, 0.55);
+		 -webkit-border-radius: 3px;
+		     -moz-border-radius: 3px;
+		          border-radius: 3px;
+	}
+	
+	.caption h1 {
+		font-size:50px;
+		color:white;
+	}
+	
+	.caption h2 {
+		font-size:18px;
+		color:white;
+		line-height: 1em;
+		margin-top: 1em;
+		margin-bottom: 0.25em;
+	}
+	
+	.caption p {
+		font-size: 90%;
+	}
+	
+	.caption .btn-primary {
+		margin-top:10px;
+		margin-bottom:10px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	.marketing {
+		margin-top:15px;
+	}
+	
+	.members-signed-in ul {
+		list-style:none;
+		padding-bottom:20px;
+		margin-left:0px;
+	}
+	
+	.members-signed-in img {
+		width:40px;
+		height:40px;
+	}
+	
+	.projects li {
+		height:50px;
+		margin-bottom:15px;
+		margin-right:10px;
+	}
+	
+	.marketing p {
+		padding-left:5%;
+		padding-right:5%;
+	}
+	
+	.project-members {
+		margin-left:30px;
+	}
+	
+	.pageheader {
+		margin-top:-5px;
+	}
+	
+	.resources hr {
+		margin-bottom:10px;
+	}
+	
+	.members-page-members ul {
+		list-style:none;
+		padding-bottom:20px;
+		margin-left:0px;
+	}
+	
+	.members-page-members li {
+		height:200px;
+		margin-right:20px;
+		margin-bottom:20px;
+	}
+	
+	.members-page-members img {
+		width:150px;
+		height:150px;
+	}
+	
+	.members-page-members p {
+		margin-bottom:0px;
+	}
+	
+	.projectscreenshot {
+		width:200px;
+		height:100px;
+	}
+	
+	.members-image { 
+		width:50px;
+		height:50px;
+	}
+}
+
+
+
+
+@media (min-width: 979px) {
+	.navbar {
+		margin-bottom: 0;
+		overflow: visible;
+	}
+	
+	.navbar-inner {
+		padding-top: 0;
+		padding-bottom: 0;
+		padding-right: 20px;
+		padding-left: 20px;
+		
+		background-color: #fafafa;
+		background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+		background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+		background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+		background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+		background-repeat: repeat-x;
+		border: 1px solid #d4d4d4;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+		*zoom: 1;
+		-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+		-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	}
+	
+	.navbar-inverse .brand {
+		color: #999999;
+		font-size: 20px;
+	}
+	
+	.pageheader {
+		margin-top:15px;
+	}
+	
+	.projects h3 {
+		font-size:1em;
+		line-height:0.75em;
+	}
+}
+
+
+
+
+@media (min-width: 1200px) {
+	.row-fluid .project-members {
+		margin-left:6%;
+		margin-right:-2%;
+	}
+}
+
+
+
+
+@media (max-width: 767px) {
+	.heroimage-and-caption {
+		width:100%;
+		height:300px;
+		margin-top:-60px;
+		text-align:center;
+	}
+	
+	.heroimage2 {
+		width:100%;
+		height:100%;
+		position:relative;
+		z-index:-1000;
+	}
+	
+	.caption {
+		width: 300px;
+		padding-left: 0px;
+		padding-top: 5px;
+		padding-bottom:5px;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -225px;
+		z-index: 10;
+		background-color: rgba(0, 0, 0, 0.55);
+		 -webkit-border-radius: 3px;
+		     -moz-border-radius: 3px;
+		          border-radius: 3px;width: 300px;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.caption h1 {
+		font-size:1.8em;
+		color:white;
+	}
+	
+	.caption h2 {
+		font-size:1.2em;
+		color:white;
+	}
+	
+	.marketing .span4 {
+		margin-bottom:40px;
+	}
+	
+	.marketing h2 {
+		font-size:1.8em;
+		margin-top:-5px;
+		margin-bottom:0px;
+	}
+	
+	.marketing p {
+		padding-left:15%;
+		padding-right:15%;
+	}
+	
+	.caption a.btn.btn-large.btn-primary {
+		width:200px;
+		height:30px;
+		padding-top:9px;
+		padding-bottom:0px;
+	}
+	
+	.caption .btn-primary {
+		margin-top: 0px;
+		margin-left: 0px;
+		margin-bottom: 5%;
+	}
+	
+	.members-signed-in img {
+		width:20px;
+		height:20px;
+	}
+	
+	.pageheader {
+		margin-top:-10px;
+	}
+	
+	.pageheader h2 {
+		font-size:2em;
+		line-height:1em;
+	}
+}

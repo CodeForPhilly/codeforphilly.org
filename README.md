@@ -1,5 +1,7 @@
 # codeforphilly.org
 
+An online focal point for civic hacking communities to share the projects they are working on and connect with each other around them.
+
 ## Requirements
 The CodeForPhilly site is built on the Emergence PHP framework and engine, and requires an Emergence server to host it.
 

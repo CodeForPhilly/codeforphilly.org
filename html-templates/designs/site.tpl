@@ -1,124 +1,106 @@
 <!DOCTYPE html>
 {load_templates designs/site.templates.tpl}
-<html lang="en">
+<html>
 	<head>
-		<meta charset="utf-8" />
-		<title>{block "title"}Code for Philly{/block}</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>{block title}Code for Philly{/block}</title>
+		<link rel="shortcut icon" href="/favicon.ico" />
 		
 		{block meta}
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<meta name="description" content="Code for America Brigade for Philadelphia" />
 		{/block}
-		
+
 		{block css}
 			{*
 				Compresses all CSS files into a single request.
 				Add ?css-debug=1 to any URL to load separate uncompressed files
 			*}
-			{cssmin "bootstrap.css+bootstrap-responsive.css+site.css+responsive.css+site-widgets/*"}
+			{cssmin array(
+    			'bootstrap.css'
+    			,'bootstrap-responsive.css'
+    			,'bootstrap-combobox.css'
+    			,'bootstrap-tagsinput.css'
+    			,'site.css'
+    			,'pages/*'
+			)}
+		{/block}
 
-			<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-			<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-			<![endif]-->
-		{/block}
-		
-		{block icons}
-			{*
-			<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png" />
-			<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png" />
-			<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png" />
-			<link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png" />
-			*}
-			<link rel="shortcut icon" href="/favicon.ico" />
-		{/block}
+		{block js}{/block}
 	</head>
 	<body>
-		{block navbar}
-			<div class="container">
-				<div class="navbar navbar-inverse">
-					<div class="navbar-inner">
-						<div class="container">
-							<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</a>
-							<a class="brand" href="/">Code For Philly</a>
-							<div class="nav-collapse collapse">
-								<ul class="nav pull-right">
-									<li><a href="/">Home</a></li>
-									<li><a href="/mission">Mission</a></li>
-									<li><a href="/how-to-help">How to Help</a></li>
-									{*<li><a href="/requests">Request Board</a></li>*}
-									<li><a href="/projects">Projects</a></li>
-									<li><a href="/members">Members</a></li>
-									{if $.User}
-										<li class="dropdown">
-											<a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools <b class="caret"></b></a>
-											<ul class="dropdown-menu" role="menu">
-												<li><a href="/resources">Resources</a></li>
-												<li><a href="/chat">Chat</a></li>
-												{if $.User->hasAccountLevel('Developer')}
-													<li class="divider"></li>
-													<li><a href="/develop" target="_blank">Hack this site!</a></li>
-													<li><a href="/members/!checkout-all">Check-out everyone</a></li>
-												{/if}
-											</ul>
-										</li>
-										<li class="dropdown">
-											<a class="dropdown-toggle" data-toggle="dropdown" href="#">{avatar $.User 10} {$.User->FirstName} <b class="caret"></b></a>
-											<ul class="dropdown-menu" role="menu">
-												<li><a href="/members/{$.User->Username}">My Profile</a></li>
-												<li class="divider"></li>
-												{if $.User->OpenCheckin}
-													<form id="inout" action="/members/{$.User->Username}/checkout" method="POST" style="display:none;">
-														<input type="submit" value="Check-out" />
-													</form>
-													<li id="inoutlink"><a href="#">Check-out</a></li>
-												{else}
-													<form id="inout" action="/members/{$.User->Username}/checkin" method="POST" style="display:none">
-														<input type="submit" value="Check in" />
-													</form>
-													<li id="inoutlink"><a href="#">Check-in</a></li>
-												{/if}
-												<li><a href="/logout">Logout</a></li>
-											</ul>
-										</li>
-									{else}
-										<li><a href="/login">Login</a></li>
-										<li><a href="/register">Sign up!</a></li>
-									{/if}
-									</li>		
-								</ul>
-							</div>
+		<header class="site">
+			{block header}
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<section class="navbar-inner">
+					<div class="container">
+					
+						<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+						<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</a>
+	
+						<a class="brand" href="/">Code for Philly</a>
+	
+						<div class="nav-collapse collapse">
+							<ul class="nav">
+								{*<li><a href="/about">About</a></li>*}
+								<li><a href="/mission">Mission</a></li>
+								<li><a href="/how-to-help">How to Help</a></li>
+								<li><a href="/contact">Contact</a></li>
+							</ul>
+
+							<ul class="nav pull-right">
+								{if $.User}
+									<li class="dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">{avatar $.User 18} {$.User->FirstName} <b class="caret"></b></a>
+										<ul class="dropdown-menu" role="menu">
+											<li><a href="/members/{$.User->Username}">View My Profile</a></li>
+											<li><a href="/profile">Edit My Profile</a></li>
+											<li><a href="/logout">Logout</a></li>
+										</ul>
+									</li>
+								{else}
+									<li><a href="/login">Login</a></li>
+									<li><a href="/register">Sign up!</a></li>
+								{/if}
+							</ul>
 						</div>
 					</div>
-				</div>
-			</div>
-		{/block}
-		
-		{block header}{/block}
-		
-		<div class="container">
-			{block "content"}{/block}
-		</div>
+				</section>
+			</nav>
+			{/block}
+		</header>
+	
+		{block content-wrapper-open}<div class="container">{/block}
+		{block content}{/block}
+		{block content-wrapper-close}</div>{/block}
 		
 		{block footer}
-			<div class="container">
-				<hr />
-				<footer>
-					<p>Built and maintained by <a href="http://codeforphilly.org">Code for Philly</a>.</p>
-				</footer>
-			</div>
+			<footer class="site">
+				Built and maintained by <a href="http://codeforphilly.org">Code for Philly</a>.
+			</footer>
 		{/block}
-		
-		{block "js-bottom"}
+	
+		{block js-bottom}
 			{*
 				Compresses all JS files into a single request.
 				Add ?js-debug=1 to any URL to load separate uncompressed files
 			*}
-			{jsmin "jquery.js+bootstrap/bootstrap-tooltip.js+bootstrap/*+magic.js+features/member-badges.js"}
+			{jsmin array(
+				'jquery.js'
+				,'bootstrap/bootstrap-collapse.js'
+				,'bootstrap/bootstrap-typeahead.js'
+				,'bootstrap/bootstrap-dropdown.js'
+				,'bootstrap/bootstrap-modal.js'
+				,'bootstrap/bootstrap-modal.js'
+				,'bootstrap/bootstrap-tooltip.js'
+				,'bootstrap-combobox.js'
+				,'bootstrap-tagsinput.js'
+			)}
 		{/block}
 
 		{block "js-analytics"}

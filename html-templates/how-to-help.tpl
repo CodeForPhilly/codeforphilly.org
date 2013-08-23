@@ -4,12 +4,14 @@
 
 {block content}
 	<h2>How to help</h2>
-	<p>Our mission requires not just software developers, but help and participation from nearly all crafts. Women and men of all experience levels are welcome. We encourage beginners to find projects they can contribute to in small ways, and we expect more experienced teammates to share their skills generously in the hope they'll be continuously reapplied to the common good.</p>
-	<p>Here are just a few examples of ways to contribute:</p>
+	<p>Because Code for Philly is a community, there is room for all types of skill sets.True, building applications often requires coders and computer programmers, but for those apps to be beautiful, it helps to have someone with an artistic eye; for the wording to communicate effectively, we need copy editors and writers, and for events like hackathons to run smoothly, we need coordinators and organizers.</p>
+	<p>So our mission requires the help and participation from nearly all crafts. Women and men of all experience levels are welcome.</p> 
+	<p>We encourage beginners to find projects they can contribute to in small ways, and we expect those with more experience to share their skills generously, in the hope they'll be continuously reapplied to the common good.
+	<p>Here are just a few ways to contribute:</p>
 
 	<h3>Community Organization</h3>
 	<p>Code for Philly is a community, it needs organization! Simple things like newsletters, regular events and workshops, and outreach and engagement can be enhanced by anyone with time and attention to spare, yet have huge impacts.</p>
-	<p>Many projects have enough stakeholders to create a neew for their own community. Help people stay connected around a cause and watch it flourish.</p>
+	<p>Many projects have enough stakeholders to create a need for their own community. Help people stay connected around a cause and watch it flourish.</p>
 
 	<h3>Copy editing and review / Software testing</h3>
 	<p>For software and information projects to fully capitalize on their exposure, they should be put through their paces before they end up in the hands of the people that actually need to use them.</p>

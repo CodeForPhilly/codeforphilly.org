@@ -4,7 +4,7 @@
 
 {$Request = $data}
 {$Creator = Person::getByID("1")}
-	{dump $Creator}
+	{*dump $Creator*}
 
 	<div class="page-header">
 		<h2>Request Board</h2>

@@ -62,11 +62,22 @@ class Project extends VersionedRecord
 			,'class' => 'ProjectUpdate'
 			,'order' => array('ID' => 'DESC')
 		)
-		 ,'Requests' => array(
+		,'Requests' => array(
             'type' => 'one-many'
             ,'class' => 'Request'
-            )
-		
+        )
+        ,'Comments' => array(
+			'type' => 'context-children'
+			,'class' => 'Comment'
+			,'order' => array('ID' => 'DESC')
+		)
+        ,'Tags' => array(
+        	'type' => 'many-many'
+        	,'class' => 'Tag'
+        	,'linkClass' => 'TagItem'
+        	,'linkLocal' => 'ContextID'
+        	,'conditions' => array('Link.ContextClass = "Project"')
+        )
 	);
 	
 	static public function getByHandle($handle)

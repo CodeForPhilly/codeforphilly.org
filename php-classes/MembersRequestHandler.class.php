@@ -6,30 +6,30 @@ class MembersRequestHandler extends PeopleRequestHandler
 	static public $accountLevelBrowse = false;
 	static public $browseOrder = array('ID' => 'DESC');
 	
-	
-	static public function handleRecordsRequest($action = false)
+	static public function handleBrowseRequest($options = array(), $conditions = array(), $responseID = null, $responseData = array())
 	{
-		switch($action ? $action : $action = static::shiftPath())
+		// apply tag filter
+		if(!empty($_REQUEST['tag']))
 		{
-			case '!checkout-all':
-				return static::handleCheckoutAllRequest();
-			default:
-				return parent::handleRecordsRequest($action);
+			// get tag
+			if(!$Tag = Tag::getByHandle($_REQUEST['tag']))
+			{
+				return static::throwNotFoundError('Tag not found');
+			}
+			
+			$conditions[] = 'ID IN (SELECT ContextID FROM tag_items WHERE TagID = '.$Tag->ID.' AND ContextClass = "Person")';
 		}
+		
+		return parent::handleBrowseRequest($options, $conditions, $responseID, $responseData);
 	}
 	
 	static public function handleRecordRequest(Member $Member, $action = false)
 	{
 		switch($action ? $action : $action = static::shiftPath())
 		{
-			case 'checkin':
+			case 'comment':
 			{
-				return static::handleCheckinRequest($Member);
-			}
-			
-			case 'checkout':
-			{
-				return static::handleCheckoutRequest($Member);
+				return static::handleCommentRequest($Member);
 			}
 		
 			default:
@@ -39,76 +39,23 @@ class MembersRequestHandler extends PeopleRequestHandler
 		}
 	}
 	
-	static public function handleCheckoutAllRequest()
+	static public function handleCommentRequest($Member)
 	{
-		$GLOBALS['Session']->requireAccountLevel('Staff');
-		DB::nonQuery(
-			'UPDATE `%s` SET OutTime = CURRENT_TIMESTAMP WHERE OutTime IS NULL'
-			,MemberCheckin::$tableName
-		);
-		
-		return static::respond('message', array(
-			'message' => sprintf('Checked out %u members', DB::affectedRows())
-		));
+		if($_SERVER['REQUEST_METHOD'] == 'POST')
+		{
+			$Comment = new Comment();
+			
+			$Comment->ContextClass = $Member->Class;
+			$Comment->ContextID = $Member->ID;
+			$Comment->Message = $_REQUEST['Message'];
+			$Comment->AuthorID = $GLOBALS['Session']->PersonID;
+			$Comment->Authored = time;
+			
+			$Comment->save();
+			
+			return static::respond('members/member', array(
+				'data' => $Member
+			));
+		}
 	}
-	
-	static public function handleCheckinRequest(Member $Member)
-	{
-		$GLOBALS['Session']->requireAuthentication();
-		
-		if($_SERVER['REQUEST_METHOD'] != 'POST') {
-			return static::throwError('A checkin can only be performed via HTTP POST');
-		}
-		
-		// check for existing open checkin
-		$ExistingCheckin = MemberCheckin::getByWhere(array(
-			'MemberID' => $Member->ID
-			,'OutTime' => null
-		));
-		
-		if($ExistingCheckin) {
-			return static::throwError('This member has a checkin already open');
-		}
-		
-		// create checkin
-		$Checkin = MemberCheckin::create(array(
-			'MemberID' => $Member->ID
-			,'InTime' => time()
-		), true);
-		
-		return static::respond('checked-in', array(
-			'data' => $Checkin
-			,'success' => true
-		));
-	}
-	
-	static public function handleCheckoutRequest(Member $Member)
-	{
-		$GLOBALS['Session']->requireAuthentication();
-		
-		if($_SERVER['REQUEST_METHOD'] != 'POST') {
-			return static::throwError('A checkin can only be performed via HTTP POST');
-		}
-		
-		// check for existing open checkin
-		$Checkin = MemberCheckin::getByWhere(array(
-			'MemberID' => $Member->ID
-			,'OutTime' => null
-		));
-		
-		if(!$Checkin) {
-			return static::throwError('This member does not have a checkin open');
-		}
-		
-		
-		// checkout
-		$Checkin->OutTime = time();
-		$Checkin->save();
-		
-		return static::respond('checked-out', array(
-			'data' => $Checkin
-			,'success' => true
-		));
-	}
-
 }

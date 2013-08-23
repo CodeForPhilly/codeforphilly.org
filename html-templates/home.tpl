@@ -1,95 +1,184 @@
 {extends designs/site.tpl}
 
 {block header}
-	<div class="heroimage-and-caption">
-		<img class="heroimage2" src="./img/philly-skyline.jpg" alt="" />
-		<div class="container">
-			<div class="caption members-signed-in">
-				<h1>We are Code for Philly</h1>
-				
-				{$latestUpdates = ProjectUpdate::getAll(array(limit=>2, order=>array(ID=>DESC)))}
-				{if $latestUpdates}
-					<h2>Latest project updates:</h2>
-					{foreach item=Update from=$latestUpdates}
-					<p>
-						{$Update->Body|truncate:60}
-						<strong>
-							<a href="/projects/{$Update->Project->Handle}/updates/{$Update->Number}">#{$Update->Number}</a>
-							in <a href="/projects/{$Update->Project->Handle}">{$Update->Project->Title|escape}</a>
-						</strong>
-					</p>
-					{/foreach}
-				{/if}
+	{$dwoo.parent}
 
-				<a class="btn btn-large btn-primary" href="/projects">Check out our projects</a>
-
-				{if first}
-					<h2>Members checked-in:</h2>
-				{/if}
-
-				<ul>
-					{foreach item=Member from=MemberCheckin::getCurrentMembers()}
-						<li>{memberLink $Member avatar=20 showName=false}</li>
-					{/foreach}
-
-					{if $.User}
-					<li>
-						{if $.User->OpenCheckin}
-							<form action="/members/{$.User->Username}/checkout" method="POST" style="display: inline">
-								<input type="submit" value="Check Out" class="btn btn-warning">
-							</form>
-						{else}
-							<form action="/members/{$.User->Username}/checkin" method="POST" style="display: inline">
-								<input type="submit" value="Check In" class="btn btn-success">
-							</form>
-						{/if}
-					</li>
-					{/if}
-				</ul>
-			</div>
+	<div class="hero-unit">
+		<div class="caption">
+			<h1>Code for Philly</h1>
+			<p>
+				is an open group of citizens, working to harness the power of technology
+				to modernize citizenship in Philadelphia.
+			</p>
+			<p>
+    			<a href="{tif $.User ? '/projects' : '/register'}" class="btn btn-primary">Start Hacking</a>
+    			<small>or <a href="/mission">Learn More&hellip;</a></small>
+			</p>
+<!--
+			<p>
+				We are technologists, organizers, educators, and change-makers who know that we can’t wait
+				for the future to come down from the top. With our allies at <a href="http://codeforamerica.org">Code for America</a>
+				and the <a href="http://phila.gov">City of Philadelphia</a>, we provide a conduit for active citizens to
+				connect with each other and with Philadelphia’s open government movement.
+			</p>
+-->
 		</div>
 	</div>
 {/block}
 
+{block content-wrapper-open}<div class="container-fluid">{/block}
 {block content}
-	<!-- Three columns of text below the carousel -->
-	<div class="row marketing">
-		<div class="span4">
-			<img src="/img/members-logo-red.jpg" />
-			<h2>Members</h2>
-			<p>Code for Philly is an open group of local citizens that are compelled to improve their city.</p>
-			<p>We welcome developers, artists, designers, community organizers, and project managers&mdash;or anyone with something to contribute.</p>
+	<nav class="sidebar left">
 
-			{$latestMember = Member::getByWhere(array(Class=>Member), array(order=>array(ID=>DESC)))}
-			{if $latestMember}
-				<h3>Newest Member</h3>
-				{memberLink $latestMember}
-			{/if}
+		<section class="tagsSummary projects">
+			<h4><a href="/projects">Projects <span class="badge badge-info">{$projectsTotal|number_format}</span></a></h4>
 
-			<p><a class="small-button" href="/members">View all members &raquo;</a></p>
-		</div>
-		<!-- /.span4 -->
-		<div class="span4">
-			<img src="/img/meetup-logo-red.jpg" />
-			<h2>Meetups</h2>
-			<p>We host weekly workshops that are open to the public along with other fun and strategic events to advance technology in our city and communities.</p>
+			<header class="btn-group">
+				<a href="#projects-by-tech" class="tagFilter active btn btn-mini" data-group="byTech">by tech</a> |
+				<a href="#projects-by-topic" class="tagFilter btn btn-mini" data-group="byTopic">by topic</a>
+			</header>
 
-			{$meetups = Meetup::getEvents()}
-			{if count($meetups)}
-				<h3>Next Meetup</h3>
-				{meetup $meetups[0]}
-			{/if}
+			<ul class="tags nav nav-tabs nav-stacked byTech">
+				{foreach item=tag from=$projectsTags.byTech}
+					<li>{tagLink tagData=$tag rootUrl="/projects"}</li>
+				{/foreach}
+			</ul>
 
-			<p><a class="small-button" href="http://www.meetup.com/Code-for-America-Philly/">View all scheduled events &raquo;</a></p>
-		</div>
-		<!-- /.span4 -->
-		<div class="span4">
-			<img src="/img/code-for-america-logo-red.jpg" />
-			<h2>Our Inspiration</h2>
-			<p>Code for America is a non-partisan, non-political 501(c)3 organization founded in 2009 to bring web-industry professionals to work with city governments in the United States in order to promote <strong>openness</strong>, <strong>participation</strong>, and <strong>efficiency</strong> in municipal governments</p>
-			<p><a class="small-button" href="http://codeforamerica.org/">Visit CodeForAmerica.org &raquo;</a></p>
-		</div>
-		<!-- /.span4 -->
-	</div>
-	<!-- /.row -->
+			<ul class="tags nav nav-tabs nav-stacked byTopic" style="display: none">
+				{foreach item=tag from=$projectsTags.byTopic}
+					<li>{tagLink tagData=$tag rootUrl="/projects"}</li>
+				{/foreach}
+			</ul>
+		</section>
+
+		<section class="tagsSummary members">
+			<h4><a href="/members">Members <span class="badge badge-info">{$membersTotal|number_format}</span></a></h4>
+
+			<header class="btn-group">
+				<a href="#members-by-tech" class="tagFilter active btn btn-mini" data-group="byTech">by tech</a> |
+				<a href="#members-by-topic" class="tagFilter btn btn-mini" data-group="byTopic">by topic</a>
+			</header>
+
+			<ul class="tags nav nav-tabs nav-stacked byTech">
+				{foreach item=tag from=$membersTags.byTech}
+					<li>{tagLink tagData=$tag rootUrl="/members"}</li>
+				{/foreach}
+			</ul>
+
+			<ul class="tags nav nav-tabs nav-stacked byTopic" style="display: none">
+				{foreach item=tag from=$membersTags.byTopic}
+					<li>{tagLink tagData=$tag rootUrl="/members"}</li>
+				{/foreach}
+			</ul>
+		</section>
+
+		<section class="resources">
+			<a href="/resources"><h4>Civic Hacking Resources</h4></a>
+			<ul class="nav nav-tabs nav-stacked">
+				<li><a href="/chat">Code for Philly Chatroom</h3></a></li>
+				<li><a href="http://opendataphilly.org">OpenDataPhilly</h3></a></li>
+				<li><a href="http://opendata.stackexchange.com/">Open Data Stack Exchange</h3></a></li>
+				<li><a href="http://commons.codeforamerica.org/">CfA Commons</h3></a></li>
+			</ul>
+		</section>
+
+		{*
+		<a href="#"><h5>Events (108)</h5></a>
+		<ul>
+			<li><a href="#">Workshops (100/3)</h3></a></li>
+			<li><a href="#">Hackathons (10/4)</h3></a></li>
+			<li><a href="#">Social (6/3)</h3></a></li>
+		</ul>
+		<h6><a href="#">event count</a> | <a href="#">next closest</a></h6>
+
+		<a href="#"><h5>Help Wanted (10)</h5></a>
+		<ul>
+			<li><a href="#">PHP (1)</a></li>
+			<li><a href="#">JS (2)</a></li>
+			<li><a href="#">Python (100)</a></li>
+			<li><a href="#">Rails (42)</a></li>
+		</ul>
+		<h6><a href="#">job count</a> | <a href="#">by tech</a></h6>
+
+		<a href="#"><h5>Help Offered</h5></a>
+		<ul>
+			<li><a href="#">Django (2)</a></li>
+			<li><a href="#">Node.js (1)</a></li>
+		</ul>
+		<h6><a href="#">job count</a> | <a href="#">by tech</a></h6>
+		*}
+	</nav>
+
+	<aside class="sidebar right meetups">
+			
+		{if $currentMeetup}
+			<article class="meetup meetup-current">
+				<h3><strong>Current</strong> Meetup</h3>
+				{meetup $currentMeetup showRsvp=false}
+				<form class="checkin" action="/checkin" method="POST">
+					<input type="hidden" name="MeetupID" value="{$currentMeetup.id}">
+					<select name="ProjectID" class="project-picker">
+						<option value="">Current Project (if any)</option>
+						{foreach item=Project from=Project::getAll()}
+							<option value="{$Project->ID}">{$Project->Title|escape}</option>
+						{/foreach}
+					</select>
+					<input type="submit" value="Check In" class="btn btn-success">
+				</form>
+				<aside class="checkins">
+					<h4>Checked-in Members</h4>
+					{$lastProjectID = null}
+					<h5 class="muted">No Current Project</h5>
+					<ul class="nav nav-pills nav-stacked">
+					{foreach item=Checkin from=$currentMeetup.checkins}
+						{if $Checkin->ProjectID != $lastProjectID}
+							</ul>
+							<h5>{if $Checkin->Project}{projectLink $Checkin->Project}{/if}</h5>
+							{$lastProjectID = $Checkin->ProjectID}
+							<ul class="nav nav-pills nav-stacked">
+						{/if}
+						<li>{memberLink $Checkin->Member}</li>
+					{/foreach}
+					</ul>
+				</aside>
+			</article>
+		{/if}
+
+		{if $nextMeetup}
+			<article class="meetup meetup-next">
+				<h3><strong>Next</strong> Meetup</h3>
+				{meetup $nextMeetup}
+			</article>
+		{/if}
+
+		{if count($futureMeetups)}
+			<h3>Future Meetups</h3>
+			{foreach item=futureMeetup from=$futureMeetups}
+				<article class="meetup meetup-future">
+					{meetup $futureMeetup}
+				</article>
+			{/foreach}
+		{/if}
+
+	</aside>
+
+	<section class="content fixed-fixed">
+		<article>
+			<h2>Latest Project Activity</h3>
+			<div class="row-fluid">
+
+					{foreach item=Update from=$updates}
+						{projectUpdate $Update headingLevel=h3 showProject=true}
+					{/foreach}
+	
+			</div> <!-- .row-fluid -->
+			<a href="/project-updates">See More&hellip;</a>
+		</article>
+	</section>
+{/block}
+{block content-wrapper-close}</div>{/block}
+
+{block js-bottom}
+	{$dwoo.parent}
+	{jsmin "sidebar-tags.js+sidebar-checkin.js"}
 {/block}

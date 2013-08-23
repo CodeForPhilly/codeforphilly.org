@@ -34,6 +34,11 @@ class ProjectsRequestHandler extends RecordsRequestHandler
 				return static::handleUpdatesRequest($Project);
 			}
 			
+			case 'comment': 
+			{
+				return static::handleCommentRequest($Project);
+			}
+			
 			default:
 			{
 				return parent::handleRecordRequest($Project, $action);
@@ -41,6 +46,22 @@ class ProjectsRequestHandler extends RecordsRequestHandler
 		}
 	}
 	
+	static public function handleBrowseRequest($options = array(), $conditions = array(), $responseID = null, $responseData = array())
+	{
+		// apply tag filter
+		if(!empty($_REQUEST['tag']))
+		{
+			// get tag
+			if(!$Tag = Tag::getByHandle($_REQUEST['tag']))
+			{
+				return static::throwNotFoundError('Tag not found');
+			}
+			
+			$conditions[] = 'ID IN (SELECT ContextID FROM tag_items WHERE TagID = '.$Tag->ID.' AND ContextClass = "Project")';
+		}
+		
+		return parent::handleBrowseRequest($options, $conditions, $responseID, $responseData);
+	}
 	
 	static public function handleAddMemberRequest(Project $Project)
 	{
@@ -176,5 +197,34 @@ class ProjectsRequestHandler extends RecordsRequestHandler
 			'data' => $Project->Updates	
 			,'Project' => $Project
 		));
+	}
+	
+	static public function handleCommentRequest($Project)
+	{
+		if($_SERVER['REQUEST_METHOD'] == 'POST')
+		{
+			$Comment = new Comment();
+			
+			$Comment->ContextClass = $Project->Class;
+			$Comment->ContextID = $Project->ID;
+			$Comment->Message = $_REQUEST['Message'];
+			$Comment->AuthorID = $GLOBALS['Session']->PersonID;
+			$Comment->Authored = time;
+			
+			$Comment->save();
+			
+			return static::respond('projects/project', array(
+				'data' => $Project
+			));
+		}
+	}
+
+	static public function onRecordSaved(Project $Project, $requestData)
+	{
+		// assign tags
+		if(isset($requestData['tags']))
+		{
+			Tag::setTags($Project, $requestData['tags']);
+		}
 	}
 }

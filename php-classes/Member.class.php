@@ -32,5 +32,18 @@ class Member extends User
 			,'class' => 'MemberCheckin'
 			,'foreign' => 'MemberID'
 		)
+        ,'Tags' => array(
+        	'type' => 'many-many'
+        	,'class' => 'Tag'
+        	,'linkClass' => 'TagItem'
+        	,'linkLocal' => 'ContextID'
+        	,'conditions' => array('Link.ContextClass = "Person"')
+        )
+		,'Comments' => array(
+			'type' => 'context-children'
+			,'class' => 'Comment'
+			,'contextClass' => __CLASS__
+			,'order' => array('ID' => 'DESC')
+		)
 	);
 }

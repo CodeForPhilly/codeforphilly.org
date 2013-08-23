@@ -40,7 +40,7 @@
 				<div class="controls">
 					<input type="email" name="Email" value="{refill field=Email}" placeholder="civic.hacker@example.com">
 					<div class="muted" id="register-privacy">
-						Your email address will not be shared with anyone.
+						Email address <strong>will</strong> be visible to other signed-in members.
 					</div>
 				</div>
 				
@@ -72,7 +72,7 @@
 			<div class="control-group">
 				<label class="control-label"></label>
 				<div class="controls">
-					<input type="submit" class="btn submit" value="Create account"><br/><br/>
+					<input type="submit" class="btn btn-primary submit" value="Create Account"><br/><br/>
 					<p class="form-hint">Already have an account? <a href="/login">Log in</a></p>
 				</div>
 			</div>

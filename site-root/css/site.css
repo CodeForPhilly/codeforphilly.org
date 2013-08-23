@@ -1,158 +1,62 @@
-.navbar-inverse .nav > li > a {
-	color: rgb(248, 247, 247);
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	font-size:15px;
+/**
+* Common site design elements
+*/
+
+body {
+	padding-top: 40px; /* Padding at top of screen for fixed navbar as recommended in bootstrap docs */
 }
 
-.btn-primary {
-	background-color: #6C0E0F;
-	background-image: -webkit-linear-gradient(top, #CE3032, #6C0E0F);
+@media (max-width: 979px) {
+	body {
+		padding-top: 0;
+	}
+	
+	.navbar-fixed-top {
+		margin-bottom: 0;
+	}
 }
 
-.btn-primary:hover {
-	color: white;
-	background-color: none;
-	text-decoration: none;
-	background-position: 0 0px;
-	-webkit-transition: background-position 0.1s linear;
-       -moz-transition: background-position 0.1s linear;
-         -o-transition: background-position 0.1s linear;
-            transition: background-position 0.1s linear; 
+/* 3-column layout from http://stackoverflow.com/questions/9269312/three-column-fluid-layout-with-twitter-bootstrap-clearfixes-messing-things-up */
+.container-fluid > .sidebar {
+    position: relative;
+    top: 0;
+    left:auto;
+    width: 220px;
 }
 
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary.active,
-.btn-primary.disabled,
-.btn-primary[disabled] {
-	color: #ffffff;
-	background-color: #6C0E0F;
-	*background-color: #6C0E0F;
+@media (min-width: 979px) {
+	.fixed-fixed {
+	    margin: 0 300px 0 270px;
+	}
+
+	.sidebar.left {
+		float: left;
+	}
+	
+	.sidebar.right {
+		float: right;
+		width: 250px;
+	}
 }
 
-.small-button {
-	display: inline-block;
-	*display: inline;
-	padding: 4px 12px;
-	margin-bottom: 0;
-	*margin-left: .3em;
-	font-size: 14px;
-	line-height: 20px;
-	color: #333333;
+.avatar {
+    background-position: center;
+    background-size: cover;
+    border-radius: .25em;
+    display: inline-block;
+    margin-right: .25em;
+    vertical-align: middle;
+}
+
+.avatar.flexible {
+    height: auto;
+    padding-top: 100%;
+    width: 100%;
+}
+
+footer.site {
 	text-align: center;
-	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-	vertical-align: middle;
-	cursor: pointer;
-	background-color: #f5f5f5;
-	*background-color: #e6e6e6;
-	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
-	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
-	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
-	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
-	background-repeat: repeat-x;
-	border: 1px solid #bbbbbb;
-	*border: 0;
-	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-	border-bottom-color: #a2a2a2;
-	-webkit-border-radius: 4px;
-	   -moz-border-radius: 4px;
-	        border-radius: 4px;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-	*zoom: 1;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-	   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-	        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-.marketing {
-	text-align:center;
-}
-
-footer {
-	text-align:center;
-}
-
-.marketing h2 {
-	color:gray;
-}
-
-.members-signed-in ul {
-	list-style:none;
-	margin-left:0px;
-}
-
-.members-signed-in li {
-	display:inline;
-}
-
-.members-page-members ul {
-	list-style:none;
-	margin-left:0px;
-}
-
-.members-page-members li {
-	float:left;
-}
-
-.members-signed-in p {
-	color:white;
-}
-
-.projects ul {
-	list-style:none;
-	margin-left:0px;
-}
-
-.projects li {
-	display:inline-block;
-}
-
-.projects h3 {
-	color:#CE3032;
-	margin-top:-8px;
-}
-
-.projects .container {
-	padding-right:0px;
-}
-
-.resources h3 {
-	color:#CE3032;
-}
-
-/* Member Badges */
-.member.with-avatar .name-link {
-	display: block;
-}
-
-
-.markdown.readme h1,
-.markdown.readme h2,
-.markdown.readme h3,
-.markdown.readme h4,
-.markdown.readme h5,
-.markdown.readme h6 {
-	font-size: 1.25em;
-	font-weight: bold;
-	line-height: inherit;
-	margin: 0 0 1em;
-}
-
-.people-list {
-
-}
-
-.people-list .listed-person {
-	background: white;
-	margin-bottom: .5em;
-	padding: 0;
-	vertical-align: top;
-	width: 60px;
-}
-
-.people-list .listed-person.maintainer {
-	background: #AEA;
+	margin-top: 20px;
+	padding: 1em;
+	border-top: 1px dashed #aaa;
 }

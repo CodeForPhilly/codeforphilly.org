@@ -14,6 +14,7 @@
 			<p class="location"><a href="http://maps.google.com/?q={$Member->Location|escape}" target="_blank">{$Person->Location|escape}</a></p>
 		{/if}
 	
+{*
 		{if $Member->OpenCheckin}
 			<form action="/members/{$Member->Username}/checkout" method="POST">
 				Checked in at {$Member->OpenCheckin->InTime|date_format:'%c'}
@@ -29,7 +30,7 @@
 				<input type="submit" value="Check {$Member->FirstName|escape} in">
 			</form>
 		{/if}
-		
+*}
 	
 		{if $Member->About}
 			<h3>About Me</h3>

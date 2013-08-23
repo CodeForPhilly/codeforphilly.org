@@ -64,6 +64,22 @@
 					<dt>README</dt>
 					<dd class="markdown readme well">{$Project->README|escape|markdown}</dd>
 				{/if}
+
+				{*
+				<dt>COMMENTS: </dt>
+				<dd>
+					<form method="post" action="/projects/{$Project->Handle}/comment">
+					<textarea name="Message"></textarea>
+					<input type="submit" value="Submit">
+					</form>
+				</dd>
+				{foreach item=Comment from=$Project->$Comments}
+					<p>
+					{$Comment->Message}
+					</p>
+				{/foreach}
+				*}
+
 			</dl>
 
 			{if ($.User && $Project->hasMember($.User))}

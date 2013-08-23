@@ -8,35 +8,42 @@
 	{elseif $Member->Email}
 		{$src = cat("//www.gravatar.com/avatar/", md5(strtolower($Member->Email)), "?s=", $pixels, "&r=g&d=http%3A%2F%2Fcodeforphilly.org%2Fimg%2Fcode_for_philly_placeholder_darker.png")}
 	{/if}
-	<img style="max-height:{$pixels}px" alt="Profile Photo: {$Member->FullName|escape}" src="{$src}" class="avatar img-rounded">
+	<div class="avatar" style="width:{$size}px;height:{$size}px;background-image:url({$src})"></div>
 {/template}
 
 {template memberLink Member avatar=32 showName=true}
-<span class="member {tif $avatar ? 'with-avatar'}">
+    <a href="/members/{$Member->Username}" title="{$Member->FullName|escape}" data-toggle="tooltip" data-placement="bottom">{strip}
 	{if $avatar}
-		<a href="/members/{$Member->Username}" class="member-thumbnail" title="{$Member->FullName|escape}" data-toggle="tooltip" data-placement="bottom">
-			{avatar $Member size=$avatar}
-		</a>
+		{avatar $Member size=$avatar}
 	{/if}
 	{if $showName}
-		<a href="/members/{$Member->Username}" class="name-link">
-			{$Member->FullName|escape}
-		</a>
+		<span class="member-name">{$Member->FullName|escape}</span>
 	{/if}
-</span>
+    {/strip}</a>
+{/template}
+
+{template tagLink tagData rootUrl}
+	<a href="{$rootUrl}?tag={$tagData.Handle}">{$tagData.Title|regex_replace:'/^[^:]+:\s*/':''}{if $tagData.itemsCount} <span class="badge pull-right">{$tagData.itemsCount|number_format}</span>{/if}</a>
 {/template}
 
 {template projectLink Project}
 	<a href="/projects/{$Project->Handle}">{$Project->Title|escape}</a>
 {/template}
 
-{template meetup event headingLevel=h4}
+{template meetup event headingLevel=h4 showRsvp=true}
 	{$endTime = $event.time + $event.duration}
 	<article class="event">
 		<{$headingLevel}>{$event.name}</{$headingLevel}>
-		<p>When: {$event.time/1000|date_format:"%A, %b %e - %l:%M%P"}&ndash;{$endTime/1000|date_format:"%l:%M%P"}</p>
-		<p>Where: <a href="http://maps.google.com/?q={$event.venue.address_1},%20{$event.venue.zip}">{$event.venue.name}</a></p>
-		<p><a href="{$event.event_url}">RSVP @ meetup.com</a> {if $event.yes_rsvp_count}({$event.yes_rsvp_count} so far){/if}</p>
+
+		<p class="muted">{strip}
+		    {$event.time/1000|date_format:"%A, %b %e <br> %l:%M%P"}&ndash;
+		    {$endTime/1000|date_format:"%l:%M%P"}
+            &#32;@&nbsp;<a href="http://maps.google.com/?q={$event.venue.address_1},%20{$event.venue.zip}">{$event.venue.name}</a>
+        {/strip}</p>
+
+		{if $showRsvp}
+			<p><a href="{$event.event_url}">RSVP @ meetup.com</a> {if $event.yes_rsvp_count}({$event.yes_rsvp_count} so far){/if}</p>
+		{/if}
 	</article>
 {/template}
 
@@ -45,18 +52,30 @@
 		{if $showHeading}
 			<{$headingLevel}>
 				{if $showProject}
-					<a href="/projects/{$Update->Project->Handle}">{$Update->Project->Title|escape}</a> &mdash; 
+					<a href="/projects/{$Update->Project->Handle}">{$Update->Project->Title|escape}</a> 
 				{/if}
-				<a href="/projects/{$Update->Project->Handle}/updates/{$Update->Number}">Update #{$Update->Number}</a>
+				<small><a href="/projects/{$Update->Project->Handle}/updates/{$Update->Number}">Update #{$Update->Number}</a></small>
 			</{$headingLevel}>
 		{/if}
-		<blockquote>
+		<div class="update-body well">
 			{$Update->Body|escape|markdown}
-			<small>Posted on {$Update->Created|date_format:"%c"} by {memberLink $Update->Creator avatar=off}</small>
-		</blockquote>
+			<p class="muted"><small>Posted on {$Update->Created|date_format:"%c"} by {memberLink $Update->Creator avatar=off}</small></p>
+		</div>
 	</article>
 {/template}
 
+{template comment Comment headingLevel=h5 showHeading=true showProject=false articleClass=""}
+	<article class="comment {$articleClass}">
+		{if $showHeading}
+			<{$headingLevel}>
+				{$Comment->Message}
+			</{$headingLevel}>
+		{/if}
+		<blockquote>
+			<small>Posted on {$Comment->Created|date_format:"%c"} by {memberLink $Comment->Creator avatar=off}</small>
+		</blockquote>
+	</article>
+{/template}
 
 
 {template userLink User avatar=no avatarSize=32}{strip}

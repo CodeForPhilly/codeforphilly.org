@@ -12,13 +12,13 @@ class MemberCheckin extends ActiveRecord
 	// gets combined with all the extended layers
 	static public $fields = array(
 		'MemberID' => 'uint'
-		,'InTime' => 'timestamp'
-		,'OutTime' => array(
-			'type' => 'timestamp'
+		,'ProjectID' => array(
+			'type' => 'uint'
 			,'notnull' => false
 		)
-		,'Location' => array(
-			'notnull' => false	
+		,'MeetupID' => array(
+			'type' => 'uint'
+			,'notnull' => false
 		)
 	);
 	
@@ -27,16 +27,32 @@ class MemberCheckin extends ActiveRecord
 			'type' => 'one-one'
 			,'class' => 'Person'
 		)
+		,'Project' => array(
+			'type' => 'one-one'
+			,'class' => 'Project'
+		)
 	);
 	
-	static public function getCurrentMembers()
+	static public $indexes = array(
+		'MeetupMember' => array(
+			'fields' => array('MeetupID', 'MemberID')
+			,'unique' => true
+		)
+	);
+	
+	static public function getAllForMeetupByProject($meetupID)
 	{
-		return Member::getAllByQuery(
-			'SELECT Member.* FROM `%s` Checkin JOIN `%s` Member ON Member.ID = Checkin.MemberID WHERE Checkin.OutTime IS NULL ORDER BY Checkin.ID DESC'
-			,array(
-				static::$tableName
-				,Member::$tableName
-			)
-		);
+		return static::getAllByField('MeetupID', $meetupID, array('order' => 'ProjectID IS NOT NULL, ProjectID DESC'));
 	}
+	
+#	static public function getCurrentMembers()
+#	{
+#		return Member::getAllByQuery(
+#			'SELECT Member.* FROM `%s` Checkin JOIN `%s` Member ON Member.ID = Checkin.MemberID WHERE Checkin.OutTime IS NULL ORDER BY Checkin.ID DESC'
+#			,array(
+#				static::$tableName
+#				,Member::$tableName
+#			)
+#		);
+#	}
 }

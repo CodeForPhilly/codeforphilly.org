@@ -5,9 +5,9 @@ An online focal point for civic hacking communities to share the projects they a
 ## Requirements
 The CodeForPhilly site is built on the Emergence PHP framework and engine, and requires an Emergence server to host it.
 
-Emergence should be easy to setup on any Mac or Linux system, but the installation guide is currently only maintained for Gentoo Linux: http://emr.ge/manual/installing_gentoo
-
-Also, ready-to-go image is available on Amazon's AMI database: https://aws.amazon.com/amis/emergence
+Emergence takes just a few minutes to setup on a Linux VM, and is designed to have a fresh system to itself. Once launched
+it will configure services on the machine as-needed to host an instance of the CodeForPhilly site along with any other
+sites, clones, or child sites. The guides for Ubuntu and Gentoo are most up-to-date: http://emr.ge/manual/installing http://emr.ge/manual/installing
 
 Free unlimited Emergence hosting is also available for civic projects on-request from calfano@codeforamerica.org
 

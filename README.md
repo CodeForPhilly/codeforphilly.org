@@ -7,7 +7,7 @@ The CodeForPhilly site is built on the Emergence PHP framework and engine, and r
 
 Emergence takes just a few minutes to setup on a Linux VM, and is designed to have a fresh system to itself. Once launched
 it will configure services on the machine as-needed to host an instance of the CodeForPhilly site along with any other
-sites, clones, or child sites. The guides for Ubuntu and Gentoo are most up-to-date: http://emr.ge/manual/installing http://emr.ge/manual/installing
+sites, clones, or child sites. The guides for Ubuntu and Gentoo are most up-to-date: http://emr.ge/manual/installing
 
 Free unlimited Emergence hosting is also available for civic projects on-request from calfano@codeforamerica.org
 

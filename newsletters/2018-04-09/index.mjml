@@ -88,7 +88,7 @@
     </mj-section>
     <mj-section background-color="#f3f3f3">
       <mj-column>
-        <mj-text align="center">Stay in touch<br></br>Join the Code for Philly slack channel.</mj-text>
+        <mj-button href="https://codeforphilly.org/chat">Join the Code for Philly Slack Workspace</mj-button>
         <mj-social>
           <mj-social-element href="wwww.twitter.com/codeforphilly" name="twitter"></mj-social-element>
         </mj-social>

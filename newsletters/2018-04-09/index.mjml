@@ -1,4 +1,10 @@
 <mjml>
+  <mj-head>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <mj-attributes>
+      <mj-all font-family="Open Sans" />
+    </mj-attributes>
+  </mj-head>
   <mj-body background-color="#E1E8ED">
     <mj-raw>
       <!-- Header -->
@@ -6,14 +12,14 @@
     <mj-section padding-bottom="0px" background-color="white">
       <mj-column width="400px">
         <mj-image align="center" src="https://codeforphilly.org/img/logo-bell.png" width="75px"></mj-image>
-        <mj-text align="left" font-size="12px" color="grey" font-family="Helvetica Neue">April 9, 2018</mj-text>
+        <mj-text align="left" font-size="12px" color="grey">April 9, 2018</mj-text>
         <mj-divider width="400px" padding-top="0" padding-bottom="0px" padding-left="0px" padding-right="0px" border-width="1px" border-color="#525252"></mj-divider>
       </mj-column>
     </mj-section>
     <mj-section padding-bottom="0px" background-color="#fcfcfc">
       <mj-column width="400px">
-        <mj-text align="left" font-size="20px" color="525252" font-family="Helvetica Neue">In This Issue</mj-text>
-        <mj-text align="left" font-family="Helvetica Neue" color="#525252">
+        <mj-text align="left" font-size="20px" color="525252">In This Issue</mj-text>
+        <mj-text align="left" color="#525252">
           <mj-list>
             <li>Leadership Team Changes</li>
             <li>Project Profile Series</li>
@@ -26,8 +32,8 @@
     </mj-section>
     <mj-section background-color="white">
       <mj-column width="400px">
-        <mj-text align="left" font-size="20px" font-family="Helvetica Neue" color="525252">Leadership Team Changes</mj-text>
-        <mj-text align="left" color="525252" font-family="Helvetica Neue"> Out-going Executive Director Dawn McDougall outlined what's changing, who's stepping aside and who's stepping up, and how all this change inevitably allows for new opportunities. </mj-text>
+        <mj-text align="left" font-size="20px" color="525252">Leadership Team Changes</mj-text>
+        <mj-text align="left" color="525252"> Out-going Executive Director Dawn McDougall outlined what's changing, who's stepping aside and who's stepping up, and how all this change inevitably allows for new opportunities. </mj-text>
 
         <mj-button background-color="#337ab7" href="https://codeforphilly.org/blog/leadership_changes">
           Read Dawn's Blog Post
@@ -38,8 +44,8 @@
     <!-- Editor -->
     <mj-section padding-bottom="0px" background-color="#fcfcfc">
       <mj-column width="400px">
-        <mj-text align="left" font-size="20px" font-family="Helvetica Neue" color="525252">Project Profile Series</mj-text>
-        <mj-text font-family="Helvetica Neue" color="#525252">
+        <mj-text align="left" font-size="20px" color="525252">Project Profile Series</mj-text>
+        <mj-text color="#525252">
           We're going to be doing more to showcase the hardwork and accomplishments of our volunteers. To get started, we wrote profiles on three big-impact projects to come out of Code for Philly. <br></br>
           <mj-list>
             <li><a href="https://codeforphilly.org/blog/the_shared_values_that_built_cyclephilly/"> The Shared Values That Built Cycle Philly</a> </li>
@@ -55,7 +61,7 @@
         <mj-image src="photo.jpg" width="350px"></mj-image>
       </mj-column>
       <mj-column width="400px">
-        <mj-text align="left" font-size="20px" font-family="Helvetica Neue" color="525252">Civic Engangement Launchpad 2018</mj-text>
+        <mj-text align="left" font-size="20px" color="525252">Civic Engangement Launchpad 2018</mj-text>
         <mj-text color="#525252">
           Our biggest event of the year is almost here. If you have a great civic tech idea, want to use your tech skills to give back, or are looking to get to know the civic tech community, you'll find something to do at Launchpad. </mj-text>
 
@@ -67,7 +73,7 @@
     </mj-section>
     <mj-section padding-bottom="0px" background-color="#fcfcfc">
       <mj-column width="400">
-        <mj-text align="left" font-size="20px" font-family="Helvetica Neue" color="525252">What's New in Civic Tech</mj-text>
+        <mj-text align="left" font-size="20px" color="525252">What's New in Civic Tech</mj-text>
 
         <mj-text color="#525252">
           <mj-list>

@@ -91,10 +91,10 @@
       <mj-column>
         <mj-button href="https://codeforphilly.org/chat">Join the Code for Philly Slack Workspace</mj-button>
         <mj-social>
-          <mj-social-element name="twitter" href="https://codeforphilly.org/" />
-          <mj-social-element name="facebook" href="https://codeforphilly.org/" />
-          <mj-social-element name="linkedin" href="https://codeforphilly.org/" />
-          <mj-social-element name="google" href="https://codeforphilly.org/" />
+          <mj-social-element name="twitter" href="[[SHORT_PERMALINK]]" />
+          <mj-social-element name="facebook" href="[[SHORT_PERMALINK]]" />
+          <mj-social-element name="linkedin" href="[[SHORT_PERMALINK]]" />
+          <mj-social-element name="google" href="[[SHORT_PERMALINK]]" />
         </mj-social>
       </mj-column>
     </mj-section>

@@ -5,7 +5,6 @@
 $cacheKey = 'projects-activity';
 
 if (!($responseData = Cache::fetch($cacheKey)) || !empty($_GET['refresh'])) {
-    $slackAccessToken = 'xoxp-3777277917-3777277939-168915750225-eef87c1c3569e95ea08ef749130c890d';
 
     // loop through projects
     $oneMonthAgo = strtotime(empty($_GET['since']) ? '1 month ago' : $_GET['since']);

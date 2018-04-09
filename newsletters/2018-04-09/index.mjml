@@ -59,7 +59,7 @@
     </mj-section>
     <mj-section background-color="white" padding-top="10px">
       <mj-column width="350px">
-        <mj-image src="photo.jpg" width="350px"></mj-image>
+        <mj-image src="https://codeforphilly.org/thumbnail/1241/1050x1050" width="350px"></mj-image>
       </mj-column>
       <mj-column width="400px">
         <mj-text align="left" font-size="20px" color="525252">Civic Engangement Launchpad 2018</mj-text>

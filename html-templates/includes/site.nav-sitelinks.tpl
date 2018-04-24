@@ -4,7 +4,7 @@
         <li><a href="/projects">{_ "Active Projects"}</a></li>
         <li><a href="/pages/project_guidelines">{_ "Projects 101"}</a></li>
         <li><a href="/pages/hack_night_program_details/">Weekly Meetups</a></li>
-        <li><a href="/pages/hackathons">Buildathons/Hackathons</a></li>
+        <li><a href="/pages/hackathons">Launchpads & Hackathons</a></li>
     </ul>
 </li>
 
@@ -21,8 +21,6 @@
     <ul class="dropdown-menu">
         <li><a href="/mission">{_ "Mission"}</a></li>
         <li><a href="/pages/code_of_conduct/">{_ "Code of Conduct"}</a></li>
-        <li><a href="/pages/leadership/">{_ "Leadership Team"}</a></li>
-        <li><a href="/pages/leadership-support_team_open_positions/">{_ "Join the Leadership Team"}</a></li>
         <li><a href="/contact">{_ "Contact Us"}</a></li>
     </ul>
 </li>

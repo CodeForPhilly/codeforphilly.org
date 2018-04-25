@@ -31,7 +31,7 @@
 
     <mj-section background-color="white">
       <mj-column width="400px">
-           <mj-image src="http://codeforphilly.org/thumbnail/1260/500x500" width="350px"></mj-image>
+           <mj-image src="http://codeforphilly.org/thumbnail/1260/700x700" width="350px"></mj-image>
         <mj-text align="left" font-size="20px" color="#525252">Launchpad 2018: A Sneak Peak</mj-text>
         <mj-text align="left" color="#525252"> Curious about what makes our Civic Engagement Launchpad more than a hackathon? Find out what workshops we have planned for #Launchpad2018 participants. </mj-text>
 
@@ -60,7 +60,7 @@
 
     <mj-section background-color="white" padding-top="10px">
       <mj-column width="350px">
-        <mj-image src="https://codeforphilly.org/thumbnail/1259/500x500" width="350px"></mj-image>
+        <mj-image src="https://codeforphilly.org/thumbnail/1259/700x700" width="350px"></mj-image>
       </mj-column>
       <mj-column width="400px">
         <mj-text align="left" font-size="20px" color="#525252">Be A Launchpad Mentor</mj-text>

@@ -1,0 +1,5 @@
+[submodule ".holo/sources/laddr"]
+	path = .holo/sources/laddr
+	url = https://github.com/CodeForPhilly/laddr
+	shallow = true
+	branch = develop

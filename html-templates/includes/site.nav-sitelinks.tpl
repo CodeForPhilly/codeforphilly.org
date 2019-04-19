@@ -21,6 +21,7 @@
     <ul class="dropdown-menu">
         <li><a href="/mission">{_ "Mission"}</a></li>
         <li><a href="/pages/code_of_conduct/">{_ "Code of Conduct"}</a></li>
+        <li><a href="/pages/leadership/">{_ "Organizing Team"}</a></li> 
         <li><a href="/contact">{_ "Contact Us"}</a></li>
     </ul>
 </li>

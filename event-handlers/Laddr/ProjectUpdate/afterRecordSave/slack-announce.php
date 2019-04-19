@@ -3,9 +3,7 @@
 $ProjectUpdate = $_EVENT['Record'];
 
 if (
-    !$ProjectUpdate->isNew ||
-    !$ProjectUpdate->Project->ChatChannel ||
-    !($channelId = Emergence\Slack\API::getChannelId($ProjectUpdate->Project->ChatChannel))
+    !$ProjectUpdate->isNew
 ) {
     return;
 }
@@ -25,7 +23,7 @@ $attachment = [
 
 Emergence\Slack\API::request('chat.postMessage', [
     'post' => [
-        'channel' => $channelId,
+        'channel' => Emergence\Slack\API::getChannelId('general'),
         'attachments' => json_encode([$attachment])
     ]
 ]);

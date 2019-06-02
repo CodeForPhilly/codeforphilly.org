@@ -1,18 +1,18 @@
 {extends designs/site.tpl}
 
-{block title}{_ Brigade Leadership Team} &mdash; {$dwoo.parent}{/block}
+{block title}{_ "Brigade Leadership Team"} &mdash; {$dwoo.parent}{/block}
 
 {block content}
 
-    <h2>{_ Brigade Leadership Team}</h2>
+    <h2>{_ "Brigade Leadership Team"}</h2>
         <p>As a brigade, we&rsquo;re growing fast and doing great work. We want to preserve an open, inclusive community where people are comfortable sharing ideas and collaborating together. The Leadershp Team provides added structure to support the impressive efforts already happening.</p>
-        <p>This team helps <a href="https://codeforphilly.org/blog/executive_means_it-s_serious">answer the critical questions:</a><em> &ldquo;What&rdquo;, &ldquo;Where&rdquo;, &ldquo;When&rdquo;, &ldquo;Who&rdquo;,</em> and <em>&ldquo;How&rdquo;</em> of Code for Philly.</p>
+        <p>This team helps <a href="/blog/executive_means_it-s_serious">answer the critical questions:</a><em> &ldquo;What&rdquo;, &ldquo;Where&rdquo;, &ldquo;When&rdquo;, &ldquo;Who&rdquo;,</em> and <em>&ldquo;How&rdquo;</em> of Code for Philly.</p>
         <p>These roles are meant to take Code for Philly to the next level. That includes improving member experience (new and regular), forming relationships with organizations and government agencies/departments/offices, telling the story of our community and the amazing work we do, diversifying our member base, organizing city-wide civic hacking events, and pushing forward the larger conversation on civic tech and civic innovation.</p>
         <p>Want to get more involved or join a task force? We&rsquo;re excited to hear from you! </p>
             <ul>
-              <li> Check out our <a href="https://codeforphilly.org/blog/">blog</a> for position openings and announcements</li>
-              <li>Talk to one of these fine folks at our <a href="meetup.com/Code-for-Philly/">next hack night</a></li>
-            <li>If you have questions or thoughts, please don&rsquo;t hesitate to <a href="https://codeforphilly.org/contact-us">contact us</a>  </li>
+              <li> Check out our <a href="/blog/">blog</a> for position openings and announcements</li>
+              <li>Talk to one of these fine folks at our <a href="https://meetup.com/Code-for-Philly/">next hack night</a></li>
+            <li>If you have questions or thoughts, please don&rsquo;t hesitate to <a href="/contact-us">contact us</a>  </li>
             </ul>
     <h2>Meet The Team</h2>
 
@@ -45,7 +45,7 @@
         <div><img src="abecirc.png" alt="abe" width="150" height="150" align="left" />
           <p>Corey 'Honest Abe' Abramson | Communications Lead</p>
           <p>Abe works on CfP&rsquo;s communications strategy, email outreach and community engagement.</p>
-          <p>He is a digital content consultant by day and <a href="www.coreyabramson.com/blog">blogs</a> about media literacy and user privacy by night.<br />
+          <p>He is a digital content consultant by day and <a href="https://www.coreyabramson.com/blog">blogs</a> about media literacy and user privacy by night.<br />
           </p>
           <p>@cocus | <a href="mailto:cabramson@codeforphilly.org">cabramson@codeforphilly.org</a></p>
         </div>

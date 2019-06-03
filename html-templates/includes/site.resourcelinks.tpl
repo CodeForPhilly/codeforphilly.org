@@ -1,5 +1,4 @@
 <li><a href="https://codeforphilly.org/pages/introduction_to_civic_hacking">Intro to Civic Hacking</a></li>
-<li><a href="/civic-jobs">Civic Jobs Board</a></li>
 <li><a href="http://commons.codeforamerica.org/">CfA Commons</a></li>
 <li><a href="http://opendata.stackexchange.com/">Open Data Stack Exchange</a></li>
 <li><a href="http://opendataphilly.org">Philly Open Data Catalog</a></li>

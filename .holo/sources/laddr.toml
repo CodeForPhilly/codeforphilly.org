@@ -1,3 +1,7 @@
 [holosource]
-url = "https://github.com/CodeForPhilly/laddr"
+url = "../laddr"
 ref = "refs/heads/develop"
+
+[holosource.project]
+holobranch = "emergence-site"
+lens = false

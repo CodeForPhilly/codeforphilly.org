@@ -1,3 +1,0 @@
-<?php
-
-ProfileRequestHandler::$profileFields[] = 'Newsletter';

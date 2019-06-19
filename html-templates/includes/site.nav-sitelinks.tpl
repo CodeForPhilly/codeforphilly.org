@@ -1,27 +1,28 @@
 <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{_ "Get Involved"} <span class="caret"></span></a>
-    <ul class="dropdown-menu">
-        <li><a href="/projects">{_ "Active Projects"}</a></li>
-        <li><a href="/pages/project_guidelines">{_ "Projects 101"}</a></li>
-        <li><a href="/pages/hack_night_program_details/">Weekly Meetups</a></li>
-        <li><a href="/pages/hackathons">Launchpads & Hackathons</a></li>
-    </ul>
+    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{_ "Get Involved"}</a>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="/projects">{_ "Active Projects"}</a>
+        <a class="dropdown-item" href="/pages/project_guidelines">{_ "Projects 101"}</a>
+        <a class="dropdown-item" href="/pages/hack_night_program_details/">{_ "Weekly Meetups"}</a>
+        <a class="dropdown-item" href="/pages/hackathons">{_ "Launchpads & Hackathons"}</a>
+    </div>
 </li>
 
 <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{_ "Community/Connect"} <span class="caret"></span></a>
-    <ul class="dropdown-menu">
-        <li><a href="/chat" target="_blank">{_ "Chat"} <small>({_ "Slack"})</small></a></li>
-        <li><a href="http://forum.codeforphilly.org/login" target="_blank">{_ "Forum"} <small>({_ "Discussion"})</small></a></li>
-        <li><a href="/members">{_ "Member Directory"}</a></li>
-    </ul>
+    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{_ "Community/Connect"}</a>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="/chat" target="_blank">{_ "Chat"} <small>({_ "Slack"})</small></a>
+        <a class="dropdown-item" href="http://forum.codeforphilly.org/login" target="_blank">{_ "Forum"} <small>({_ "Discussion"})</small></a>
+        <a class="dropdown-item" href="/members">{_ "Member Directory"}</a>
+    </div>
 </li>
+
 <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{_ "About"} <span class="caret"></span></a>
-    <ul class="dropdown-menu">
-        <li><a href="/mission">{_ "Mission"}</a></li>
-        <li><a href="/pages/code_of_conduct/">{_ "Code of Conduct"}</a></li>
-        <li><a href="/pages/leadership/">{_ "Organizing Team"}</a></li> 
-        <li><a href="/contact">{_ "Contact Us"}</a></li>
-    </ul>
+    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{_ "About"}</a>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="/mission">{_ "Mission"}</a>
+        <a class="dropdown-item" href="/pages/code_of_conduct/">{_ "Code of Conduct"}</a>
+        <a class="dropdown-item" href="/pages/leadership/">{_ "Organizing Team"}</a>
+        <a class="dropdown-item" href="/contact">{_ "Contact Us"}</a>
+    </div>
 </li>

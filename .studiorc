@@ -1,9 +1,3 @@
 #!/bin/bash
-
 hab pkg install emergence/studio
 source "$(hab pkg path emergence/studio)/studio.sh"
-
-echo "    * Use 'load-into-mysql <files>' to load .sql.bz2 files into local mysql database"
-load-into-mysql() {
-    bzcat "$@" | hab pkg exec core/mysql mysql -u root -h 127.0.0.1 default
-}

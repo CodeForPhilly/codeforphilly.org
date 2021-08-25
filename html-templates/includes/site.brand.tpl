@@ -1,0 +1,1 @@
+<img alt="{Laddr::$siteName|escape}" src="{versioned_url img/logo.png}" height="25"> {Laddr::$siteName|escape}

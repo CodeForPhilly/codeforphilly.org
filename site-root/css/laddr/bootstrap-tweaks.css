@@ -1,0 +1,194 @@
+/*
+ * Bootstrap tweaks
+ *
+ *  + CSS   
+ *      - Typography
+ *      - Forms
+ *
+ *  + Components
+ *      - Jumbotron
+ *
+ */
+
+/* 
+ * + CSS
+ */
+
+/* - Typography */
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 300;
+}
+
+/* - Forms */
+
+legend {
+    border: 0;
+}
+
+/* - Grids */
+
+.row-wrap {
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+
+.row-wrap [class*="col"] {
+        -webkit-flex: 0 0 auto;
+                flex: 0 0 auto;
+        float: none;
+    }
+
+
+/* 
+ * + Components
+ */
+
+/* card */
+
+.card img {
+   max-width: 100%;
+}
+.card .btn {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* - Badges */
+
+h1 .badge, h2 .badge, h3 badge, h4 .badge, h5 .badge {
+    font-size: 0.5em;
+    margin-top: -0.5em;
+    vertical-align: middle;
+}
+
+/* - Cards */
+
+.meetups .event.card .card-body {
+    padding: 0.75rem;
+}
+
+.meetups .event.card .card-body p:last-child {
+    margin-bottom: 0;
+}
+
+/* - Jumbotron */
+
+.jumbotron {
+    background-image: url(/img/cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    color: white;
+}
+
+.jumbotron-caption {
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 3px;
+    padding: 20px 25px;
+}
+
+.jumbotron-caption .media-left {
+    padding-right: 15px;
+}
+
+.jumbotron-caption .media-right {
+    padding-left: 15px;
+}
+
+@media (max-width: 479px) {
+    .media {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .jumbotron-caption {
+        text-align: center;
+    }
+
+    .jumbotron-caption .media-left, 
+    .jumbotron-caption .media-right,
+    .jumbotron-caption .media-body {
+        display: block;
+    }
+
+    .media-object {
+        display: inline-block;
+    }
+
+    .jumbotron-caption .media-body {
+        width: auto;
+    }
+
+    .jumbotron-caption .media-left, 
+    .jumbotron-caption .media-right,
+    .jumbotron-caption .list-inline > li {
+        margin-bottom: 15px;
+    }
+
+    .jumbotron-caption .list-inline > li {
+        display: block;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .jumbotron-caption {
+        margin: auto;
+        max-width: 75%;
+        padding: 40px 50px;
+    }
+
+}
+
+/* page-header was dropped in BS4 but we use it a bunch */
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+@media (max-width:1024px) {
+    .navbar .container {
+        position: relative;
+        padding-right: 56px;
+    }
+    .navbar .site-search { display: none; }
+    .navbar .site-search + .pull-right { float: none; }
+    .navbar .site-search + .pull-right .nav-link { color: white; }
+    .navbar-toggler {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .navbar-dark .navbar-brand {
+        flex-grow: 1;
+    }
+}
+
+/* - Menus - */
+@media (min-width: 1024px) {
+    /* Active submenu on hover, but only in desktop mode */
+    .dropdown-toggle:hover + .dropdown-menu,
+    .dropdown-menu:hover {
+        display: block;
+    }
+}
+
+.dropdown-menu {
+  margin-top: -2px;
+}
+.dropdown-menu .dropdown-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.site-search .dropdown-menu .dropdown-item {
+  white-space: normal;
+}

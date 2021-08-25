@@ -1,0 +1,114 @@
+<mjml>
+  <mj-head>
+    <mj-title>Code for Philly Newsletter: May 21, 2018</mj-title>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <mj-attributes>
+      <mj-all font-family="Open Sans, Arial, Helvetica, sans-serif" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#E1E8ED">
+
+    <mj-section background-color="white">
+      <mj-column width="400px">
+        <mj-image align="center" src="https://codeforphilly.org/img/logo-bell.png" width="150px"></mj-image>
+        <mj-text align="center" font-size="24px" color="#525252">Code for Philly Newsletter</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f2eded">
+      <mj-column width="400px">
+        <mj-text align="left" font-size="20px" color="#525252">In This Issue</mj-text>
+        <mj-text align="left" color="#525252">
+          <mj-list>
+            <li>Launchpad 2018: Demo Night</li>
+            <li>Open Source Workshop Recaps</li>
+            <li>New Code for Philly Co-Director</li>
+            <li>What's New in Civic Tech</li>
+          </mj-list>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column width="400px">
+        <mj-image src="http://codeforphilly.org/thumbnail/1288/700x700" width="350px"></mj-image>
+        <mj-text align="left" font-size="20px" color="#525252">Launchpad 2018: Demo Night</mj-text>
+        <mj-text align="left" color="#525252">
+          Our #Launchpad2018 project teams have been hard at work over the past month and now it's finally time for them to share with us all that they've accomplished. Join us in celebrating their progress with a night of demos, drinks, and snacks. Project teams will present their progress and then answer questions from our industry panelists. This year's panelists include:<br></br>
+          <mj-list>
+            <li>Sara Hall, Product Lead with the City of Philadelphia’s Office of Open Data and Digital Transformation</li>
+            <li>Lauren Lockwood, Researcher and Digital Services Consultant, Former Chief Digital Officer for the City of Boston</li>
+            <li>Shilla Saebi, Open Source Program Manager, Comcast</li>
+            <li>Mark Wheeler, Interim CIO for the City of Philadelphia</li>
+          </mj-list>
+        </mj-text>
+
+        <mj-button background-color="#337ab7" href="https://www.meetup.com/Code-for-Philly/events/249979027/">
+          RSVP for Demo Night
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f2eded">
+      <mj-column width="400px">
+        <mj-text align="left" font-size="20px" color="#525252">Open Source Workshop Recaps</mj-text>
+        <mj-text color="#525252">
+          As part of our month of Launchpad programming, Code for Philly hosted two workshops on open source project building. <br></br>
+          <mj-list>
+            <li><a href="https://codeforphilly.org/blog/recap--a_guide_to_open_source_licensing/">A Guide to Open Source Licensing</a> presented by Krista Khare, Program Manager with Comcast's Open Source Practice</li>
+            <li><a href="https://codeforphilly.org/blog/recap--open_source_community_building-management_best_practices"> Open Source Community Building and Management Best Practices</a> presented by Kristerpher Henderson and James Lott</li>
+          </mj-list> 
+          <br />Bringing in subject matter experts like Krista, Kristerpher, and James to lead workshops is something we're considering doing more often. If you enjoyed their workshops, or would support similar events going forward, let us know! 
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white" padding-top="10px">
+      <mj-column width="350px"></mj-column>
+      <mj-column width="400px">
+        <mj-text align="left" font-size="20px" color="#525252">New Code for Philly Co-Director</mj-text>
+        <mj-text color="#525252">
+          The new Code for Philly Leadership Team is continuing to take shape and we have exciting news on that front over on our blog. 
+        </mj-text>
+        <mj-button background-color="#337ab7" href="https://codeforphilly.org/blog/cfp_co-director_announcement_-_may_2018">
+          Read Rich's Blog Post
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f2eded">
+      <mj-column width="400">
+        <mj-text align="left" font-size="20px" color="#525252">What's New In Civic Tech</mj-text>
+
+        <mj-text color="#525252">
+          <mj-list>
+            <li>Our friends at Open Data Delaware wrapped up their Open Data Challenge 2018, <a href="https://technical.ly/delaware/2018/05/17/winning-projects-open-data-challenge-2018/">check out the winning projects.</a></li>
+            <li>Code for America is asking, <a href="https://medium.com/code-for-america/who-controls-the-data-in-a-program-like-food-stamps-who-should-cb885aac3d9f">"who controls the data in a program like food stamps?"</a></li>
+            <li>The City of Los Angeles is looking for feedback and comments on their new Mobility Data Specification <a href="https://github.com/CityOfLosAngeles/mobility-data-specification">on GitHub</a></li>
+            <li>We talked about how civic tech projects need a diverse set of skills to succeed over at <a href="https://technical.ly/philly/2018/04/30/civic-engagement-launchpad-noncoders-welcome/">Technically Philly</a></li>
+          </mj-list>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column>
+        <mj-button background-color="#337ab7" href="https://codeforphilly.org/chat">
+          Join the Code for Philly Slack Community
+        </mj-button>
+        <mj-social>
+          <mj-social-element name="twitter" href="[[SHORT_PERMALINK]]" />
+          <mj-social-element name="facebook" href="[[SHORT_PERMALINK]]" />
+          <mj-social-element name="linkedin" href="[[SHORT_PERMALINK]]" />
+          <mj-social-element name="google" href="[[SHORT_PERMALINK]]" />
+        </mj-social>
+        <mj-text align="center">
+          To unsubscribe from future editions of our newsletter,
+          <a href="https://codeforphilly.org/profile?source=unsubscribe">edit your profile on codeforphilly.org</a>
+          and uncheck <em>Subscribe to Newsletter</em>.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

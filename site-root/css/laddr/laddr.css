@@ -1,0 +1,215 @@
+/*
+ * Laddr
+ *
+ *  + CSS
+ *
+ *  + Components
+ *      - Comments
+ *      - Dropdown Results
+ *      - Event
+ *      - Person
+ *      - Post
+ *      - Site Footer
+ *
+ */
+
+
+/* 
+ * + CSS 
+ */
+
+html { font-size: 16px; }
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 50px; /* Padding at top of screen for fixed navbar as recommended in bootstrap docs */
+}
+
+.margin-bottom { margin-bottom: 10px; }
+.margin-left   { margin-left: 10px;   }
+.margin-right  { margin-right: 10px;  }
+.margin-top    { margin-top: 10px;    }
+
+.padding-bottom { padding-bottom: 10px; }
+.padding-left   { padding-left: 10px;   }
+.padding-right  { padding-right: 10px;  }
+.padding-top    { padding-top: 10px;    }
+
+
+/* 
+ * + Components 
+ */
+ 
+
+/* - Comments - */
+
+.comments-list {
+    margin-top: 2em;
+}
+
+.comment {
+    border-top: 1px solid #ccc;
+    padding: 1em 0;
+}
+
+.comment .author {
+    float: left;
+    margin: 0 .5em 0 -.25em;
+    width: 64px;
+}
+
+.comment .message {
+    overflow: hidden;
+}
+
+.comment textarea {
+    font-size: inherit;
+}
+
+
+/* - Dropdown Results */
+
+.dropdown-results .dropdown-menu {
+    right: 15px;
+    width: 300px;
+}
+
+.dropdown-results .dropdown-header {
+    background-color: #ddd;
+    color: #555;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #FAFAD2;
+}
+
+.dropdown-item:active {
+  color: #16181b;
+  background-color: #EEE8AA;
+}
+
+.dropdown-results .empty-text,
+.dropdown-results .muted {
+    color: #777;
+}
+
+.dropdown-results .empty-text {
+    padding: 3px 20px;
+}
+
+.dropdown-results .muted {
+    font-size: 11px;
+    font-style: italic;
+}
+
+
+/* - Event */
+
+.event {
+    margin-bottom: 15px;
+}
+
+.event-title,
+.event-meta {
+    margin-bottom: 5px;
+}
+
+.event-title {
+    font-size: 1.28571em;
+}
+
+.panel-heading .event {
+    margin-bottom: 0;
+}
+
+.panel-heading .event-title {
+    margin-top: 0;
+}
+
+.well > .event-description > *:first-child {
+    margin-top: 0;
+}
+
+.fa-meetup {
+    color: #dd3333;
+}
+
+
+/* - Person */
+
+.avatar {
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.people-list.inline li,
+.people-list-person {
+    margin-bottom: .25em;
+    padding: 0;
+    text-align: center;
+    vertical-align: bottom;
+    width: 70px;
+}
+
+.people-list a {
+    display: inline-block;
+}
+
+
+/* - Post */
+
+.panel-body .post-title:first-child,
+.panel-body .post-link-group + .post-title {
+    margin-top: 0;
+}
+
+.post-link-group {
+    display: table;
+    margin-bottom: 10px;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.post-link-group > .btn {
+    display: table-cell;
+    float: none;
+}
+
+.post-title .label {
+    font-size: 0.4em;
+    margin-left: 0.5em;
+    vertical-align: 0.5em;
+}
+
+.post-subtitle {
+    font-weight: 700;
+}
+
+.post-footer .text-muted a {
+    color: inherit;
+}
+
+@media screen and (min-width: 970px) {
+
+    .post-link-group {
+        display: block;
+        width: auto;
+    }
+
+    .post-link-group > .btn {
+        display: inline-block;
+        float: left;
+    }
+
+}
+
+
+/* - Site Footer */
+
+.site-footer {
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}

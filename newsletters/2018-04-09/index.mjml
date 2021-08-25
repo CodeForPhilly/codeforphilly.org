@@ -1,0 +1,110 @@
+<mjml>
+  <mj-head>
+    <mj-title>Code for Philly Newsletter: April 9, 2018</mj-title>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <mj-attributes>
+      <mj-all font-family="Open Sans, Arial, Helvetica, sans-serif" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#E1E8ED">
+
+    <mj-section background-color="white">
+      <mj-column width="400px">
+        <mj-image align="center" src="https://codeforphilly.org/img/logo-bell.png" width="150px"></mj-image>
+        <mj-text align="center" font-size="24px" color="#525252">Code for Philly Newsletter</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f2eded">
+      <mj-column width="400px">
+        <mj-text align="left" font-size="20px" color="#525252">In This Issue</mj-text>
+        <mj-text align="left" color="#525252">
+          <mj-list>
+            <li>Leadership Team Changes</li>
+            <li>Project Profile Series</li>
+            <li>Civic Engagement Launchpad 2018</li>
+            <li>What's New in Civic Tech</li>
+          </mj-list>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column width="400px">
+        <mj-text align="left" font-size="20px" color="#525252">Leadership Team Changes</mj-text>
+        <mj-text align="left" color="#525252"> Out-going Executive Director Dawn McDougall outlined what's changing, who's stepping aside and who's stepping up, and how all this change inevitably allows for new opportunities. </mj-text>
+
+        <mj-button background-color="#337ab7" href="https://codeforphilly.org/blog/leadership_changes">
+          Read Dawn's Blog Post
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f2eded">
+      <mj-column width="400px">
+        <mj-text align="left" font-size="20px" color="#525252">Project Profile Series</mj-text>
+        <mj-text color="#525252">
+          We're going to be doing more to showcase the hardwork and accomplishments of our volunteers. To get started, we wrote profiles on three big-impact projects to come out of Code for Philly. <br></br>
+          <mj-list>
+            <li><a href="https://codeforphilly.org/blog/the_shared_values_that_built_cyclephilly/"> The Shared Values That Built Cycle Philly</a> </li>
+            <li><a href="https://codeforphilly.org/blog/the_growth_of_greenstem/"> The Growth of GreenSTEM</a> </li>
+            <li><a href="https://codeforphilly.org/blog/not_in_philly--a_shared_call_to_serve/"> Not In Philly: A Shared Call To Serve</a> </li>
+
+          </mj-list>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white" padding-top="10px">
+      <mj-column width="350px">
+        <mj-image src="https://codeforphilly.org/thumbnail/1241/1050x1050" width="350px"></mj-image>
+      </mj-column>
+      <mj-column width="400px">
+        <mj-text align="left" font-size="20px" color="#525252">Civic Engangement Launchpad 2018</mj-text>
+        <mj-text color="#525252">
+          Our biggest event of the year is almost here. If you have a great civic tech idea, want to use your tech skills to give back, or are looking to get to know the civic tech community, you'll find something to do at Launchpad. </mj-text>
+
+
+        <mj-button background-color="#337ab7" href="https://codeforphilly.org/events/launchpad-2018">
+          Launchpad 2018 Event Details
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f2eded">
+      <mj-column width="400">
+        <mj-text align="left" font-size="20px" color="#525252">What's New in Civic Tech</mj-text>
+
+        <mj-text color="#525252">
+          <mj-list>
+            <li>Code for America announced the launch of its <a href="https://medium.com/code-for-america/apply-to-join-code-for-americas-community-fellowship-pilot-b4f384399754"> Community Fellowship Pilot Program </a></li>
+            <li>Governing.com took us inside the New York City Service Design Studio in <a href="http://www.governing.com/topics/mgmt/gov-apple-new-york-services.html">How 'Service Design' Is Changing the Way Cities Work </a></li>
+            <li>An essay from Founder and Executive Director of Code for America, Jennifer Pahlka, on how <a href="https://medium.com/accelerate-this/neglecting-the-machinery-of-government-is-a-choice-97db26d99d62">Neglecting the Machinery of Government is a Choice</a></li>
+            <li>Code for Atlanta is <a href="https://www.change.org/p/mayor-keisha-lance-bottoms-the-city-of-atlanta-should-publish-a-blameless-post-mortem-of-the-ransomware-attack?recruiter=867558611&utm_source=share_petition&utm_medium=twitter&utm_campaign=share_petition">petitioning the City of Atlanta </a>              to release a new post-mortem of the <a href="https://www.reuters.com/article/us-usa-cyber-atlanta/with-paper-and-phones-atlanta-struggles-to-recover-from-cyber-attack-idUSKBN1H70R0">March 2018 ransomware attack.</a></li>
+
+          </mj-list>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column>
+        <mj-button background-color="#337ab7" href="https://codeforphilly.org/chat">
+            Join the Code for Philly Slack Community
+        </mj-button>
+        <mj-social>
+          <mj-social-element name="twitter" href="[[SHORT_PERMALINK]]" />
+          <mj-social-element name="facebook" href="[[SHORT_PERMALINK]]" />
+          <mj-social-element name="linkedin" href="[[SHORT_PERMALINK]]" />
+          <mj-social-element name="google" href="[[SHORT_PERMALINK]]" />
+        </mj-social>
+        <mj-text align="center">
+            To unsubscribe from future editions of our newsletter,
+            <a href="https://codeforphilly.org/profile?source=unsubscribe">edit your profile on codeforphilly.org</a>
+            and uncheck <em>Subscribe to Newsletter</em>.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

@@ -1,0 +1,114 @@
+<mjml>
+  <mj-head>
+    <mj-title>Code for Philly Newsletter: April 24, 2018</mj-title>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <mj-attributes>
+      <mj-all font-family="Open Sans, Arial, Helvetica, sans-serif" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#E1E8ED">
+
+    <mj-section background-color="white">
+      <mj-column width="400px">
+        <mj-image align="center" src="https://codeforphilly.org/img/logo-bell.png" width="150px"></mj-image>
+        <mj-text align="center" font-size="24px" color="#525252">Code for Philly Newsletter</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f2eded">
+      <mj-column width="400px">
+        <mj-text align="left" font-size="20px" color="#525252">In This Issue</mj-text>
+        <mj-text align="left" color="#525252">
+          <mj-list>
+            <li>Launchpad 2018: A Sneak Peak</li>
+            <li>Submit Your Project Idea to Launchpad</li>
+            <li>Be A Launchpad Mentor</li>
+            <li>What's New In Civic Tech</li>
+          </mj-list>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column width="400px">
+           <mj-image src="http://codeforphilly.org/thumbnail/1260/700x700" width="350px"></mj-image>
+        <mj-text align="left" font-size="20px" color="#525252">Launchpad 2018: A Sneak Peak</mj-text>
+        <mj-text align="left" color="#525252"> Curious about what makes our Civic Engagement Launchpad more than a hackathon? Find out what workshops we have planned for #Launchpad2018 participants. </mj-text>
+
+        <mj-button background-color="#337ab7" href="https://codeforphilly.org/blog/launchpad_-_programming_teaser">
+          Get Your Launchpad Sneak Peak
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f2eded">
+      <mj-column width="400px">
+        <mj-text align="left" font-size="20px" color="#525252">Submit Your Project Idea to Launchpad</mj-text>
+        <mj-text color="#525252">
+         Have a great idea for a civic tech project? You can submit it to Launchpad even you can't attend Launchpad. If your idea:<br></br>
+          <mj-list>
+            <li>Increases civic engagement</li>
+            <li>Helps residents engage with local government or the democratic process</li>
+            <li>Uses data or technology to improve the lives of residents</li></mj-list><br></br>
+				<mj-text color="#525252">
+  We want to hear it.</mj-text>
+ 	<mj-button background-color="#337ab7" href="https://docs.google.com/forms/d/e/1FAIpQLScn8P1cMZ33XSst2-1Xz5HgrVbnH_z-NG0E3ln_HUzdC87fgA/viewform"> Submit Your Project Idea
+            </mj-button>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white" padding-top="10px">
+      <mj-column width="350px">
+        <mj-image src="https://codeforphilly.org/thumbnail/1259/700x700" width="350px"></mj-image>
+      </mj-column>
+      <mj-column width="400px">
+        <mj-text align="left" font-size="20px" color="#525252">Be A Launchpad Mentor</mj-text>
+        <mj-text color="#525252">
+          Are you looking for an opportunity to give back to the Philly tech community? Volunteer to be a mentor at our Civic Engagement Launchpad.</mj-text>
+
+        <mj-button background-color="#337ab7" href="https://docs.google.com/forms/d/e/1FAIpQLSeJpioRjZmkLM-rrt9kWxPemR_aCG4cu6wM0V6I0LuOdilQZg/viewform">
+          Fill out the Mentor Interest Survey
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#f2eded">
+      <mj-column width="400">
+        <mj-text align="left" font-size="20px" color="#525252">What's New In Civic Tech</mj-text>
+
+        <mj-text color="#525252">
+<mj-list>
+            <li>Generocity named our Civic Engagement Launchpad to <a href="https://generocity.org/philly/2018/04/19/ptw18-philly-tech-week-15-events-social-impact-pros/"> their shortlist</a> of must-attend Philly Tech Week events for 'social impact pros'</li>
+            <li>Code for Atlanta's Paratransit Pal <a href="https://medium.com/paratransit-pal/paratransit-pal-won-40-000-at-at-ts-atlanta-civic-coding-challenge-and-gave-it-all-to-charity-30bba157d92d">won $40,00 at AT&T's Atlantic Civic Coding Challege </a> </li>
+            <li>Open Data Delaware announced they're launching <a href="https://technical.ly/delaware/2018/04/04/open-data-delaware-launches-newark-codes/">'Newark Codes'</a></li>
+  				<li>GovLabPHL is hosting a <a href="https://www.eventbrite.com/e/govlabphl-form-redesign-registration-44225252922">form redesign event</a> on May 19 to makeover forms for the City of Philadelphia
+  </li>
+          </mj-list>
+        </mj-text>
+
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="white">
+      <mj-column>
+        <mj-button background-color="#337ab7" href="https://codeforphilly.org/chat">
+            Join the Code for Philly Slack Community
+        </mj-button>
+        <mj-social>
+          <mj-social-element name="twitter" href="[[SHORT_PERMALINK]]" />
+          <mj-social-element name="facebook" href="[[SHORT_PERMALINK]]" />
+          <mj-social-element name="linkedin" href="[[SHORT_PERMALINK]]" />
+          <mj-social-element name="google" href="[[SHORT_PERMALINK]]" />
+        </mj-social>
+        <mj-text align="center">
+            To unsubscribe from future editions of our newsletter,
+            <a href="https://codeforphilly.org/profile?source=unsubscribe">edit your profile on codeforphilly.org</a>
+            and uncheck <em>Subscribe to Newsletter</em>.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

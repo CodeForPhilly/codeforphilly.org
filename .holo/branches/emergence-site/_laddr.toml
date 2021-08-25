@@ -1,3 +1,4 @@
 [holomapping]
-files = "*/**"
+holosource="=>emergence-skeleton"
+files = "**"
 before = "*"

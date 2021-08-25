@@ -1,7 +1,0 @@
-site_name: CodeForPhilly.org Docs
-site_url: https://codeforphilly.github.io/codeforphilly
-
-theme:
-  palette:
-    primary: "red"
-    accent: "blue"

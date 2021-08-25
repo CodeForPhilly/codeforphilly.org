@@ -1,0 +1,6 @@
+extra:
+  studio:
+    name: codeforphilly-studio
+    web_port: 9080
+    docs_port: 9088
+    mysql_port: 9086

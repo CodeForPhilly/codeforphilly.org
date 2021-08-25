@@ -1,0 +1,20 @@
+name: Publish Holobranches
+
+on:
+  push:
+    tags: [ 'v1.*' ]
+
+jobs:
+
+  publish-holobranches:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: 'Update holobranch: emergence/site/v1'
+      uses: JarvusInnovations/hologit@actions/projector/v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        HAB_LICENSE: accept
+      with:
+        holobranch: emergence-site
+        commit-to: emergence/site/v1

@@ -1,0 +1,6 @@
+repo_url: https://github.com/CodeForPhilly/codeforphilly
+
+extra:
+  repository:
+    name: laddr
+    url: git@github.com:CodeForPhilly/codeforphilly.git

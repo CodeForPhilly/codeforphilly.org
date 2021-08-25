@@ -11,6 +11,7 @@ Git::$repositories['codeforphilly'] = [
         'newsletters',
         'php-classes',
         'php-config/Git.config.d',
+        'php-config/Laddr',
         'php-config/Laddr.config.d',
         'site-root'
     ]

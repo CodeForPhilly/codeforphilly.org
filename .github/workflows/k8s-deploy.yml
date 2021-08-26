@@ -14,7 +14,7 @@ env:
   DOCKER_PACKAGE: codeforphilly-composite
 
   KUBE_CONFIG_DATA: ${{ secrets.KUBECONFIG_BASE64 }}
-  KUBE_NAMESPACE: codeforphilly
+  KUBE_NAMESPACE: code-for-philly
   KUBE_HOSTNAME: codeforphilly.sandbox.k8s.phl.io
 
   DATABASE_NAME: codeforphilly

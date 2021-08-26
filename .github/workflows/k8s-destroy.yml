@@ -9,7 +9,7 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   KUBE_CONFIG_DATA: ${{ secrets.KUBECONFIG_BASE64 }}
-  KUBE_NAMESPACE: codeforphilly
+  KUBE_NAMESPACE: code-for-philly
 
   RELEASE_NAME: pr-${{ github.event.number }}
 

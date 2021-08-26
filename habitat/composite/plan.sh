@@ -1,4 +1,4 @@
-composite_app_pkg_name=codeforphilly
+composite_app_pkg_name=site
 pkg_name="${composite_app_pkg_name}-composite"
 pkg_origin=codeforphilly
 pkg_maintainer="Code for Philly <hello@codeforphilly.org>"

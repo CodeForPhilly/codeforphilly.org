@@ -1,2 +1,4 @@
 .DS_Store
-
+# i think these -e files come from sed
+*.tpl-e
+*.js-e

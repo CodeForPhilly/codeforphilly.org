@@ -1,0 +1,67 @@
+#mainNav .navbar-nav .nav-item .dropdown-menu .nav-link {
+  color: inherit;
+}
+
+/* BEGIN CSS for sponsor.html & volunteer.html */
+
+.secondary-page-intro {
+  padding-top: 150px;  /* do not overlap with navbar. ENHANCE: there's a cleaner way to do this? */
+}
+.secondary-page-div {
+  background-color: #fff;
+  /* copy bootstrap's .card */
+  font-size: 150%;
+}
+
+.secondary-page-intro p {
+  color: #6c757d;
+}
+
+#secondary__main {
+  background-color: #212529;
+  /* copy bootstrap's #mainNav */
+}
+#secondary__main li {
+  color: #6c757d;
+}
+#secondary__main img {
+  padding: 0;
+}
+
+/* END CSS for sponsor.html & volunteer.html */
+
+#main-video {
+  padding: 0;
+  padding-top: 4.5rem;
+}
+
+@media (max-width: 992px) {
+  #main-video {
+    padding: 0;
+    padding-top: 126px;
+  }
+}
+
+.main-volunteer-link {
+  border: 1px solid transparent;
+  color:white;
+  background-color: #DC3545;
+  display: inline-block;
+  padding: .5rem 2rem;
+  border-radius: .25rem;
+}
+
+.main-volunteer-link:hover {
+  border: 1px solid #DC3545;
+  background-color:white;
+  color: #DC3545;
+}
+
+.main-red-text {
+    color: #DC3545;
+}
+
+.main-blue-text {
+  color: #2c57a5;
+}
+ 

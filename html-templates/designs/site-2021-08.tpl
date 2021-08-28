@@ -150,9 +150,9 @@
 
 <!-- Masthead-->
 
-<!-- 
+<!--
 
-      
+
   <header class="masthead">
       <div class="container"> -->
 
@@ -188,7 +188,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="" />
+                        <img class="img-fluid" src="assets/img/portfolio/phlask.png" alt="" />
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">PHLASK</div>
@@ -202,7 +202,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/paws.jpg" alt="" />
+                        <img class="img-fluid" src="assets/img/portfolio/paws.png" alt="" />
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">PAWS</div>
@@ -216,7 +216,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/plse.jpg" alt="" />
+                        <img class="img-fluid" src="assets/img/portfolio/plse.png" alt="" />
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">PLSE</div>
@@ -231,7 +231,7 @@
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
                         </div>
                         <img class="img-fluid" src="assets/img/portfolio/flowers.jpg" alt="" />
-                    </a>    
+                    </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Only Plant Natives PA</div>
                         <div class="portfolio-caption-subheading text-muted">Propagate PA Wildflowers</div>
@@ -244,7 +244,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/code-for-philly.jpg" alt="" />
+                        <img class="img-fluid" src="assets/img/portfolio/code-for-philly.png" alt="" />
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">CfP Website Design</div>
@@ -315,12 +315,12 @@
                       <input type="checkbox" class="custom-control-input" id="customSwitch1">
                       <label class="custom-control-label" for="customSwitch1">Python</label>
                     </div>
-          
+
                     <div class="custom-control custom-switch">
                       <input type="checkbox" class="custom-control-input" id="customSwitch2">
                       <label class="custom-control-label" for="customSwitch2">Javascript</label>
                     </div>
-          
+
                     <div class="custom-control custom-switch">
                       <input type="checkbox" class="custom-control-input" id="customSwitch3">
                       <label class="custom-control-label" for="customSwitch3">Project Management</label>
@@ -329,12 +329,12 @@
                       <input type="checkbox" class="custom-control-input" id="customSwitch4">
                       <label class="custom-control-label" for="customSwitch4">Django</label>
                     </div>
-          
+
                     <div class="custom-control custom-switch">
                       <input type="checkbox" class="custom-control-input" id="customSwitch5">
                       <label class="custom-control-label" for="customSwitch5">HTML</label>
                     </div>
-          
+
                     <div class="custom-control custom-switch">
                       <input type="checkbox" class="custom-control-input" id="customSwitch6">
                       <label class="custom-control-label" for="customSwitch6">Rust</label>
@@ -379,7 +379,7 @@
                       <input type="checkbox" class="custom-control-input" id="customSwitch14">
                       <label class="custom-control-label" for="customSwitch14">MERN</label>
                     </div>
-                    
+
                     <div class="custom-control custom-switch">
                       <input type="checkbox" class="custom-control-input" id="customSwitch15">
                       <label class="custom-control-label" for="customSwitch15">Git</label>
@@ -392,7 +392,7 @@
 
                   <br>
                     <button type="button" class="btn btn-danger">Search</button>
-                
+
                   </div>
 
                 <div class="col-sm">
@@ -416,7 +416,7 @@
                       </ul>
                       <div class="card-body">
                         <p class="text-center">
-                            <a href="#">Slack</a> &bull; 
+                            <a href="#">Slack</a> &bull;
                             <a href="#">Zoom</a> &bull;
                             <a href="#">Twitter</a> &bull;
                             <a href="#">Github</a>
@@ -454,7 +454,7 @@
                       </ul>
                       <div class="card-body">
                         <p class="text-center">
-                            <a href="#">Slack</a> &bull; 
+                            <a href="#">Slack</a> &bull;
                             <a href="#">Zoom</a> &bull;
                             <a href="#">Twitter</a> &bull;
                             <a href="#">Github</a>
@@ -465,7 +465,7 @@
                 </div>
               </div>
             </div>
-    
+
 
 
   </div>
@@ -619,7 +619,7 @@
                       <div class="modal-body">
                           <!-- Project Details Go Here-->
                           <h2 class="text-uppercase">PHLASK</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/01-thumbnail.jpg" alt="" />
+                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/phlask.png" alt="" />
                           <p class="text-justify"> PHLASK is an Ecosystem for Finding and Sharing Water in
                               Philadelphia Water should remain abundant, clean and accessible to everyone.
                               <br />PHLASK's mission is to help people find publicly available sources of water,
@@ -675,7 +675,7 @@
                       <div class="modal-body">
                           <!-- Project Details Go Here-->
                           <h2 class="text-uppercase">PAWS</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/paws.jpg" alt="" />
+                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/paws.png" alt="" />
                           <p class="text-justify">WHO IS PAWS - As the city's largest animal rescue partner and no-kill animal shelter,
                               PAWS is working to make Philadelphia a place where every healthy and treatable pet
                               is guaranteed a home. Since inception over 10 years ago, PAWS has rescued and placed
@@ -755,7 +755,7 @@
                       <div class="modal-body">
                           <!-- Project Details Go Here-->
                           <h2 class="text-uppercase">Prevention Point</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/pp.jpg" alt="" />
+                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/pp.png" alt="" />
                           <p class="text-justify">Prevention Point is a private nonprofit organization providing harm reduction
                               services to Philadelphia and the surrounding area.</p>
                           <p class="text-justify">Currently, they are storing data from their programs in separate Excel spreadsheets,
@@ -813,7 +813,7 @@
                       <div class="modal-body">
                           <!-- Project Details Go Here-->
                           <h2 class="text-uppercase">PLSE</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/plse.jpg" alt="" />
+                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/plse.png" alt="" />
                           <p class="text-justify">Philadelphia Lawyers for Social Equity (PLSE) is a non-profit legal aid organization
                               that focuses on helping people overcome the barriers they face as a result of
                               criminal records.</p>
@@ -880,7 +880,7 @@
                             But it is a bit overwhelming to select plants (e.g. wildflowers and grasses). This google sheet + tableau solution is designed to assist as a entry point to further research.
                             I'm seeking user experience feedback from the Code for Philly community. Also - If anyone wants to help with the database, please join the project.
                             </p>
-                          
+
                           <!-- <p>
                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                   class="bi bi-link" viewBox="0 0 16 16">
@@ -926,7 +926,7 @@
                       <div class="modal-body">
                           <!-- Project Details Go Here-->
                           <h2 class="text-uppercase">CfP Website Design</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/code-for-philly.jpg" alt="" />
+                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/code-for-philly.png" alt="" />
                           <p class="text-justify">The goal of this particular project is just to re-do the homepage first, and connect it to the existing old pages and laddr. The issues on our "Issues" page in this repo are ones that the leadership team has identified as things they would like changed. However we're open to other ideas of course.
                           </p>
                           <!-- <p>
@@ -975,7 +975,7 @@
                     <br>
                     <a href="/pages/hackathons">Hackathons</a>
                 </div>
-    
+
                 <div class="col-12 col-sm-4">
                     <a href="/pages/mission">Mission</a>
                     <br>
@@ -983,7 +983,7 @@
                     <br>
                     <a href="/pages/leadership/">Leadership</a>
                 </div>
-    
+
                 <div class="col-12 col-sm-4">
                     <a href="/chat">Slack</a>
                     <br>

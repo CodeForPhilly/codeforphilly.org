@@ -4,7 +4,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Code For Philly</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous">
     </script>
@@ -21,7 +21,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="/"><img src="assets/img/favicon.ico" alt="favicon" style="height: 2rem;"></a>
+            <a class="navbar-brand js-scroll-trigger" href="/"><img src="/favicon.ico" alt="favicon" style="height: 2rem;"></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars ml-1"></i>
@@ -276,7 +276,7 @@
                     <br>
                     <a href="/pages/hackathons">Hackathons</a>
                 </div>
-    
+
                 <div class="col-12 col-sm-4">
                     <a href="/pages/mission">Mission</a>
                     <br>
@@ -284,7 +284,7 @@
                     <br>
                     <a href="/pages/leadership/">Leadership</a>
                 </div>
-    
+
                 <div class="col-12 col-sm-4">
                     <a href="/chat">Slack</a>
                     <br>

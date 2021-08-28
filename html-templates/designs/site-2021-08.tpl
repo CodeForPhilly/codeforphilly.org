@@ -188,7 +188,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/phlask.png" alt="" />
+                        <img class="img-fluid" src="/img/portfolio/phlask.png" alt="" />
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">PHLASK</div>
@@ -202,7 +202,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/paws.png" alt="" />
+                        <img class="img-fluid" src="/img/portfolio/paws.png" alt="" />
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">PAWS</div>
@@ -216,7 +216,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/plse.png" alt="" />
+                        <img class="img-fluid" src="/img/portfolio/plse.png" alt="" />
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">PLSE</div>
@@ -230,7 +230,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/flowers.jpg" alt="" />
+                        <img class="img-fluid" src="/img/portfolio/flowers.jpg" alt="" />
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">Only Plant Natives PA</div>
@@ -244,7 +244,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/code-for-philly.png" alt="" />
+                        <img class="img-fluid" src="/img/portfolio/code-for-philly.png" alt="" />
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">CfP Website Design</div>
@@ -397,7 +397,7 @@
 
                 <div class="col-sm">
                   <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="assets/img/portfolio/pp.png" alt="Card image cap">
+                      <img class="card-img-top" src="/img/portfolio/pp.png" alt="Card image cap">
                       <div class="card-body">
                         <h5 class="card-title">Prevention Point</h5>
                         <p class="card-text">Needle exchange program for Philadelphia.
@@ -435,7 +435,7 @@
                 <div class="col-sm">
 
                   <div class="card" style="width: 18rem;">
-                      <img class="card-img-top" src="assets/img/portfolio/auto.png" alt="Card image cap">
+                      <img class="card-img-top" src="/img/portfolio/auto.png" alt="Card image cap">
                       <div class="card-body">
                         <h5 class="card-title">Philly Auto and Parole</h5>
                         <p class="card-text">Give the formerly incarcerated opportunity for a living wage.
@@ -482,7 +482,7 @@
           </div>
           <ul class="timeline">
               <li>
-                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
+                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="/img/about/1.jpg" alt="" /></div>
                   <div class="timeline-panel">
                       <div class="timeline-heading">
                           <h4>2009-2011</h4>
@@ -492,7 +492,7 @@
                   </div>
               </li>
               <li class="timeline-inverted">
-                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
+                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="/img/about/2.jpg" alt="" /></div>
                   <div class="timeline-panel">
                       <div class="timeline-heading">
                           <h4>March 2011</h4>
@@ -502,7 +502,7 @@
                   </div>
               </li>
               <li>
-                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="" /></div>
+                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="/img/about/3.jpg" alt="" /></div>
                   <div class="timeline-panel">
                       <div class="timeline-heading">
                           <h4>December 2012</h4>
@@ -512,7 +512,7 @@
                   </div>
               </li>
               <li class="timeline-inverted">
-                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="" /></div>
+                  <div class="timeline-image"><img class="rounded-circle img-fluid" src="/img/about/4.jpg" alt="" /></div>
                   <div class="timeline-panel">
                       <div class="timeline-heading">
                           <h4>July 2014</h4>
@@ -551,7 +551,7 @@
       <div class="row">
           <div class="col-lg-3">
               <div class="team-member">
-                  <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="" />
+                  <img class="mx-auto rounded-circle" src="/img/team/1.jpg" alt="" />
                   <h4>Marieke Jackson and Machow</h4>
                   <p class="text-muted">Co-Directors</p>
                   <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
@@ -561,7 +561,7 @@
           </div>
           <div class="col-lg-3">
               <div class="team-member">
-                  <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="" />
+                  <img class="mx-auto rounded-circle" src="/img/team/2.jpg" alt="" />
                   <h4>Julia Schuchard</h4>
                   <p class="text-muted">Communications Co-Lead<br>
                       jschuchard@codeforphilly.org</p>
@@ -572,7 +572,7 @@
           </div>
           <div class="col-lg-3">
               <div class="team-member">
-                  <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="" />
+                  <img class="mx-auto rounded-circle" src="/img/team/3.jpg" alt="" />
                   <h4>Barb Donnini</h4>
                   <p class="text-muted">Community Co-Lead<br>
                       bdonnini@codeforphilly.org</p>
@@ -583,7 +583,7 @@
           </div>
           <div class="col-lg-3">
               <div class="team-member">
-                  <img class="mx-auto rounded-circle" src="assets/img/team/4.jpg" alt="" />
+                  <img class="mx-auto rounded-circle" src="/img/team/4.jpg" alt="" />
                   <h4>Walt Ribeiro</h4>
                   <p class="text-muted">Projects Co-Lead<br>
                       wribeiro@codeforphilly.org</p>
@@ -611,7 +611,7 @@
 <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
       <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+          <div class="close-modal" data-dismiss="modal"><img src="/img/close-icon.svg" alt="Close modal" />
           </div>
           <div class="container">
               <div class="row justify-content-center">
@@ -619,7 +619,7 @@
                       <div class="modal-body">
                           <!-- Project Details Go Here-->
                           <h2 class="text-uppercase">PHLASK</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/phlask.png" alt="" />
+                          <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/phlask.png" alt="" />
                           <p class="text-justify"> PHLASK is an Ecosystem for Finding and Sharing Water in
                               Philadelphia Water should remain abundant, clean and accessible to everyone.
                               <br />PHLASK's mission is to help people find publicly available sources of water,
@@ -667,7 +667,7 @@
 <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
       <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+          <div class="close-modal" data-dismiss="modal"><img src="/img/close-icon.svg" alt="Close modal" />
           </div>
           <div class="container">
               <div class="row justify-content-center">
@@ -675,7 +675,7 @@
                       <div class="modal-body">
                           <!-- Project Details Go Here-->
                           <h2 class="text-uppercase">PAWS</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/paws.png" alt="" />
+                          <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/paws.png" alt="" />
                           <p class="text-justify">WHO IS PAWS - As the city's largest animal rescue partner and no-kill animal shelter,
                               PAWS is working to make Philadelphia a place where every healthy and treatable pet
                               is guaranteed a home. Since inception over 10 years ago, PAWS has rescued and placed
@@ -747,7 +747,7 @@
 <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
       <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+          <div class="close-modal" data-dismiss="modal"><img src="/img/close-icon.svg" alt="Close modal" />
           </div>
           <div class="container">
               <div class="row justify-content-center">
@@ -755,7 +755,7 @@
                       <div class="modal-body">
                           <!-- Project Details Go Here-->
                           <h2 class="text-uppercase">Prevention Point</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/pp.png" alt="" />
+                          <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/pp.png" alt="" />
                           <p class="text-justify">Prevention Point is a private nonprofit organization providing harm reduction
                               services to Philadelphia and the surrounding area.</p>
                           <p class="text-justify">Currently, they are storing data from their programs in separate Excel spreadsheets,
@@ -805,7 +805,7 @@
 <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
       <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+          <div class="close-modal" data-dismiss="modal"><img src="/img/close-icon.svg" alt="Close modal" />
           </div>
           <div class="container">
               <div class="row justify-content-center">
@@ -813,7 +813,7 @@
                       <div class="modal-body">
                           <!-- Project Details Go Here-->
                           <h2 class="text-uppercase">PLSE</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/plse.png" alt="" />
+                          <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/plse.png" alt="" />
                           <p class="text-justify">Philadelphia Lawyers for Social Equity (PLSE) is a non-profit legal aid organization
                               that focuses on helping people overcome the barriers they face as a result of
                               criminal records.</p>
@@ -867,7 +867,7 @@
 <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
       <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+          <div class="close-modal" data-dismiss="modal"><img src="/img/close-icon.svg" alt="Close modal" />
           </div>
           <div class="container">
               <div class="row justify-content-center">
@@ -875,7 +875,7 @@
                       <div class="modal-body">
                           <!-- Project Details Go Here-->
                           <h2 class="text-uppercase">Only Plant Natives PA</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/flowers.jpg" alt="" />
+                          <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/flowers.jpg" alt="" />
                           <p class="text-justify">Native plants are really <a href="https://www.audubon.org/content/why-native-plants-matter">important…</a><br><br>
                             But it is a bit overwhelming to select plants (e.g. wildflowers and grasses). This google sheet + tableau solution is designed to assist as a entry point to further research.
                             I'm seeking user experience feedback from the Code for Philly community. Also - If anyone wants to help with the database, please join the project.
@@ -918,7 +918,7 @@
 <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
       <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" />
+          <div class="close-modal" data-dismiss="modal"><img src="/img/close-icon.svg" alt="Close modal" />
           </div>
           <div class="container">
               <div class="row justify-content-center">
@@ -926,7 +926,7 @@
                       <div class="modal-body">
                           <!-- Project Details Go Here-->
                           <h2 class="text-uppercase">CfP Website Design</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="assets/img/portfolio/code-for-philly.png" alt="" />
+                          <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/code-for-philly.png" alt="" />
                           <p class="text-justify">The goal of this particular project is just to re-do the homepage first, and connect it to the existing old pages and laddr. The issues on our "Issues" page in this repo are ones that the leadership team has identified as things they would like changed. However we're open to other ideas of course.
                           </p>
                           <!-- <p>

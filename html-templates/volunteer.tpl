@@ -153,7 +153,7 @@
                     the members to see what contact information they’ve published. You can hover over their circles to
                     get their
                     titles as well.</p>
-                <img src="assets/img/volunteer/rate_my_nurse_screen_shot.png" class="col-xs-6 card-img pt-4" alt="rate my nurse screen shot">
+                <img src="/img/volunteer/rate_my_nurse_screen_shot.png" class="col-xs-6 card-img pt-4" alt="rate my nurse screen shot">
             </div>
             <hr class="m-5">
             <p class="text-center">Having trouble figuring out what projects are active, finding contact information for
@@ -200,7 +200,7 @@
                 <p class="col-md-6">Once you’ve identified a project you are interested in, log into our Slack and find
                     the
                     channel for the project. The channel is always listed on the project description page</p>
-                <img src="assets/img/volunteer/project_slack_channel.png" class="col-md-6 card-img" alt="TODO">
+                <img src="/img/volunteer/project_slack_channel.png" class="col-md-6 card-img" alt="TODO">
             </div>
             <hr class="m-5">
             <p class="text-center">Having trouble logging into Slack or finding the correct Slack channel? Email <a class="card-link" href="mailto:hello@codeforphilly.org">hello@codeforphilly.org</a>.</p>

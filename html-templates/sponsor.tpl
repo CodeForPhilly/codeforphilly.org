@@ -98,8 +98,8 @@
             </div>
         </div>
         <div class="row">
-            <img class="col-6 d-none d-lg-block" src="assets/img/sponsor/img-1.jpg" alt="Two people presenting 'What is Civic Hacking?'">
-            <img class="col-12 col-lg-6" src="assets/img/sponsor/img-2.jpg" alt="A person presenting 'Philadelphia Statistics'">
+            <img class="col-6 d-none d-lg-block" src="/img/sponsor/img-1.jpg" alt="Two people presenting 'What is Civic Hacking?'">
+            <img class="col-12 col-lg-6" src="/img/sponsor/img-2.jpg" alt="A person presenting 'Philadelphia Statistics'">
         </div>
         <div class="secondary-page-div p-5" style="background-color: #2c57a5; color: aliceblue; padding-top: unset;">
             <a href="/projects">Here are CFP's projects</a>, which Philadelphia community members, including yourself, have the opportunity to help volunteer on as well! As this is a nonprofit organization, monetary contributions are always greatly appreciated. They allow us to continue the work you see, in order to make a positive change in our community.
@@ -114,8 +114,8 @@
             <p class="text-center">Interested? Contact us at <a class="card-link" href="mailto:hello@codeforphilly.org">hello@codeforphilly.org</a> or join <a href="/chat">our Slack workspace</a>.</p>
         </div>
         <div class="row">
-            <img class="col-12 col-lg-6" src="assets/img/sponsor/img-3.jpg" alt="Technologists in a cool hall.">
-            <img class="col-6 d-none d-lg-block" src="assets/img/sponsor/img-4.jpg" alt="Technologists in a presentation.">
+            <img class="col-12 col-lg-6" src="/img/sponsor/img-3.jpg" alt="Technologists in a cool hall.">
+            <img class="col-6 d-none d-lg-block" src="/img/sponsor/img-4.jpg" alt="Technologists in a presentation.">
         </div>
     </main>
 

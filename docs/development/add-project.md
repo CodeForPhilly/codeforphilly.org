@@ -1,3 +1,8 @@
+# Add a project
+
+Use this template to add a new project to `site-root/home.tpl`:
+
+```html
 <!-- Modal TODO -->
 <div class="portfolio-modal modal fade" id="portfolioModalTODO" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
@@ -43,3 +48,4 @@
       </div>
   </div>
 </div>
+```

@@ -70,16 +70,27 @@
                         <ul class="dropdown-menu search" id="navbarSearchBarDropdown" aria-labelledby="navbarDropdown">
                         </ul>
                     </li>
-                    <li class="nav-item show">
-                        <a class="nav-link " href="/login?return=%2F" id="navbarDropdown" role="button" aria-haspopup="false" aria-expanded="false">
-                            Login
-                        </a>
-                    </li>
-                    <li class="nav-item show">
-                        <a class="nav-link " href="/register?return=%2F" id="navbarDropdown" role="button" aria-haspopup="false" aria-expanded="false">
-                            Signup
-                        </a>
-                    </li>
+                    {if $.User}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {$.User->FirstName}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                {include includes/site.nav-userlinks.tpl}
+                            </div>
+                        </li>
+                    {else}
+                        <li class="nav-item show">
+                            <a class="nav-link" href="/login?return={$.server.REQUEST_URI|escape:url}" id="navbarDropdown" role="button" aria-haspopup="false" aria-expanded="false">
+                                {_ "Login"}
+                            </a>
+                        </li>
+                        <li class="nav-item show">
+                            <a class="nav-link" href="/register?return={$.server.REQUEST_URI|escape:url}" id="navbarDropdown" role="button" aria-haspopup="false" aria-expanded="false">
+                                {_ "Signup"}
+                            </a>
+                        </li>
+                    {/if}
                 </ul>
             </div>
         </div>

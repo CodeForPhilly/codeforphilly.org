@@ -77,7 +77,7 @@
                                 {avatar $.User 18} {$.User->FirstName}
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                {include includes/site.nav-userlinks.tpl}
+                                {include includes/site-bootstrap4.nav-userlinks.tpl}
                             </div>
                         </li>
                     {else}

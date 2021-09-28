@@ -23,6 +23,7 @@
         <a class="dropdown-item" href="/mission">{_ "Mission"}</a>
         <a class="dropdown-item" href="/pages/code_of_conduct/">{_ "Code of Conduct"}</a>
         <a class="dropdown-item" href="/pages/leadership/">{_ "Organizing Team"}</a>
+        <a class="dropdown-item" href="/pages/leadership-support_team_open_positions/">{_ "Join the Organizing Team"}</a>
         <a class="dropdown-item" href="/contact">{_ "Contact Us"}</a>
     </div>
 </li>

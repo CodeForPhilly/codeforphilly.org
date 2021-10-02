@@ -1,4 +1,0 @@
-[holomapping]
-root = "helm-chart"
-files = "**"
-after = "*"

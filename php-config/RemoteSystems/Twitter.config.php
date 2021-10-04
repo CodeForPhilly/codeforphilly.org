@@ -1,3 +1,4 @@
 <?php
 
-//RemoteSystems\Twitter::$siteHandle = 'YOUR_TWITTER_HANDLE_HERE';
+RemoteSystems\Twitter::$siteHandle = 'CodeForPhilly';
+RemoteSystems\Twitter::$defaultTweetIntentParams['related'] .= ',codeforphilly';

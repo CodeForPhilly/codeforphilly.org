@@ -1,4 +1,4 @@
-# Add a secret
+# Deploy a secret
 
 ## Prerequisites
 

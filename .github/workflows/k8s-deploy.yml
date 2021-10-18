@@ -146,7 +146,7 @@ jobs:
           --install \
           --namespace "${KUBE_NAMESPACE}" \
           --set site.name="${RELEASE_NAME}" \
-          --set site.title="laddr/${RELEASE_NAME}" \
+          --set site.title="codeforphilly/${RELEASE_NAME}" \
           --set site.image.repository="${DOCKER_REGISTRY}/${DOCKER_REPOSITORY}/${DOCKER_PACKAGE}" \
           --set site.image.tag="${RELEASE_NAME}" \
           --set ingress.enabled=true \

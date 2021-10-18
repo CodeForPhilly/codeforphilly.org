@@ -2,77 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/add-project/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/clone-from-git/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/email/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/migrations/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/running-tests/e2e/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/workspace-setup/content-editor/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/workspace-setup/local-studio/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/workspace-setup/virtual-multisite/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/getting-started/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/operations/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/operations/deploy-secret/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/operations/migrate-to-k8s/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/usage/</loc>
-         <lastmod>2021-10-03</lastmod>
+         <lastmod>2021-10-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

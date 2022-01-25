@@ -88,7 +88,22 @@
 
 <!-- Portfolio Grid-->
 
-
+{template projectTile name  portfolioModal short image logo=no}    
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href={$portfolioModal}>
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
+                        </div>
+                        <img class="img-fluid" src="/img/portfolio/{$image}" alt="" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">{$name}</div>
+                        <div class="portfolio-caption-subheading text-muted">{$short}</div>
+                    </div>
+                </div>
+            </div>
+{/template}	
 
 <section class="page-section bg-light" id="projects">
     <div class="container">
@@ -97,81 +112,17 @@
             <!-- <h3 class="section-subheading text-muted">Look around!</h3> -->
         </div>
         <div class="row">
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
-                        </div>
-                        <img class="img-fluid" src="/img/portfolio/phlask.png" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">PHLASK</div>
-                        <div class="portfolio-caption-subheading text-muted">Access to Public Water</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
-                        </div>
-                        <img class="img-fluid" src="/img/portfolio/paws.png" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">PAWS</div>
-                        <div class="portfolio-caption-subheading text-muted">Homes for all Pets</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
-                        </div>
-                        <img class="img-fluid" src="/img/portfolio/plse.png" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">PLSE</div>
-                        <div class="portfolio-caption-subheading text-muted">Legal Support and Expungement</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
-                        </div>
-                        <img class="img-fluid" src="/img/portfolio/flowers.jpg" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">Only Plant Natives PA</div>
-                        <div class="portfolio-caption-subheading text-muted">Propagate PA Wildflowers</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
-                        </div>
-                        <img class="img-fluid" src="/img/portfolio/code-for-philly.png" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">CfP Website Design</div>
-                        <div class="portfolio-caption-subheading text-muted">Homepage</div>
-                    </div>
-                </div>
-            </div>
+
+			{projectTile name="PHLASK" portfolioModal="#portfolioModal1" short="Access to Public Water" image="phlask.png" }
+			{projectTile name="PAWS" portfolioModal="#portfolioModal2" short="Homes for all Pets" image="paws.png" }
+			{projectTile name="PLSE" portfolioModal="#portfolioModal4" short="Legal Support and Expungement" image="plse.png" }
+			{projectTile name="Only Plant Natives PA" portfolioModal="#portfolioModal5" short="Propagate PA Wildflowers" image="flowers.jpg" }
+			{projectTile name="CfP Website Design" portfolioModal="#portfolioModal6" short="Homepage" image="code-for-philly.png" }
+
+
         </div>
     </div>
 </section>
-
-
 
 <!-- Services-->
 <section class="page-section" id="services">
@@ -522,359 +473,65 @@
 </section>
 
 <!-- Portfolio Modals-->
-<!-- Modal 1-->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal"><img src="/img/close-icon.svg" alt="Close modal" />
-          </div>
-          <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here-->
-                          <h2 class="text-uppercase">PHLASK</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/phlask.png" alt="" />
-                          <p class="text-justify"> PHLASK is an Ecosystem for Finding and Sharing Water in
-                              Philadelphia Water should remain abundant, clean and accessible to everyone.
-                              <br />PHLASK's mission is to help people find publicly available sources of water,
-                              and to impel private enterprises to provide public access to their water
-                              infrastructure - simply by PHLasking.
-                              <br />
-                              If you would like to help reduce the use of wasteful plastic bottles and increase
-                              access to water, please join the PHLASK Coalition!
-                          </p>
-                          <!-- <p>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                  class="bi bi-link" viewBox="0 0 16 16">
-                                  <path
-                                      d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                                  <path
-                                      d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-                              </svg>
-                              <a href="http://www.phlask.me">www.phlask.me</a>
-                              &nbsp;&nbsp;&nbsp;
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                  class="bi bi-envelope" viewBox="0 0 16 16">
-                                  <path
-                                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
-                              </svg>
-                              <a href="mailto:hello@phlask.me">hello@phlask.me</a>
-                          </p> -->
-                            <a href="/projects/phlask--life-liberty_and_the_pursuit_of_water" target="_blank" class="btn btn-primary">Project Page</a>
-                            <a href="http://www.phlask.me" target="_blank" class="btn btn-primary">Project Website</a>
-                            <a href="https://github.com/phlask" target="_blank" class="btn btn-primary">Github</a>
-                            <div class="modal-join-slack">
-                                <p>Want to join this project? Introduce yourself in the #phlask Slack channel.</p>
-                                <a href="/chat?channel=phlask" target="_blank" class="btn btn-primary">Join Slack</a>
-                            </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div> -->
-      </div>
-  </div>
-</div>
-<!-- Modal 2-->
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal"><img src="/img/close-icon.svg" alt="Close modal" />
-          </div>
-          <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here-->
-                          <h2 class="text-uppercase">PAWS</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/paws.png" alt="" />
-                          <p class="text-justify">WHO IS PAWS - As the city's largest animal rescue partner and no-kill animal shelter,
-                              PAWS is working to make Philadelphia a place where every healthy and treatable pet
-                              is guaranteed a home. Since inception over 10 years ago, PAWS has rescued and placed
-                              27,000+ animals in adoptive and foster homes, and has worked to prevent pet
-                              homelessness by providing 86,000+ low-cost spay/neuter services and affordable vet
-                              care to 227,000+ clinic patients. Just in 2018, 3,584 animals were rescued and
-                              36,871 clinic patients were served. PAWS is funded 100% through donations, with 91
-                              cents of every dollar collected going directly to the animals. Therefore, PAWS'
-                              rescue work (including 3 shelters and all rescue and animal care programs),
-                              administration and development efforts are coordinated by only about 70 staff
-                              members complemented by over 1500 volunteers.</p>
-                          <p class="text-justify">DATA IS UNDERUTILIZED - Through this chain of operational and service activities,
-                              PAWS accumulates data regarding donations, adoptions, fosters, volunteers,
-                              merchandise sales, event attendees (to name a few), each in their own system and/or
-                              manual (Google Sheet) tally. This vital data that can drive insights remains siloed
-                              and is usually difficult to extract, manipulate, and analyze. Taking all of this
-                              data, making is readily available, and drawing inferences through analysis can drive
-                              many benefits: PAWS operations can be better informed and use data-driven decisions
-                              to guide programs and maximize effectiveness; supporters can be further engaged by
-                              suggesting additional opportunities for involvement based upon pattern analysis;
-                              multi-dimensional supporters can be consistently (and accurately) acknowledged for
-                              all the ways they support PAWS (i.e. a volunteer who donates and also fosters
-                              kittens), not to mention opportunities to further tap the potential of these
-                              enthusiastic supporters. And there are bound to be more leverage points as we get
-                              further into this project!</p>
-                          <p class="text-justify">PROJECT MISSION - This project seeks to provide PAWS with an easy-to-use and
-                              easy-to-support tool to extract data from multiple source systems, confirm accuracy
-                              and appropriateness and process data where necessary (a data hygiene and wrangling
-                              step), and then load relevant data into one or more repositories to facilitate (1) a
-                              highly-accurate and rich 360-degree view of PAWS constituents (Salesforce is a
-                              likely candidate target system; already in use at PAWS) and (2) flexible ongoing
-                              data analysis and insights discovery (e.g. a data warehouse).</p>
-                              <!-- <p>
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                      class="bi bi-link" viewBox="0 0 16 16">
-                                      <path
-                                          d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                                      <path
-                                          d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-                                  </svg>
-                                  <a href="/projects/paws_data_pipeline">codeforphilly.org/projects/paws_data_pipeline</a>
-                                  &nbsp;&nbsp;&nbsp;
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                      class="bi bi-envelope" viewBox="0 0 16 16">
-                                      <path
-                                          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
-                                  </svg>
-                                  <a href="mailto:email@email.here">email@email.here</a>
-                              </p> -->
-                                <a href="/projects/paws_data_pipeline" target="_blank" class="btn btn-primary">Project Page</a>
-                                <a href="https://phillypaws.org/" target="_blank" class="btn btn-primary">Nonprofit Website</a>
-                                <a href="https://github.com/CodeForPhilly/paws-data-pipeline" target="_blank" class="btn btn-primary">Github</a>
-                                <div class="modal-join-slack">
-                                    <p>Want to join this project? Introduce yourself in the #paws_data_pipeline Slack channel.</p>
-                                    <a href="/chat?channel=paws_data_pipeline" target="_blank" class="btn btn-primary">Join Slack</a>
-                                </div>
-                      </div>
 
-                  </div>
-              </div>
-          </div>
-          <!-- <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div> -->
-      </div>
-  </div>
-</div>
-<!-- Modal 3-->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal"><img src="/img/close-icon.svg" alt="Close modal" />
-          </div>
-          <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here-->
-                          <h2 class="text-uppercase">Prevention Point</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/pp.png" alt="" />
-                          <p class="text-justify">Prevention Point is a private nonprofit organization providing harm reduction
-                              services to Philadelphia and the surrounding area.</p>
-                          <p class="text-justify">Currently, they are storing data from their programs in separate Excel spreadsheets,
-                              disparate EHRs, and partner data systems. This prevents them from being able to see
-                              all activities associated with an individual program participant, and also makes it
-                              impossible for them to do meaningful analyses that monitor program health and
-                              evaluate efforts.</p>
-                          <p class="text-justify">This project would work to migrate all of the disparate data sources into one system,
-                              make a UI that allows Prevention Point to access all participant data in one system,
-                              and increase the ease with which program coordinators can evaluate and monitor
-                              activities.</p>
-                          <!-- <p>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                  class="bi bi-link" viewBox="0 0 16 16">
-                                  <path
-                                      d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                                  <path
-                                      d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-                              </svg>
-                              <a href="/projects/prevention_point_unified_reporting_system">codeforphilly.org/projects/prevention_point_unified_reporting_system</a>
-                              &nbsp;&nbsp;&nbsp;
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                  class="bi bi-envelope" viewBox="0 0 16 16">
-                                  <path
-                                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
-                              </svg>
-                              <a href="mailto:email@goes.here">email@goes.here</a>
-                          </p> -->
-                            <a href="/projects/prevention_point_unified_reporting_system" target="_blank" class="btn btn-primary">Project Page</a>
-                            <a href="https://ppponline.org/" target="_blank" class="btn btn-primary">Nonprofit Website</a>
-                            <a href="https://github.com/CodeForPhilly/prevention-point" target="_blank" class="btn btn-primary">Github</a>
-                            <div class="modal-join-slack">
-                                <p>Want to join this project? Introduce yourself in the #preventionpoint Slack channel.</p>
-                                <a href="/chat?channel=preventionpoint" target="_blank" class="btn btn-primary">Join Slack</a>
-                            </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div> -->
-      </div>
-  </div>
-</div>
-<!-- Modal 4-->
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal"><img src="/img/close-icon.svg" alt="Close modal" />
-          </div>
-          <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here-->
-                          <h2 class="text-uppercase">PLSE</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/plse.png" alt="" />
-                          <p class="text-justify">Philadelphia Lawyers for Social Equity (PLSE) is a non-profit legal aid organization
-                              that focuses on helping people overcome the barriers they face as a result of
-                              criminal records.</p>
-                          <p class="text-justify">On July 1st, they will encounter a problem that will severely hinder their ability to
-                              efficiently provide expungements within their current 6-12 month timeframe. The new
-                              “automatic sealing” of the Clean Slate Law will go into effect, which will remove
-                              their access to criminal records. These documents are needed to draft the legal
-                              paperwork necessary for an expungement, or a complete erasure of one’s criminal
-                              record.</p>
-                          <p class="text-justify">This project involves “scraping” criminal history record information from a
-                              publicly-available database and storing it on secure servers only available to PLSE
-                              staff for the purpose of expungements. The data will need to be properly organized
-                              in order to easily pull up an individual’s full record. This project is the only way
-                              they could continue providing quick, life-changing services to Philadelphia
-                              communities.</p>
-                          <!-- <p>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                  class="bi bi-link" viewBox="0 0 16 16">
-                                  <path
-                                      d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                                  <path
-                                      d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-                              </svg>
-                              <a href="/projects/philadelphia_lawyers_for_social_equity_-_record_expungement">codeforphilly.org/projects/philadelphia_lawyers_for_social_equity_-_record_expungement</a>
-                              &nbsp;&nbsp;&nbsp;
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                  class="bi bi-envelope" viewBox="0 0 16 16">
-                                  <path
-                                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
-                              </svg>
-                              <a href="mailto:hello@phlask.me">hello@phlask.me</a>
-                          </p> -->
-                            <a href="/projects/philadelphia_lawyers_for_social_equity_-_record_expungement" target="_blank" class="btn btn-primary">Project Page</a>
-                            <a href="https://www.plsephilly.org/" target="_blank" class="btn btn-primary">Nonprofit Website</a>
-                            <a href="https://github.com/natev/Expungement-Generator" target="_blank" class="btn btn-primary">Github</a>
-                            <div class="modal-join-slack">
-                                <p>Want to join this project? Introduce yourself in the #plse-expungement Slack channel.</p>
-                                <a href="/chat?channel=plse-expungement" target="_blank" class="btn btn-primary">Join Slack</a>
-                            </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div> -->
-      </div>
-  </div>
-</div>
-<!-- Modal 5-->
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal"><img src="/img/close-icon.svg" alt="Close modal" />
-          </div>
-          <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here-->
-                          <h2 class="text-uppercase">Only Plant Natives PA</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/flowers.jpg" alt="" />
-                          <p class="text-justify">Native plants are really <a href="https://www.audubon.org/content/why-native-plants-matter">important…</a><br><br>
-                            But it is a bit overwhelming to select plants (e.g. wildflowers and grasses). This google sheet + tableau solution is designed to assist as a entry point to further research.
-                            I'm seeking user experience feedback from the Code for Philly community. Also - If anyone wants to help with the database, please join the project.
-                            </p>
+{template projectModal modal name image description project site github slack logo=no}   
+	<div class="portfolio-modal modal fade" id="{$modal}" tabindex="-1" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog">
+		  <div class="modal-content">
+			  <div class="close-modal" data-dismiss="modal"><img src="/img/close-icon.svg" alt="Close modal" />
+			  </div>
+			  <div class="container">
+				  <div class="row justify-content-center">
+					  <div class="col-lg-8">
+						  <div class="modal-body">
+							    <!-- Project Details Go Here-->
+							    <h2 class="text-uppercase">{$name}</h2>
+							    <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/{$image}" alt="" />
+							    <p class="text-justify">{$description}</p>
+								<a href="/projects/{$project}" target="_blank" class="btn btn-primary">Project Page</a>
+								<a href="{$site}" target="_blank" class="btn btn-primary">Project Website</a>
+								<a href="{$github}" target="_blank" class="btn btn-primary">Github</a>
+								<div class="modal-join-slack">
+									<p>Want to join this project? Introduce yourself in the #{$slack} Slack channel.</p>
+									<a href="/chat?channel={$slack}" target="_blank" class="btn btn-primary">Join Slack</a>
+								</div>
+						  </div>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+	</div>
+{/template}	
 
-                          <!-- <p>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                  class="bi bi-link" viewBox="0 0 16 16">
-                                  <path
-                                      d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                                  <path
-                                      d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-                              </svg>
-                              <a href="/projects/philadelphia_bail_fund_interactive_data_portal">codeforphilly.org/projects/philadelphia_bail_fund_interactive_data_portal</a>
-                              &nbsp;&nbsp;&nbsp;
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                  class="bi bi-envelope" viewBox="0 0 16 16">
-                                  <path
-                                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
-                              </svg>
-                              <a href="mailto:email@goes.here">email@goes.here</a>
-                          </p> -->
-                            <a href="/projects/pa_wildflower_selector " target="_blank" class="btn btn-primary">Project Page</a>
-                            <a href="https://github.com/CodeForPhilly/pa-wildflower-selector" target="_blank" class="btn btn-primary">Github</a>
-                            <div class="modal-join-slack">
-                                <p>Want to join this project? Introduce yourself in the #pa-wildflower-selector Slack channel.</p>
-                                <a href="/chat?channel=pa-wildflower-selector " target="_blank" class="btn btn-primary">Join Slack</a>
-                            </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div> -->
-      </div>
-  </div>
-</div>
-<!-- Modal 6-->
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal"><img src="/img/close-icon.svg" alt="Close modal" />
-          </div>
-          <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-lg-8">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here-->
-                          <h2 class="text-uppercase">CfP Website Design</h2>
-                          <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/code-for-philly.png" alt="" />
-                          <p class="text-justify">The goal of this particular project is just to re-do the homepage first, and connect it to the existing old pages and laddr. The issues on our "Issues" page in this repo are ones that the leadership team has identified as things they would like changed. However we're open to other ideas of course.
-                          </p>
-                          <!-- <p>
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                  class="bi bi-link" viewBox="0 0 16 16">
-                                  <path
-                                      d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                                  <path
-                                      d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
-                              </svg>
-                              <a href="https://github.com/CodeForPhilly/cfp-mockup/">https://github.com/CodeForPhilly/cfp-mockup/</a>
-                              &nbsp;&nbsp;&nbsp;
-                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                  class="bi bi-envelope" viewBox="0 0 16 16">
-                                  <path
-                                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
-                              </svg>
-                              <a href="mailto:email@goes.here">email@goes.here</a>
-                          </p> -->
-                            <a href="/projects/code_for_philly_website_redesign" target="_blank"class="btn btn-primary">Project Page</a>
-                            <a href="https://github.com/CodeForPhilly/cfp-mockup/" target="_blank" class="btn btn-primary">Github</a>
-                            <div class="modal-join-slack">
-                                <p>Want to join this project? Introduce yourself in the #cfp-homepage-redesign Slack channel.</p>
-                                <a href="/chat?channel=cfp-homepage-redesign" target="_blank" class="btn btn-primary">Join Slack</a>
-                            </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!-- <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div> -->
-      </div>
-  </div>
-</div>
+{projectModal name="PHLASK" modal="portfolioModal1" image="phlask.png" 
+description="PHLASK is an Ecosystem for Finding and Sharing Water in Philadelphia Water should remain abundant, clean and accessible to everyone.<br><br>
+PHLASK's mission is to help people find publicly available sources of water, and to impel private enterprises to provide public access to their water infrastructure - simply by PHLasking.<br><br>
+If you would like to help reduce the use of wasteful plastic bottles and increase access to water, please join the PHLASK Coalition!"  
+project="phlask--life-liberty_and_the_pursuit_of_water" site="http://www.phlask.me" github="https://github.com/phlask" slack="phlask" }
+
+{projectModal name="PAWS" modal="portfolioModal2" image="paws.png" 
+description="WHO IS PAWS - As the city's largest animal rescue partner and no-kill animal shelter, PAWS is working to make Philadelphia a place where every healthy and treatable pet is guaranteed a home. Since inception over 10 years ago, PAWS has rescued and placed 27,000+ animals in adoptive and foster homes, and has worked to prevent pet homelessness by providing 86,000+ low-cost spay/neuter services and affordable vet care to 227,000+ clinic patients. Just in 2018, 3,584 animals were rescued and 36,871 clinic patients were served. PAWS is funded 100% through donations, with 91 cents of every dollar collected going directly to the animals. Therefore, PAWS' rescue work (including 3 shelters and all rescue and animal care programs), administration and development efforts are coordinated by only about 70 staff members complemented by over 1500 volunteers.<br><br>
+DATA IS UNDERUTILIZED - Through this chain of operational and service activities, PAWS accumulates data regarding donations, adoptions, fosters, volunteers, merchandise sales, event attendees (to name a few), each in their own system and/or manual (Google Sheet) tally. This vital data that can drive insights remains siloed and is usually difficult to extract, manipulate, and analyze. Taking all of this data, making is readily available, and drawing inferences through analysis can drive many benefits: PAWS operations can be better informed and use data-driven decisions to guide programs and maximize effectiveness; supporters can be further engaged by suggesting additional opportunities for involvement based upon pattern analysis; multi-dimensional supporters can be consistently (and accurately) acknowledged for all the ways they support PAWS (i.e. a volunteer who donates and also fosters kittens), not to mention opportunities to further tap the potential of these enthusiastic supporters. And there are bound to be more leverage points as we get further into this project! <br><br>
+PROJECT MISSION - This project seeks to provide PAWS with an easy-to-use and easy-to-support tool to extract data from multiple source systems, confirm accuracy and appropriateness and process data where necessary (a data hygiene and wrangling step), and then load relevant data into one or more repositories to facilitate (1) a highly-accurate and rich 360-degree view of PAWS constituents (Salesforce is a likely candidate target system; already in use at PAWS) and (2) flexible ongoing data analysis and insights discovery (e.g. a data warehouse)."  
+project="paws_data_pipeline" site="https://phillypaws.org/" github="https://github.com/CodeForPhilly/paws-data-pipeline" slack="paws_data_pipeline"}
+
+{projectModal name="PLSE" modal="portfolioModal4" image="plse.png" 
+description="Philadelphia Lawyers for Social Equity (PLSE) is a non-profit legal aid organization that focuses on helping people overcome the barriers they face as a result of criminal records.<br><br>
+On July 1st, they will encounter a problem that will severely hinder their ability to efficiently provide expungements within their current 6-12 month timeframe. The new 'automatic sealing' of the Clean Slate Law will go into effect, which will remove their access to criminal records. These documents are needed to draft the legal paperwork necessary for an expungement, or a complete erasure of one's criminal record.<br><br>
+This project involves 'scraping' criminal history record information from a publicly-available database and storing it on secure servers only available to PLSE staff for the purpose of expungements. The data will need to be properly organized in order to easily pull up an individual's full record. This project is the only way they could continue providing quick, life-changing services to Philadelphia communities."  
+project="prevention_point_unified_reporting_system" site="https://www.plsephilly.org/" github="https://github.com/CodeForPhilly/prevention-point" slack="preventionpoint" }
+
+{projectModal name="Only Plant Natives PA" modal="portfolioModal5" image="flowers.jpg" 
+description="Native plants are really <a href='https://www.audubon.org/content/why-native-plants-matter'>important...</a><br><br>
+But it is a bit overwhelming to select plants (e.g. wildflowers and grasses). This google sheet + tableau solution is designed to assist as a entry point to further research.
+I'm seeking user experience feedback from the Code for Philly community. Also - If anyone wants to help with the database, please join the project."  
+project="pa_wildflower_selector" site="https://choosenativeplants.com/" github="https://github.com/CodeForPhilly/pa-wildflower-selector" slack="pa-wildflower-selector" }
+
+{projectModal name="CfP Website Design" modal="portfolioModal6" image="code-for-philly.png" 
+description="The goal of this particular project is just to re-do the homepage first, and connect it to the existing old pages and laddr. The issues on our 'Issues' page in this repo are ones that the leadership team has identified as things they would like changed. However we're open to other ideas of course."  
+project="code_for_philly_website_redesign" site="https://codeforphilly.org/" github="https://github.com/CodeForPhilly/codeforphilly.org" slack="cfp-homepage-redesign"}
+
+
+
 {/block}

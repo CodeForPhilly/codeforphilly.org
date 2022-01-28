@@ -135,12 +135,18 @@
                 </div>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-left">Copyright © Code For Philly 2021</div>
+                <div class="col-lg-4 text-lg-left"></div>
                 <div class="col-lg-4 my-3 my-lg-0">
                     <a class="btn btn-dark btn-social mx-2" href="http://twitter.com/codeforphilly"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="https://www.meetup.com/Code-for-Philly"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="http://codeforphilly.slack.com"><i class="fab fa-linkedin-in"></i></a>
+					<a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/company/code-for-philly/about/"><i class="fab fa-linkedin-in"></i></a>
+					<a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/codeforphilly/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.meetup.com/Code-for-Philly"><i class="fab fa-meetup"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="http://codeforphilly.slack.com"><i class="fab fa-slack"></i></a>
                 </div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-lg-4 text-lg-left"></div>
+				<div class="col-lg-4 text-lg-center">Copyright © Code For Philly 2022</div>
                 <!-- <div class="col-lg-4 text-lg-right">
                         <a class="mr-3" href="#!">Privacy Policy</a>
                         <a href="#!">Terms of Use</a>

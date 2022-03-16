@@ -116,7 +116,7 @@
 			{projectTile name="PHLASK" portfolioModal="#portfolioModal1" short="Access to Public Water" image="phlask.png" }
 			{projectTile name="PAWS" portfolioModal="#portfolioModal2" short="Homes for all Pets" image="paws.png" }
 			{projectTile name="PLSE" portfolioModal="#portfolioModal4" short="Legal Support and Expungement" image="plse.png" }
-			{projectTile name="Only Plant Natives PA" portfolioModal="#portfolioModal5" short="Propagate PA Wildflowers" image="flowers.jpg" }
+			{projectTile name="Choose Native Plants PA" portfolioModal="#portfolioModal5" short="Propagate PA Wildflowers" image="flowers.jpg" }
 			{projectTile name="CfP Website Design" portfolioModal="#portfolioModal6" short="Homepage" image="code-for-philly.png" }
 
 
@@ -522,7 +522,7 @@ On July 1st, they will encounter a problem that will severely hinder their abili
 This project involves 'scraping' criminal history record information from a publicly-available database and storing it on secure servers only available to PLSE staff for the purpose of expungements. The data will need to be properly organized in order to easily pull up an individual's full record. This project is the only way they could continue providing quick, life-changing services to Philadelphia communities."  
 project="prevention_point_unified_reporting_system" site="https://www.plsephilly.org/" github="https://github.com/CodeForPhilly/prevention-point" slack="preventionpoint" }
 
-{projectModal name="Only Plant Natives PA" modal="portfolioModal5" image="flowers.jpg" 
+{projectModal name="Choose Native Plants PA" modal="portfolioModal5" image="flowers.jpg" 
 description="Native plants are really <a href='https://www.audubon.org/content/why-native-plants-matter'>important...</a><br><br>
 But it is a bit overwhelming to select plants (e.g. wildflowers and grasses). This google sheet + tableau solution is designed to assist as a entry point to further research.
 I'm seeking user experience feedback from the Code for Philly community. Also - If anyone wants to help with the database, please join the project."  

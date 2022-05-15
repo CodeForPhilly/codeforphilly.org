@@ -19,6 +19,7 @@
                         <source src="videos/video-small.mp4" type="video/mp4">
                         <source src="videos/video-small.webm" type="video/webm">
                         <source src="videos/video-small.ogv" type="video/ogg">
+			<track label="English" kind="subtitles" srclang="en" src="videos/CFP-en.vtt" default>
                     </video>
                 </div>
 

@@ -11,7 +11,7 @@
     <div class="">
 
         <div class="row">
-
+            <div class="col-12 col-xl-1" style="padding-right:0;"></div>
             <div class="col-12 col-xl-8" style="padding-right:0;">
 
                 <div class="">
@@ -106,7 +106,7 @@
             </div>
 {/template}	
 
-<section class="page-section bg-light" id="projects">
+<section class="page-section" id="projects">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Join a Project</h2>
@@ -487,7 +487,7 @@
 						  <div class="modal-body">
 							    <!-- Project Details Go Here-->
 							    <h2 class="text-uppercase">{$name}</h2>
-							    <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/{$image}" alt="" />
+							    <img class="img-fluid shadow d-block mx-auto img-modal" src="/img/portfolio/{$image}" style="width:450px;height:250px;" alt="" />
 							    <p class="text-justify">{$description}</p>
 								<a href="/projects/{$project}" target="_blank" class="btn btn-primary">Project Page</a>
 								<a href="{$site}" target="_blank" class="btn btn-primary">Project Website</a>

@@ -13,7 +13,8 @@
         <div class="row">
 
             <div class="col-12 col-xl-8" style="padding-right:0;">
-
+            <div class="col-12 col-xl-1" style="padding-right:0;"></div>
+	    
                 <div class="">
                     <video class="" style="width: 100%;" autoplay muted loop poster="videos/video.jpg">
                         <source src="videos/video-small.mp4" type="video/mp4">
@@ -96,7 +97,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
                         </div>
-                        <img class="img-fluid" src="/img/portfolio/{$image}" alt="" />
+                        <img class="img-fluid shadow" src="/img/portfolio/{$image}" style="width:450px;height:250px;" alt="" />
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">{$name}</div>
@@ -106,7 +107,7 @@
             </div>
 {/template}	
 
-<section class="page-section bg-light" id="projects">
+<section class="page-section" id="projects">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Join a Project</h2>

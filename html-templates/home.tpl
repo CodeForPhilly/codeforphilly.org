@@ -521,7 +521,7 @@ project="paws_data_pipeline" site="https://phillypaws.org/" github="https://gith
 description="Philadelphia Lawyers for Social Equity (PLSE) is a non-profit legal aid organization that focuses on helping people overcome the barriers they face as a result of criminal records.<br><br>
 On July 1st, they will encounter a problem that will severely hinder their ability to efficiently provide expungements within their current 6-12 month timeframe. The new 'automatic sealing' of the Clean Slate Law will go into effect, which will remove their access to criminal records. These documents are needed to draft the legal paperwork necessary for an expungement, or a complete erasure of one's criminal record.<br><br>
 This project involves 'scraping' criminal history record information from a publicly-available database and storing it on secure servers only available to PLSE staff for the purpose of expungements. The data will need to be properly organized in order to easily pull up an individual's full record. This project is the only way they could continue providing quick, life-changing services to Philadelphia communities."  
-project="prevention_point_unified_reporting_system" site="https://www.plsephilly.org/" github="https://github.com/CodeForPhilly/prevention-point" slack="preventionpoint" }
+project="philadelphia_lawyers_for_social_equity_-_record_expungement" site="https://www.plsephilly.org/" github="https://github.com/natev/Expungement-Generator" slack="plse-expungement" }
 
 {projectModal name="Choose Native Plants PA" modal="portfolioModal5" image="flowers.jpg" 
 description="Native plants are really <a href='https://www.audubon.org/content/why-native-plants-matter'>important...</a><br><br>

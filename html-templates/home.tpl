@@ -12,13 +12,14 @@
 
         <div class="row">
 
-            <div class="col-12 col-xl-8" style="padding-right:0;">
+            <div class="col-12 col-xl-7 mx-xl-auto" style="padding-right:0;">
 
                 <div class="">
                     <video class="" style="width: 100%;" autoplay muted loop poster="videos/video.jpg">
                         <source src="videos/video-small.mp4" type="video/mp4">
                         <source src="videos/video-small.webm" type="video/webm">
                         <source src="videos/video-small.ogv" type="video/ogg">
+			<track label="English" kind="subtitles" srclang="en" src="videos/CFP-en.vtt" default>
                     </video>
                 </div>
 
@@ -95,7 +96,7 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
                         </div>
-                        <img class="img-fluid" src="/img/portfolio/{$image}" alt="" />
+                        <img class="img-fluid shadow" src="/img/portfolio/{$image}" alt="" />
                     </a>
                     <div class="portfolio-caption">
                         <div class="portfolio-caption-heading">{$name}</div>
@@ -105,7 +106,7 @@
             </div>
 {/template}	
 
-<section class="page-section bg-light" id="projects">
+<section class="page-section" id="projects">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Join a Project</h2>
@@ -520,7 +521,7 @@ project="paws_data_pipeline" site="https://phillypaws.org/" github="https://gith
 description="Philadelphia Lawyers for Social Equity (PLSE) is a non-profit legal aid organization that focuses on helping people overcome the barriers they face as a result of criminal records.<br><br>
 On July 1st, they will encounter a problem that will severely hinder their ability to efficiently provide expungements within their current 6-12 month timeframe. The new 'automatic sealing' of the Clean Slate Law will go into effect, which will remove their access to criminal records. These documents are needed to draft the legal paperwork necessary for an expungement, or a complete erasure of one's criminal record.<br><br>
 This project involves 'scraping' criminal history record information from a publicly-available database and storing it on secure servers only available to PLSE staff for the purpose of expungements. The data will need to be properly organized in order to easily pull up an individual's full record. This project is the only way they could continue providing quick, life-changing services to Philadelphia communities."  
-project="prevention_point_unified_reporting_system" site="https://www.plsephilly.org/" github="https://github.com/CodeForPhilly/prevention-point" slack="preventionpoint" }
+project="philadelphia_lawyers_for_social_equity_-_record_expungement" site="https://www.plsephilly.org/" github="https://github.com/natev/Expungement-Generator" slack="plse-expungement" }
 
 {projectModal name="Choose Native Plants PA" modal="portfolioModal5" image="flowers.jpg" 
 description="Native plants are really <a href='https://www.audubon.org/content/why-native-plants-matter'>important...</a><br><br>

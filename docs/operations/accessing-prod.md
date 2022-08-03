@@ -35,7 +35,7 @@ The database, as well as application logs and shell, can be accessed via a `KUBE
 2. Get the name of the currently running pods and store them in shell variables:
 
     ```bash
-    POD_NAME=$(kubectl -n code-for-philly get pod -l app.kubernetes.io/name=code-for-philly -o jsonpath='{.items[0].metadata.name}')
+    POD_NAME=$(kubectl -n code-for-philly get pod --field-selector=status.phase=Running -l app.kubernetes.io/name=code-for-philly -o jsonpath='{.items[0].metadata.name}')
     ```
 
 ### Open interactive backend shell

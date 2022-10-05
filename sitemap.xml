@@ -2,172 +2,177 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/add-project/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/clone-from-git/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/email/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/migrations/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/api-docs/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/console-commands/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/cypress/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/data-exporters/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/docs/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/dwoo-plugins/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/event-handlers/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/fixtures/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/helm-chart/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/html-templates/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/php-classes/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/php-config/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/php-migrations/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/phpunit-tests/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/sencha-workspace/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/site-root/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/filesystem-api/site-tasks/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/running-tests/e2e/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/workspace-setup/content-editor/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/workspace-setup/local-studio/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/development/workspace-setup/virtual-multisite/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/getting-started/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/operations/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/operations/accessing-prod/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/operations/deploy-secret/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/operations/migrate-to-k8s/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://codeforphilly.github.io/codeforphilly/operations/update-saml2-certificate/</loc>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://codeforphilly.github.io/codeforphilly/usage/</loc>
-         <lastmod>2022-08-03</lastmod>
+         <lastmod>2022-10-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

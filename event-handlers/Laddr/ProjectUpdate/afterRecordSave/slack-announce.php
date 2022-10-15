@@ -8,6 +8,10 @@ if (
     return;
 }
 
+if (!Emergence\Slack\API::isAvailable()) {
+    return;
+}
+
 $attachment = [
     'pretext' => ':tada: New project update!',
     'title' => $ProjectUpdate->getTitle(),

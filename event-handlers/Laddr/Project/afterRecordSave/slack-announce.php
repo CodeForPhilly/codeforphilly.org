@@ -6,6 +6,10 @@ if (!$Project->isNew) {
     return;
 }
 
+if (!Emergence\Slack\API::isAvailable()) {
+    return;
+}
+
 $attachment = [
     'pretext' => ':construction: A new project has been posted!',
     'title' => $Project->getTitle(),

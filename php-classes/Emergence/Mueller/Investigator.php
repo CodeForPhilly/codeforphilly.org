@@ -59,32 +59,36 @@ class Investigator
             'points' => -100,
             'function' => [__CLASS__, 'testNameMatchingShady']
         ],
-        'has-about' => [
-            'points' => 100,
-            'function' => [__CLASS__, 'testHasUserField'],
-            'userField' => 'About'
+
+        // spammers fill these out commonly now
+        // 'has-about' => [
+        //     'points' => 100,
+        //     'function' => [__CLASS__, 'testHasUserField'],
+        //     'userField' => 'About'
+        // ],
+        // 'has-location' => [
+        //     'points' => 100,
+        //     'function' => [__CLASS__, 'testHasUserField'],
+        //     'userField' => 'Location'
+        // ],
+
+        'about-bbcode' => [
+            'points' => -100,
+            'function' => [__CLASS__, 'testAboutBBCode']
         ],
-        'has-location' => [
-            'points' => 100,
-            'function' => [__CLASS__, 'testHasUserField'],
-            'userField' => 'Location'
+        'about-html' => [
+            'points' => -100,
+            'function' => [__CLASS__, 'testAboutHtml']
         ],
         'comment-immediate' => [
             'points' => -100,
-            'secondary' => 100,
             'function' => [__CLASS__, 'testCommentImmediate'],
-            'maxSeconds' => 60
+            'maxSeconds' => 600
         ],
         'comment-foreign' => [
             'points' => -100,
-            'secondary' => 101,
             'function' => [__CLASS__, 'testCommentForeign']
         ],
-#        'comment-linkcode' => [
-#            'points' => -100,
-#            'secondary' => 102,
-#            'function' => [__CLASS__, 'testCommentLinkCode']
-#        ],
         'session-multiple' => [
             'points' => 100,
             'secondary' => 200,
@@ -143,7 +147,7 @@ class Investigator
 
 
         // collect content tables
-        $creatorColumns = DB::allRecords('SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = SCHEMA() AND COLUMN_NAME = "CreatorID" AND TABLE_NAME NOT LIKE "_e_%" AND TABLE_NAME NOT LIKE "_purged_%" AND TABLE_NAME NOT IN ("people", "history_people")');
+        $creatorColumns = DB::allRecords('SELECT * FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = SCHEMA() AND COLUMN_NAME = "CreatorID" AND TABLE_NAME NOT LIKE "\\_e\\_%" AND TABLE_NAME NOT LIKE "_purged_%" AND TABLE_NAME NOT IN ("people", "history_people")');
         $contentTables = [];
         foreach ($creatorColumns as $column) {
             $contentTables[$column['TABLE_NAME']] = false;
@@ -243,7 +247,7 @@ class Investigator
 
                         DB::nonQuery('INSERT INTO `%s` SELECT * FROM `%s` WHERE CreatorID = %u', [$purgedTableName, $tableName, $User->ID]);
                         DB::nonQuery('DELETE FROM `%s` WHERE CreatorID = %u', [$tableName, $User->ID]);
-                        $purgings[$tableName] += DB::affectedRows();
+                        $purgings[$tableName] = DB::affectedRows();
                     }
 
                     foreach (['people', 'history_people'] as $tableName) {
@@ -340,6 +344,8 @@ class Investigator
                     }
                 }
             }
+
+            $userCache['diagnostics']['countries'] = $userCache['countries'];
         }
 
         return $userCache['countries'];
@@ -483,16 +489,28 @@ class Investigator
         return !empty($User->{$options['userField']});
     }
 
+    public static function testAboutBBCode(IUser $User)
+    {
+        return $User->About && strpos($User->About, '[url=') !== false;
+    }
+
+    public static function testAboutHtml(IUser $User)
+    {
+        return $User->About && strpos($User->About, '<a href=') !== false;
+    }
+
     public static function testCommentImmediate(IUser $User, array &$userCache, array $options)
     {
         $firstCommentTime = null;
-        foreach (static::getUserComments($User, $userCache) as $comment) {
+        $comments = static::getUserComments($User, $userCache);
+        foreach ($comments as $comment) {
             $time = strtotime($comment['Created']);
             if (!$firstCommentTime || $firstCommentTime > $time) {
                 $firstCommentTime = $time;
             }
         }
 
+        $userCache['diagnostics']['comments'] = count($comments);
         $userCache['diagnostics']['time-to-comment'] = $firstCommentTime ? $firstCommentTime - $User->Created : null;
 
         return $firstCommentTime && $firstCommentTime - $User->Created < $options['maxSeconds'];
@@ -508,15 +526,6 @@ class Investigator
 
         return false;
     }
-
-#    public static function testCommentLinkCode(IUser $User, array &$userCache, array $options)
-#    {
-#        foreach (static::getUserComments($User, $userCache) as $comment) {
-#            // TODO: detect [url and [img and <a href
-#        }
-#
-#        return false;
-#    }
 
     public static function testIpBlacklist(IUser $User, array &$userCache)
     {

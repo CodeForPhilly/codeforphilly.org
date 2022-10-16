@@ -46,6 +46,7 @@ Investigator::$tests['has-local-location'] = [
             || strpos($location, 'conshohocken') !== false
             || strpos($location, 'cherry hill') !== false
             || strpos($location, 'phoenixville') !== false
+            || strpos($location, 'brewerytown') !== false
         );
     }
 ];

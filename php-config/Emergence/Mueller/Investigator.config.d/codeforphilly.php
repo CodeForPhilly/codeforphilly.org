@@ -16,11 +16,9 @@ Investigator::$tests['has-local-location'] = [
         return (
             strpos($location, 'philly') !== false
             || strpos($location, 'phila') !== false
-            || strpos($location, 'nj') !== false
-            || strpos($location, 'pa') !== false
             || strpos($location, 'fishtown') !== false
             || strpos($location, 'delaware') !== false
-            || strpos($location, 'chester') !== false
+            || strpos($location, 'west chester') !== false
             || strpos($location, 'drexel') !== false
             || strpos($location, 'temple') !== false
             || strpos($location, 'penn') !== false
@@ -47,6 +45,7 @@ Investigator::$tests['has-local-location'] = [
             || strpos($location, 'manayunk') !== false
             || strpos($location, 'conshohocken') !== false
             || strpos($location, 'cherry hill') !== false
+            || strpos($location, 'phoenixville') !== false
         );
     }
 ];

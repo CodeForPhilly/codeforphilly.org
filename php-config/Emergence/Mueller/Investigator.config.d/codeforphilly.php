@@ -47,6 +47,14 @@ Investigator::$tests['has-local-location'] = [
             || strpos($location, 'cherry hill') !== false
             || strpos($location, 'phoenixville') !== false
             || strpos($location, 'brewerytown') !== false
+            || strpos($location, 'mt. airy') !== false
+            || strpos($location, 'mt airy') !== false
+            || strpos($location, 'narberth') !== false
+            || strpos($location, 'haverford') !== false
+            || strpos($location, 'maple shade') !== false
+            || strpos($location, 'voorhees') !== false
+            || strpos($location, ', pa') !== false
+            || preg_match('/191\d\d/', $location)
         );
     }
 ];

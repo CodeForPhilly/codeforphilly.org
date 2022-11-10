@@ -25,5 +25,6 @@
         <a class="dropdown-item" href="/pages/leadership/">{_ "Organizing Team"}</a>
         <a class="dropdown-item" href="/pages/open_leadership_positions/">{_ "Join the Organizing Team"}</a>
         <a class="dropdown-item" href="/contact">{_ "Contact Us"}</a>
+        <a class="dropdown-item" href="/blog">{_ "Blog"}</a>        
     </div>
 </li>

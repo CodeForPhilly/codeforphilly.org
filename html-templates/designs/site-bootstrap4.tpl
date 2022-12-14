@@ -44,6 +44,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item nav-link" href="/volunteer">Volunteer</a>
+                            <a class="dropdown-item nav-link" href="https://meetup.com/code-for-philly">Events</a>			    
                             <a class="dropdown-item nav-link" href="/sponsor">Sponsor</a>
                             <a class="dropdown-item nav-link" href="/projects">Find a Project</a>
                             <a class="dropdown-item nav-link" href="/pages/project_guidelines">Projects 101</a>

@@ -119,6 +119,13 @@
 			{projectTile name="PLSE" portfolioModal="#portfolioModal4" short="Legal Support and Expungement" image="plse.png" }
 			{projectTile name="Choose Native Plants PA" portfolioModal="#portfolioModal5" short="Propagate PA Wildflowers" image="flowers.jpg" }
 			{projectTile name="CfP Website Design" portfolioModal="#portfolioModal6" short="Homepage" image="code-for-philly.png" }
+			{projectTile name="CfP Website Design" portfolioModal="#portfolioModal7" short="Homepage" image="code-for-philly.png" }
+			{projectTile name="CfP Website Design" portfolioModal="#portfolioModal8" short="Homepage" image="code-for-philly.png" }
+			{projectTile name="CfP Website Design" portfolioModal="#portfolioModal9" short="Homepage" image="code-for-philly.png" }
+			{projectTile name="CfP Website Design" portfolioModal="#portfolioModal10" short="Homepage" image="code-for-philly.png" }
+			{projectTile name="CfP Website Design" portfolioModal="#portfolioModal11" short="Homepage" image="code-for-philly.png" }
+			{projectTile name="CfP Website Design" portfolioModal="#portfolioModal12" short="Homepage" image="code-for-philly.png" }
+			{projectTile name="CfP Website Design" portfolioModal="#portfolioModal13" short="Homepage" image="code-for-philly.png" }			
 
 
         </div>
@@ -530,6 +537,34 @@ I'm seeking user experience feedback from the Code for Philly community. Also - 
 project="pa_wildflower_selector" site="https://choosenativeplants.com/" github="https://github.com/CodeForPhilly/pa-wildflower-selector" slack="pa-wildflower-selector" }
 
 {projectModal name="CfP Website Design" modal="portfolioModal6" image="code-for-philly.png" 
+description="The goal of this particular project is just to re-do the homepage first, and connect it to the existing old pages and laddr. The issues on our 'Issues' page in this repo are ones that the leadership team has identified as things they would like changed. However we're open to other ideas of course."  
+project="code_for_philly_website_redesign" site="https://codeforphilly.org/" github="https://github.com/CodeForPhilly/codeforphilly.org" slack="cfp-homepage-redesign"}
+
+{projectModal name="CfP Website Design" modal="portfolioModal7" image="code-for-philly.png" 
+description="The goal of this particular project is just to re-do the homepage first, and connect it to the existing old pages and laddr. The issues on our 'Issues' page in this repo are ones that the leadership team has identified as things they would like changed. However we're open to other ideas of course."  
+project="code_for_philly_website_redesign" site="https://codeforphilly.org/" github="https://github.com/CodeForPhilly/codeforphilly.org" slack="cfp-homepage-redesign"}
+
+{projectModal name="CfP Website Design" modal="portfolioModal8" image="code-for-philly.png" 
+description="The goal of this particular project is just to re-do the homepage first, and connect it to the existing old pages and laddr. The issues on our 'Issues' page in this repo are ones that the leadership team has identified as things they would like changed. However we're open to other ideas of course."  
+project="code_for_philly_website_redesign" site="https://codeforphilly.org/" github="https://github.com/CodeForPhilly/codeforphilly.org" slack="cfp-homepage-redesign"}
+
+{projectModal name="CfP Website Design" modal="portfolioModal9" image="code-for-philly.png" 
+description="The goal of this particular project is just to re-do the homepage first, and connect it to the existing old pages and laddr. The issues on our 'Issues' page in this repo are ones that the leadership team has identified as things they would like changed. However we're open to other ideas of course."  
+project="code_for_philly_website_redesign" site="https://codeforphilly.org/" github="https://github.com/CodeForPhilly/codeforphilly.org" slack="cfp-homepage-redesign"}
+
+{projectModal name="CfP Website Design" modal="portfolioModal10" image="code-for-philly.png" 
+description="The goal of this particular project is just to re-do the homepage first, and connect it to the existing old pages and laddr. The issues on our 'Issues' page in this repo are ones that the leadership team has identified as things they would like changed. However we're open to other ideas of course."  
+project="code_for_philly_website_redesign" site="https://codeforphilly.org/" github="https://github.com/CodeForPhilly/codeforphilly.org" slack="cfp-homepage-redesign"}
+
+{projectModal name="CfP Website Design" modal="portfolioModal11" image="code-for-philly.png" 
+description="The goal of this particular project is just to re-do the homepage first, and connect it to the existing old pages and laddr. The issues on our 'Issues' page in this repo are ones that the leadership team has identified as things they would like changed. However we're open to other ideas of course."  
+project="code_for_philly_website_redesign" site="https://codeforphilly.org/" github="https://github.com/CodeForPhilly/codeforphilly.org" slack="cfp-homepage-redesign"}
+
+{projectModal name="CfP Website Design" modal="portfolioModal12" image="code-for-philly.png" 
+description="The goal of this particular project is just to re-do the homepage first, and connect it to the existing old pages and laddr. The issues on our 'Issues' page in this repo are ones that the leadership team has identified as things they would like changed. However we're open to other ideas of course."  
+project="code_for_philly_website_redesign" site="https://codeforphilly.org/" github="https://github.com/CodeForPhilly/codeforphilly.org" slack="cfp-homepage-redesign"}
+
+{projectModal name="CfP Website Design" modal="portfolioModal13" image="code-for-philly.png" 
 description="The goal of this particular project is just to re-do the homepage first, and connect it to the existing old pages and laddr. The issues on our 'Issues' page in this repo are ones that the leadership team has identified as things they would like changed. However we're open to other ideas of course."  
 project="code_for_philly_website_redesign" site="https://codeforphilly.org/" github="https://github.com/CodeForPhilly/codeforphilly.org" slack="cfp-homepage-redesign"}
 

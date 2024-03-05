@@ -119,6 +119,7 @@
 			{projectTile name="PLSE" portfolioModal="#portfolioModal4" short="Legal Support and Expungement" image="plse.png" }
 			{projectTile name="Choose Native Plants PA" portfolioModal="#portfolioModal5" short="Propagate PA Wildflowers" image="flowers.jpg" }
 			{projectTile name="CfP Website Design" portfolioModal="#portfolioModal6" short="Homepage" image="code-for-philly.png" }
+			{projectTile name="Balancer" portfolioModal="#portfolioModal7" short="Homepage" image="code-for-philly.png" }
 
 
         </div>
@@ -533,6 +534,8 @@ project="pa_wildflower_selector" site="https://choosenativeplants.com/" github="
 description="The goal of this particular project is just to re-do the homepage first, and connect it to the existing old pages and laddr. The issues on our 'Issues' page in this repo are ones that the leadership team has identified as things they would like changed. However we're open to other ideas of course."  
 project="code_for_philly_website_redesign" site="https://codeforphilly.org/" github="https://github.com/CodeForPhilly/codeforphilly.org" slack="cfp-homepage-redesign"}
 
-
+{projectModal name="Balancer" modal="portfolioModal7" image="code-for-philly.png" 
+description="Balancer (formerly named "MedAssist") seeks to solve the problems created by the trial-and-error decision-making process that psychiatrists/medication prescribers and patients go through when choosing medications for bipolar disorder."  
+project="balancer" site="https://balancerproject.com/" github="https://github.com/CodeForPhilly/balancer-data" slack="balancer"}
 
 {/block}

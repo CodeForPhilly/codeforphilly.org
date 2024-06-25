@@ -1,5 +1,10 @@
 <?php
 
+// short circuit original handler for new static homepage
+if (empty(Site::$pathStack[0]) || Site::$pathStack[0] != 'classic') {
+    return RequestHandler::respond('home');
+}
+
 // compile home page data
 $now = new DateTime();
 $pageData = array();
@@ -75,4 +80,4 @@ $pageData = array();
 
 
 // render data against home template
-RequestHandler::respond('home', $pageData);
+RequestHandler::respond('home-classic', $pageData);

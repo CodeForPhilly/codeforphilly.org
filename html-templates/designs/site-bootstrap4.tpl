@@ -148,7 +148,7 @@
 			</div>
 			<div class="row align-items-center">
 				<div class="col-lg-4 text-lg-left"></div>
-				<div class="col-lg-4 text-lg-center">Copyright © Code For Philly 2022</div>
+				<div class="col-lg-4 text-lg-center">Copyright © Code For Philly 2011 - 2024</div>
                 <!-- <div class="col-lg-4 text-lg-right">
                         <a class="mr-3" href="#!">Privacy Policy</a>
                         <a href="#!">Terms of Use</a>

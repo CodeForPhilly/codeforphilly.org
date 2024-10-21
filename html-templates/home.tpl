@@ -115,12 +115,12 @@
         <div class="row">
 
 			{projectTile name="PHLASK" portfolioModal="#portfolioModal1" short="Access to Public Water" image="phlask.png" }
-			{projectTile name="PAWS" portfolioModal="#portfolioModal2" short="Homes for all Pets" image="paws.png" }
-			{projectTile name="PLSE" portfolioModal="#portfolioModal4" short="Legal Support and Expungement" image="plse.png" }
+			{projectTile name="PAX" portfolioModal="#portfolioModal4" short="Legal Support and Expungement" image="plse.png" }
 			{projectTile name="Choose Native Plants PA" portfolioModal="#portfolioModal5" short="Propagate PA Wildflowers" image="flowers.jpg" }
-			{projectTile name="CfP Website Design" portfolioModal="#portfolioModal6" short="Homepage" image="code-for-philly.png" }
-			{projectTile name="Balancer" portfolioModal="#portfolioModal7" short="Homepage" image="code-for-philly.png" }
-
+			{projectTile name="CfP Website Design" portfolioModal="#portfolioModal6" short="Website Redesign" image="code-for-philly.png" }
+			{projectTile name="Balancer" portfolioModal="#portfolioModal7" short="AI-assisted BPD bipolar medication decision app" image="code-for-philly.png" }
+			{projectTile name="Clean and Green Philly" portfolioModal="#portfolioModal8" short="Map of empty lots in Philly" image="cleanandgreen.png" }
+			{projectTile name="Votewise" portfolioModal="#portfolioModal9" short="Non-partisan aid to make ballot decisions" image="votewise.png" }
 
         </div>
     </div>
@@ -512,17 +512,9 @@ PHLASK's mission is to help people find publicly available sources of water, and
 If you would like to help reduce the use of wasteful plastic bottles and increase access to water, please join the PHLASK Coalition!"  
 project="phlask--life-liberty_and_the_pursuit_of_water" site="http://www.phlask.me" github="https://github.com/phlask" slack="phlask" }
 
-{projectModal name="PAWS" modal="portfolioModal2" image="paws.png" 
-description="WHO IS PAWS - As the city's largest animal rescue partner and no-kill animal shelter, PAWS is working to make Philadelphia a place where every healthy and treatable pet is guaranteed a home. Since inception over 10 years ago, PAWS has rescued and placed 27,000+ animals in adoptive and foster homes, and has worked to prevent pet homelessness by providing 86,000+ low-cost spay/neuter services and affordable vet care to 227,000+ clinic patients. Just in 2018, 3,584 animals were rescued and 36,871 clinic patients were served. PAWS is funded 100% through donations, with 91 cents of every dollar collected going directly to the animals. Therefore, PAWS' rescue work (including 3 shelters and all rescue and animal care programs), administration and development efforts are coordinated by only about 70 staff members complemented by over 1500 volunteers.<br><br>
-DATA IS UNDERUTILIZED - Through this chain of operational and service activities, PAWS accumulates data regarding donations, adoptions, fosters, volunteers, merchandise sales, event attendees (to name a few), each in their own system and/or manual (Google Sheet) tally. This vital data that can drive insights remains siloed and is usually difficult to extract, manipulate, and analyze. Taking all of this data, making is readily available, and drawing inferences through analysis can drive many benefits: PAWS operations can be better informed and use data-driven decisions to guide programs and maximize effectiveness; supporters can be further engaged by suggesting additional opportunities for involvement based upon pattern analysis; multi-dimensional supporters can be consistently (and accurately) acknowledged for all the ways they support PAWS (i.e. a volunteer who donates and also fosters kittens), not to mention opportunities to further tap the potential of these enthusiastic supporters. And there are bound to be more leverage points as we get further into this project! <br><br>
-PROJECT MISSION - This project seeks to provide PAWS with an easy-to-use and easy-to-support tool to extract data from multiple source systems, confirm accuracy and appropriateness and process data where necessary (a data hygiene and wrangling step), and then load relevant data into one or more repositories to facilitate (1) a highly-accurate and rich 360-degree view of PAWS constituents (Salesforce is a likely candidate target system; already in use at PAWS) and (2) flexible ongoing data analysis and insights discovery (e.g. a data warehouse)."  
-project="paws_data_pipeline" site="https://phillypaws.org/" github="https://github.com/CodeForPhilly/paws-data-pipeline" slack="paws_data_pipeline"}
-
-{projectModal name="PLSE" modal="portfolioModal4" image="plse.png" 
-description="Philadelphia Lawyers for Social Equity (PLSE) is a non-profit legal aid organization that focuses on helping people overcome the barriers they face as a result of criminal records.<br><br>
-On July 1st, they will encounter a problem that will severely hinder their ability to efficiently provide expungements within their current 6-12 month timeframe. The new 'automatic sealing' of the Clean Slate Law will go into effect, which will remove their access to criminal records. These documents are needed to draft the legal paperwork necessary for an expungement, or a complete erasure of one's criminal record.<br><br>
-This project involves 'scraping' criminal history record information from a publicly-available database and storing it on secure servers only available to PLSE staff for the purpose of expungements. The data will need to be properly organized in order to easily pull up an individual's full record. This project is the only way they could continue providing quick, life-changing services to Philadelphia communities."  
-project="philadelphia_lawyers_for_social_equity_-_record_expungement" site="https://www.plsephilly.org/" github="https://github.com/natev/Expungement-Generator" slack="plse-expungement" }
+{projectModal name="PAX" modal="portfolioModal4" image="plse.png" 
+description="PAX is an expungement petition generator for PLSE. The application takes in PDFs of clients' criminal dockets and returns fully formatted petitions to expunge the clients' criminal records. Having a clear criminal record helps those clients to better find work, housing, and services."  
+project="philadelphia_lawyers_for_social_equity_-_record_expungement" site="https://www.plsephilly.org/" github="https://github.com/natev/Expungement-Generator" slack="pax" }
 
 {projectModal name="Choose Native Plants PA" modal="portfolioModal5" image="flowers.jpg" 
 description="Native plants are really <a href='https://www.audubon.org/content/why-native-plants-matter'>important...</a><br><br>
@@ -537,5 +529,13 @@ project="code_for_philly_website_redesign" site="https://codeforphilly.org/" git
 {projectModal name="Balancer" modal="portfolioModal7" image="code-for-philly.png" 
 description="Balancer (formerly named "MedAssist") seeks to solve the problems created by the trial-and-error decision-making process that psychiatrists/medication prescribers and patients go through when choosing medications for bipolar disorder."  
 project="balancer" site="https://balancerproject.com/" github="https://github.com/CodeForPhilly/balancer-data" slack="balancer"}
+
+{projectModal name="Clean & Green Philly" modal="portfolioModal8" image="cleanandgreen.png" 
+description="Philadelphia has a gun violence problem. This dashboard aims to help solve it by empowering community groups to carry out cleaning and greening interventions in the vacant properties where they can have the biggest impact."  
+project="vacant_and_abandoned_properties_dashboard" site="https://www.cleanandgreenphilly.org/" github="https://github.com/CodeForPhilly/clean-and-green-philly" slack="clean-and-green-philly"}
+
+{projectModal name="Votewise" modal="portfolioModal9" image="votewise.png" 
+description="VoteWise.net is a non-partisan non-profit website that connects voters, organizations, and politicians without advertising dollars getting in the way. Right now, politicians have serious challenges reaching voters without advertising. This means that politicians have to waste a lot of time begging for money instead of doing what they want to do — help the community."  
+project="votewisenet" site="http://www.votewise.net/" github="https://github.com/spencersnygg/VoteWise" slack="votewise"}
 
 {/block}

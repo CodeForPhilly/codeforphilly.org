@@ -35,41 +35,42 @@
 
 
 <!-- Portfolio Grid-->
-
 {template projectTile name  portfolioModal short image logo=no}    
-            <div class="col-lg-4 col-sm-6 mb-4">
-                <div class="portfolio-item">
-                    <a class="portfolio-link" data-toggle="modal" href={$portfolioModal}>
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x text-danger"></i></div>
-                        </div>
-                        <img class="img-fluid shadow" src="/img/portfolio/{$image}" alt="" />
-                    </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">{$name}</div>
-                        <div class="portfolio-caption-subheading text-muted">{$short}</div>
-                    </div>
-                </div>
+  <div class="col-lg-4 col-sm-6 mb-4">
+    <div class="portfolio-item">
+      <a class="portfolio-link" data-toggle="modal" href={$portfolioModal}>
+        <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fas fa-plus fa-3x text-danger"></i>
             </div>
+        </div>
+        <img class="img-fluid shadow" src="/img/portfolio/{$image}" alt="" />
+      </a>
+      <div class="portfolio-caption">
+        <div class="portfolio-caption-heading">{$name}</div>
+        <div class="portfolio-caption-subheading text-muted">{$short}</div>
+      </div>
+    </div>
+  </div>
 {/template}	
 
 <section class="page-section" id="projects">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">Join a Project</h2>
-        </div>
-        <div class="row">
-
-          {projectTile name="PHLASK" portfolioModal="#portfolioModal1" short="Access to Public Water" image="phlask.png" }
-          {projectTile name="PAX" portfolioModal="#portfolioModal4" short="Legal Support and Expungement" image="plse.png" }
-          {projectTile name="Choose Native Plants PA" portfolioModal="#portfolioModal5" short="Propagate PA Wildflowers" image="flowers.jpg" }
-          {projectTile name="CfP Website Design" portfolioModal="#portfolioModal6" short="Website Redesign" image="code-for-philly.png" }
-          {projectTile name="Balancer" portfolioModal="#portfolioModal7" short="AI-assisted BPD bipolar medication decision app" image="code-for-philly.png" }
-          {projectTile name="Clean and Green Philly" portfolioModal="#portfolioModal8" short="Map of empty lots in Philly" image="cleanandgreen.png" }
-          {projectTile name="Votewise" portfolioModal="#portfolioModal9" short="Non-partisan aid to make ballot decisions" image="votewise.png" }
-
-        </div>
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">Join a Project</h2>
     </div>
+    <div class="row">
+
+      {projectTile name="PHLASK" portfolioModal="#portfolioModal1" short="Access to Public Water" image="phlask.png" }
+      {projectTile name="PAX" portfolioModal="#portfolioModal4" short="Legal Support and Expungement" image="plse.png" }
+      {projectTile name="Choose Native Plants PA" portfolioModal="#portfolioModal5" short="Propagate PA Wildflowers" image="flowers.jpg" }
+      {projectTile name="CfP Website Design" portfolioModal="#portfolioModal6" short="Website Redesign" image="code-for-philly.png" }
+      {projectTile name="Balancer" portfolioModal="#portfolioModal7" short="AI-assisted BPD bipolar medication decision app" image="code-for-philly.png" }
+      {projectTile name="Clean and Green Philly" portfolioModal="#portfolioModal8" short="Map of empty lots in Philly" image="cleanandgreen.png" }
+      {projectTile name="Votewise" portfolioModal="#portfolioModal9" short="Non-partisan aid to make ballot decisions" image="votewise.png" }
+
+    </div>
+  </div>
 </section>
 
 <!-- Services-->

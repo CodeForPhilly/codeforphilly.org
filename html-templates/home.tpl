@@ -164,7 +164,7 @@ description="The goal of this particular project is just to re-do the homepage f
 project="code_for_philly_website_redesign" site="https://codeforphilly.org/" github="https://github.com/CodeForPhilly/codeforphilly.org" slack="cfp-homepage-redesign"}
 
 {projectModal name="Balancer" modal="portfolioModal7" image="code-for-philly.png" 
-description="Balancer (formerly named "MedAssist") seeks to solve the problems created by the trial-and-error decision-making process that psychiatrists/medication prescribers and patients go through when choosing medications for bipolar disorder."  
+description="Balancer (formerly named \"MedAssist\") seeks to solve the problems created by the trial-and-error decision-making process that psychiatrists/medication prescribers and patients go through when choosing medications for bipolar disorder."  
 project="balancer" site="https://balancerproject.com/" github="https://github.com/CodeForPhilly/balancer-data" slack="balancer"}
 
 {projectModal name="Clean & Green Philly" modal="portfolioModal8" image="cleanandgreen.png" 

@@ -4,50 +4,33 @@
 
     <!-- Youtube video https://codepen.io/GusRuss89/pen/bVwNrE -->
 
-
-
 <section class="page-section" id="main-video">
-
-    <div class="">
-
-        <div class="row">
-
-            <div class="col-12 col-xl-7 mx-xl-auto" style="padding-right:0;">
-
-                <div class="">
-                    <video class="" style="width: 100%;" autoplay muted loop poster="videos/video.jpg">
-                        <source src="videos/video-small.mp4" type="video/mp4">
-                        <source src="videos/video-small.webm" type="video/webm">
-                        <source src="videos/video-small.ogv" type="video/ogg">
-			<track label="English" kind="subtitles" srclang="en" src="videos/CFP-en.vtt" default>
-                    </video>
-                </div>
-
-
-            </div>
-
-
-            <div class="col-12 col-xl-4">
-                <div style="display:flex;
-                align-items: flex-end;
-                height: 100%;
-                padding: 1rem 2rem 5rem;">
-                    <div>
-                        <h4 class="main-blue-text" style="margin-bottom:1rem;">Contribute towards technology-related projects that benefit the
-                            City
-                            of Philadelphia.</h4>
-                        <h4 class="main-red-text" style="margin-bottom:2rem;">No coding experience required.</h4>
-
-                        <a href="/volunteer"
-                            class="main-volunteer-link">Volunteer!</a>
-                    </div>
-                </div>
-
-            </div>
-
+  <div class="">
+    <div class="row">
+      <div class="col-12 col-xl-7 mx-xl-auto" style="padding-right:0;">
+        <div class="">
+          <video class="" style="width: 100%;" autoplay muted loop poster="videos/video.jpg">
+            <source src="videos/video-small.mp4" type="video/mp4">
+            <source src="videos/video-small.webm" type="video/webm">
+            <source src="videos/video-small.ogv" type="video/ogg">
+            <track label="English" kind="subtitles" srclang="en" src="videos/CFP-en.vtt" default>
+          </video>
         </div>
-
+      </div>
+      <div class="col-12 col-xl-4">
+        <div style="display:flex;
+        align-items: flex-end;
+        height: 100%;
+        padding: 1rem 2rem 5rem;">
+          <div>
+            <h4 class="main-blue-text" style="margin-bottom:1rem;">Contribute towards technology-related projects that benefit the City of Philadelphia.</h4>
+            <h4 class="main-red-text" style="margin-bottom:2rem;">No coding experience required.</h4>
+            <a href="/volunteer" class="main-volunteer-link">Volunteer!</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 
@@ -74,17 +57,16 @@
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Join a Project</h2>
-            <!-- <h3 class="section-subheading text-muted">Look around!</h3> -->
         </div>
         <div class="row">
 
-			{projectTile name="PHLASK" portfolioModal="#portfolioModal1" short="Access to Public Water" image="phlask.png" }
-			{projectTile name="PAX" portfolioModal="#portfolioModal4" short="Legal Support and Expungement" image="plse.png" }
-			{projectTile name="Choose Native Plants PA" portfolioModal="#portfolioModal5" short="Propagate PA Wildflowers" image="flowers.jpg" }
-			{projectTile name="CfP Website Design" portfolioModal="#portfolioModal6" short="Website Redesign" image="code-for-philly.png" }
-			{projectTile name="Balancer" portfolioModal="#portfolioModal7" short="AI-assisted BPD bipolar medication decision app" image="code-for-philly.png" }
-			{projectTile name="Clean and Green Philly" portfolioModal="#portfolioModal8" short="Map of empty lots in Philly" image="cleanandgreen.png" }
-			{projectTile name="Votewise" portfolioModal="#portfolioModal9" short="Non-partisan aid to make ballot decisions" image="votewise.png" }
+          {projectTile name="PHLASK" portfolioModal="#portfolioModal1" short="Access to Public Water" image="phlask.png" }
+          {projectTile name="PAX" portfolioModal="#portfolioModal4" short="Legal Support and Expungement" image="plse.png" }
+          {projectTile name="Choose Native Plants PA" portfolioModal="#portfolioModal5" short="Propagate PA Wildflowers" image="flowers.jpg" }
+          {projectTile name="CfP Website Design" portfolioModal="#portfolioModal6" short="Website Redesign" image="code-for-philly.png" }
+          {projectTile name="Balancer" portfolioModal="#portfolioModal7" short="AI-assisted BPD bipolar medication decision app" image="code-for-philly.png" }
+          {projectTile name="Clean and Green Philly" portfolioModal="#portfolioModal8" short="Map of empty lots in Philly" image="cleanandgreen.png" }
+          {projectTile name="Votewise" portfolioModal="#portfolioModal9" short="Non-partisan aid to make ballot decisions" image="votewise.png" }
 
         </div>
     </div>

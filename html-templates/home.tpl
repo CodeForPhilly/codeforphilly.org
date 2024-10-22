@@ -76,48 +76,43 @@
 <!-- Services-->
 <section class="page-section" id="services">
   <div class="container">
-      <div class="text-center">
-          <h2 class="section-heading text-uppercase">Get Involved</h2>
-          <h3 class="section-subheading text-muted">We use tech, data, and design as a mode of civic engagement
-              with our local communities.</h3>
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">Get Involved</h2>
+      <h3 class="section-subheading text-muted">We use tech, data, and design as a mode of civic engagement with our local communities.</h3>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <a href="/sponsor">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-hand-holding-medical fa-stack-2x text-danger"></i>
+            <i c.lass="fas fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <h4 class="my-3">Sponsor</h4>
+        <p class="text-muted">Sponsor an event</p>
       </div>
-      <div class="row text-center">
-          <div class="col-md-4">
-            <a href="/sponsor">
-              <span class="fa-stack fa-4x">
-                  <i class="fas fa-hand-holding-medical fa-stack-2x text-danger"></i>
-                  <i c.lass="fas fa-laptop fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-              <h4 class="my-3">Sponsor</h4>
-              <p class="text-muted">Sponsor an event</p>
-          </div>
-          <div class="col-md-4">
-            <a href="https://code-for-philly.gitbook.io/partnerships/creating-new-partnerships/first-steps" target="_blank">
-              <span class="fa-stack fa-4x">
-                  <i class="fas fa-laptop-code fa-stack-2x text-danger"></i>
-                  <i c.lass="fas fa-laptop fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-              <h4 class="my-3">Start a Project</h4>
-              <p class="text-muted">Start or get help on a project</p>
-          </div>
-          <div class="col-md-4">
-            <a href="/volunteer">
-              <span class="fa-stack fa-4x">
-                  <i class="fas fa-hands-helping fa-stack-2x text-danger"></i>
-                  <i c.lass="fas fa-hands-helping fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-              <h4 class="my-3">Volunteer</h4>
-              <p class="text-muted">Join our projects</p>
-          </div>
+      <div class="col-md-4">
+        <a href="https://code-for-philly.gitbook.io/partnerships/creating-new-partnerships/first-steps" target="_blank">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-laptop-code fa-stack-2x text-danger"></i>
+            <i c.lass="fas fa-laptop fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <h4 class="my-3">Start a Project</h4>
+        <p class="text-muted">Start or get help on a project</p>
       </div>
+      <div class="col-md-4">
+        <a href="/volunteer">
+          <span class="fa-stack fa-4x">
+            <i class="fas fa-hands-helping fa-stack-2x text-danger"></i>
+            <i c.lass="fas fa-hands-helping fa-stack-1x fa-inverse"></i>
+          </span>
+        </a>
+        <h4 class="my-3">Volunteer</h4>
+        <p class="text-muted">Join our projects</p>
+      </div>
+    </div>
   </div>
-</section>
-
-
-</div>
 </section>
 
 <!-- Portfolio Modals-->
@@ -126,16 +121,17 @@
 	<div class="portfolio-modal modal fade" id="{$modal}" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-dialog">
 		  <div class="modal-content">
-			  <div class="close-modal" data-dismiss="modal"><img src="/img/close-icon.svg" alt="Close modal" />
+			  <div class="close-modal" data-dismiss="modal">
+          <img src="/img/close-icon.svg" alt="Close modal" />
 			  </div>
 			  <div class="container">
 				  <div class="row justify-content-center">
 					  <div class="col-lg-8">
 						  <div class="modal-body">
-							    <!-- Project Details Go Here-->
-							    <h2 class="text-uppercase">{$name}</h2>
-							    <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/{$image}" alt="" />
-							    <p class="text-justify">{$description}</p>
+                <!-- Project Details Go Here-->
+                <h2 class="text-uppercase">{$name}</h2>
+                <img class="img-fluid d-block mx-auto img-modal" src="/img/portfolio/{$image}" alt="" />
+                <p class="text-justify">{$description}</p>
 								<a href="/projects/{$project}" target="_blank" class="btn btn-primary">Project Page</a>
 								<a href="{$site}" target="_blank" class="btn btn-primary">Project Website</a>
 								<a href="{$github}" target="_blank" class="btn btn-primary">Github</a>

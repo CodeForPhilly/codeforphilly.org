@@ -58,7 +58,7 @@
 
       {projectTile name="PHLASK" portfolioModal="#portfolioModal1" short="Access to Public Water" image="phlask.png" }
       {projectTile name="PAX" portfolioModal="#portfolioModal4" short="Legal Support and Expungement" image="plse.png" }
-      {projectTile name="Choose Native Plants PA" portfolioModal="#portfolioModal5" short="Propagate PA Wildflowers" image="flowers.jpg" }
+      {projectTile name="Philly Ward Leaders" portfolioModal="#portfolioModal5" short="Learn about your ward leaders" image="ward-leaders.png" }
       {projectTile name="CfP Website Design" portfolioModal="#portfolioModal6" short="Website Redesign" image="code-for-philly.png" }
       {projectTile name="Balancer" portfolioModal="#portfolioModal7" short="AI-assisted BPD bipolar medication decision app" image="balancer.png" }
       {projectTile name="Clean and Green Philly" portfolioModal="#portfolioModal8" short="Map of empty lots in Philly" image="cleanandgreen.png" }
@@ -153,11 +153,9 @@ project="phlask--life-liberty_and_the_pursuit_of_water" site="http://www.phlask.
 description="PAX is an expungement petition generator for PLSE. The application takes in PDFs of clients' criminal dockets and returns fully formatted petitions to expunge the clients' criminal records. Having a clear criminal record helps those clients to better find work, housing, and services."  
 project="philadelphia_lawyers_for_social_equity_-_record_expungement" site="https://www.plsephilly.org/" github="https://github.com/natev/Expungement-Generator" slack="pax" }
 
-{projectModal name="Choose Native Plants PA" modal="portfolioModal5" image="flowers.jpg" 
-description="Native plants are really <a href='https://www.audubon.org/content/why-native-plants-matter'>important...</a><br><br>
-But it is a bit overwhelming to select plants (e.g. wildflowers and grasses). This google sheet + tableau solution is designed to assist as a entry point to further research.
-I'm seeking user experience feedback from the Code for Philly community. Also - If anyone wants to help with the database, please join the project."  
-project="pa_wildflower_selector" site="https://choosenativeplants.com/" github="https://github.com/CodeForPhilly/pa-wildflower-selector" slack="pa-wildflower-selector" }
+{projectModal name="Philly Ward Leaders" modal="portfolioModal5" image="ward-leaders.png" 
+description="How many of you have heard of all of the judges who ran in the last election? How about all the Council at-large candidates? How about all the State Representative candidates? Most people who show up to vote have not heard of all the candidates. Instead, they're given flyers on the way in, often by their neighbors, suggesting who they should vote for. But who determines what's on the flyers? Ward leaders. And how many of you know who your ward leader is?"  
+project="philly_ward_leaders" site="http://phillywardleaders.com/" github="https://github.com/CodeForPhilly/philly-ward-leaders" slack="ward-leader-bb-cards" }
 
 {projectModal name="CfP Website Design" modal="portfolioModal6" image="code-for-philly.png" 
 description="The goal of this particular project is just to re-do the homepage first, and connect it to the existing old pages and laddr. The issues on our 'Issues' page in this repo are ones that the leadership team has identified as things they would like changed. However we're open to other ideas of course."  

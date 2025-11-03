@@ -10,12 +10,10 @@
 {block content}
     <header class="page-header">
         <div class="btn-toolbar pull-right">
-            {if $.User}
+            {if $.User && $.User->hasAccountLevel('Staff')}
                 <form action="/projects/create">
                     <button class="btn btn-success" type="submit">{icon "plus"}&nbsp;{_ "Add Project&hellip;"}</button>
                 </form>
-            {else}
-                <a href="/register" class="btn btn-danger">{"Register with us!"}</a>
             {/if}
         </div>
         <h1>{_ "Civic Projects Directory"} <span class="badge badge-pill badge-secondary">{$projectsTotal|number_format}</span></h1>

@@ -8,8 +8,8 @@
     <div class="page-header">
         <div class="btn-toolbar pull-right">
             <div class="btn-group">
-                <a href="/projects/{$Project->Handle}/edit" class="btn btn-info">{_ "Edit Project"}</a>
-                {if $.User}
+                {if $.User->hasAccountLevel('Staff')}
+                    <a href="/projects/{$Project->Handle}/edit" class="btn btn-info">{_ "Edit Project"}</a>
                     <div class="btn-group">
                         <button class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
                         <div class="dropdown-menu">
@@ -23,8 +23,6 @@
                             {/if}
                         </div>
                     </div>
-                {/if}
-                {if $.User->hasAccountLevel('Staff')}
                     <a class="btn btn-danger" href="{$Project->getUrl('/delete')|escape}">Delete Project</a>
                 {/if}
             </div>
@@ -121,8 +119,8 @@
                 <div class="btn-group pull-right">
                     {if $.User && $Project->hasMember($.User)}
                         <a href="#post-update" class="btn btn-primary btn-sm" data-toggle="modal">{_ "Post Update"}</a>
+                        <a href="/project-buzz/create?ProjectID={$Project->ID}" class="btn btn-success btn-sm">{_ "Log Buzz"}</a>
                     {/if}
-                    <a href="/project-buzz/create?ProjectID={$Project->ID}" class="btn btn-success btn-sm">{_ "Log Buzz"}</a>
                 </div>
             </h2>
 
@@ -189,7 +187,9 @@
                     <li class="muted list-inline-item">{_ "No registered members"}</li>
                 {/foreach}
                 </ul>
-                <a class="btn btn-success add-person" href="#add-member" data-toggle="modal">+ {_ "Add"}</a>
+                {if $.User && $Project->hasMember($.User)}
+                    <a class="btn btn-success add-person" href="#add-member" data-toggle="modal">+ {_ "Add"}</a>
+                {/if}
             {/if}
             <hr>
 

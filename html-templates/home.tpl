@@ -2,21 +2,9 @@
 
 {block "content"}
 
-    <!-- Youtube video https://codepen.io/GusRuss89/pen/bVwNrE -->
-
 <section class="page-section" id="main-video">
   <div class="">
     <div class="row">
-      <div class="col-12 col-xl-7 mx-xl-auto" style="padding-right:0;">
-        <div class="">
-          <video class="" style="width: 100%;" autoplay muted loop poster="videos/video.jpg">
-            <source src="videos/video-small.mp4" type="video/mp4">
-            <source src="videos/video-small.webm" type="video/webm">
-            <source src="videos/video-small.ogv" type="video/ogg">
-            <track label="English" kind="subtitles" srclang="en" src="videos/CFP-en.vtt" default>
-          </video>
-        </div>
-      </div>
       <div class="col-12 col-xl-4">
         <div style="display:flex;
         align-items: flex-end;
@@ -26,6 +14,7 @@
             <h4 class="main-blue-text" style="margin-bottom:1rem;">Contribute towards technology-related projects that benefit the City of Philadelphia.</h4>
             <h4 class="main-red-text" style="margin-bottom:2rem;">No coding experience required.</h4>
             <a href="/volunteer" class="main-volunteer-link">Volunteer!</a>
+            <a href="https://opencollective.com/code-for-philly" class="main-volunteer-link">Donate!</a>
           </div>
         </div>
       </div>

@@ -46,12 +46,14 @@
     <div class="row">
 
       {projectTile name="PHLASK" portfolioModal="#portfolioModal1" short="Access to Public Water" image="phlask.png" }
+      {projectTile name="Benefit Decision Toolkit" portfolioModal="#portfolioModal2" short="Make it easier for benefits orgs to build screeners" image="bdt.png" }
+      {projectTile name="Open Data Philly" portfolioModal="#portfolioModal3" short="The city of Philadelphia's public data hub" image="open-data-philly.png" }
       {projectTile name="PAX" portfolioModal="#portfolioModal4" short="Legal Support and Expungement" image="plse.png" }
       {projectTile name="Philly Ward Leaders" portfolioModal="#portfolioModal5" short="Learn about your ward leaders" image="ward-leaders.png" }
       {projectTile name="CfP Website Design" portfolioModal="#portfolioModal6" short="Website Redesign" image="code-for-philly.png" }
       {projectTile name="Balancer" portfolioModal="#portfolioModal7" short="AI-assisted BPD bipolar medication decision app" image="balancer.png" }
-      {projectTile name="Clean and Green Philly" portfolioModal="#portfolioModal8" short="Map of empty lots in Philly" image="cleanandgreen.png" }
       {projectTile name="Votewise" portfolioModal="#portfolioModal9" short="Non-partisan aid to make ballot decisions" image="votewise.png" }
+      {projectTile name="Choose Native Plants PA" portfolioModal="#portfolioModal10" short="Propagate PA Wildflowers" image="flowers.jpg" }
 
     </div>
   </div>
@@ -138,6 +140,14 @@ PHLASK's mission is to help people find publicly available sources of water, and
 If you would like to help reduce the use of wasteful plastic bottles and increase access to water, please join the PHLASK Coalition!"  
 project="phlask--life-liberty_and_the_pursuit_of_water" site="http://www.phlask.me" github="https://github.com/phlask" slack="phlask" }
 
+{projectModal name="Benefit Decision Toolkit" modal="portfolioModal2" image="bdt.png" 
+description="One crucial ingredient for expanding benefits access is helping people to quickly assess their eligibility for the programs.<br><br>This project aims to make it easier to create benefit eligibility assessment tools, to the point where it can be done by savvy subject matter experts with little-to-no formal software coding training."  
+project="dmn_benefit_toolbox-including_the_philly_property_tax_relief_screener" site="https://phillypropertytaxrelief.org/" github="https://github.com/CodeForPhilly/benefit-decision-toolkit" slack="benefit-decision-toolkit" }
+
+{projectModal name="Open Data Philly" modal="portfolioModal3" image="open-data-philly.png" 
+description="OpenDataPhilly is a regional open data catalog, providing a repository for information about open data available from the City of Philadelphia, non-profit organizations, university research projects, and other publishers of open data about the region. It was originally developed by Azavea and is now volunteer maintained."  
+project="opendataphilly_enhancements" site="https://opendataphilly.org/" github="https://github.com/opendataphilly/opendataphilly-jkan" slack="opendataphilly" }
+
 {projectModal name="PAX" modal="portfolioModal4" image="plse.png" 
 description="PAX is an expungement petition generator for PLSE. The application takes in PDFs of clients' criminal dockets and returns fully formatted petitions to expunge the clients' criminal records. Having a clear criminal record helps those clients to better find work, housing, and services."  
 project="philadelphia_lawyers_for_social_equity_-_record_expungement" site="https://www.plsephilly.org/" github="https://github.com/natev/Expungement-Generator" slack="pax" }
@@ -154,12 +164,14 @@ project="code_for_philly_website_redesign" site="https://codeforphilly.org/" git
 description="Balancer (formerly named \"MedAssist\") seeks to solve the problems created by the trial-and-error decision-making process that psychiatrists/medication prescribers and patients go through when choosing medications for bipolar disorder."  
 project="balancer" site="http://balancerproject.com/" github="https://github.com/CodeForPhilly/balancer-data" slack="balancer"}
 
-{projectModal name="Clean & Green Philly" modal="portfolioModal8" image="cleanandgreen.png" 
-description="Philadelphia has a gun violence problem. This dashboard aims to help solve it by empowering community groups to carry out cleaning and greening interventions in the vacant properties where they can have the biggest impact."  
-project="vacant_and_abandoned_properties_dashboard" site="https://www.cleanandgreenphilly.org/" github="https://github.com/CodeForPhilly/clean-and-green-philly" slack="clean-and-green-philly"}
-
 {projectModal name="Votewise" modal="portfolioModal9" image="votewise.png" 
 description="VoteWise.net is a non-partisan non-profit website that connects voters, organizations, and politicians without advertising dollars getting in the way. Right now, politicians have serious challenges reaching voters without advertising. This means that politicians have to waste a lot of time begging for money instead of doing what they want to do — help the community."  
 project="votewisenet" site="http://www.votewise.net/" github="https://github.com/spencersnygg/VoteWise" slack="votewise"}
+
+{projectModal name="Choose Native Plants PA" modal="portfolioModal10" image="flowers.jpg" 
+description="Native plants are really <a href='https://www.audubon.org/content/why-native-plants-matter'>important...</a><br><br>
+But it is a bit overwhelming to select plants (e.g. wildflowers and grasses). This google sheet + tableau solution is designed to assist as a entry point to further research.
+I'm seeking user experience feedback from the Code for Philly community. Also - If anyone wants to help with the database, please join the project."  
+project="pa_wildflower_selector" site="https://choosenativeplants.com/" github="https://github.com/CodeForPhilly/pa-wildflower-selector" slack="pa-wildflower-selector" }
 
 {/block}

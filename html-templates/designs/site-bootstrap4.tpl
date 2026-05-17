@@ -43,6 +43,7 @@
                             Get Involved
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item nav-link" href="https://opencollective.com/code-for-philly">Donate</a>
                             <a class="dropdown-item nav-link" href="/volunteer">Volunteer</a>
                             <a class="dropdown-item nav-link" href="https://meetup.com/code-for-philly" target="_blank">Events</a>
                             <a class="dropdown-item nav-link" href="/sponsor">Sponsor</a>

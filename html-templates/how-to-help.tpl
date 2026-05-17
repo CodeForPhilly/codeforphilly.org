@@ -32,7 +32,7 @@
     <h3>Software Development</h3>
     <p>Software development often starts with making information accessible and useful. This usually requires more patience than experience as searches are run, links followed, spreadsheets cleaned up, documents reformatted, etc... Learning and applying the underpinnings of file, data, and presentation formats like ASCII, CSV, and HTML is the foundation of bridging human and machine information.</p>
     <p>There is a huge array, maybe thousands of tools and languages to specialize in, all with their own niches where they might provide the best solution. Entire projects and careers can be built on few enough to count with one hand.</p>
-    <p>Browse our <a href="/projects">projects directory</a> or the <a href="http://commons.codeforamerica.org">Code for America Commons</a> to find something that uses the tool/language you're looking for, or to get a sense for what tools and languages power the types of projects you want to get involved with.</p>
+    <p>Browse our <a href="/projects">projects directory</a> to find something that uses the tool/language you're looking for, or to get a sense for what tools and languages power the types of projects you want to get involved with.</p>
 
     <h3>Journalism / Reporting</h3>
     <ul>

@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -1879,46 +1879,46 @@
 <span class="w">    </span>-l<span class="w"> </span>app.kubernetes.io/name<span class="o">=</span>code-for-philly<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>-l<span class="w"> </span>app.kubernetes.io/instance<span class="o">=</span>code-for-philly<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--field-selector<span class="o">=</span>status.phase<span class="o">==</span>Running<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[0].metadata.name}&#39;</span>
+<span class="w">    </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">'{.items[0].metadata.name}'</span>
 <span class="k">)</span>
 </code></pre></div>
 </li>
 <li>
 <p>Get authenticated SQL dump url from <a href="https://codeforphilly.org/site-admin">https://codeforphilly.org/site-admin</a> and store in a shell variable:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">sql_url</span><span class="o">=</span><span class="s1">&#39;https://codeforphilly.org/site-admin/database/dump.sql?_session=abcdef1234567890&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="nv">sql_url</span><span class="o">=</span><span class="s1">'https://codeforphilly.org/site-admin/database/dump.sql?_session=abcdef1234567890'</span>
 </code></pre></div>
 </li>
 <li>
 <p>Load database into Kubernetes host:</p>
-<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>-n<span class="w"> </span>code-for-philly<span class="w"> </span><span class="nb">exec</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">pod_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>--<span class="w"> </span><span class="se">\</span>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>-n<span class="w"> </span>code-for-philly<span class="w"> </span><span class="nb">exec</span><span class="w"> </span><span class="s2">"</span><span class="si">${</span><span class="nv">pod_name</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span>--<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>hab<span class="w"> </span>pkg<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>codeforphilly/site-composite<span class="w"> </span><span class="se">\</span>
 <span class="w">        </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="se">\</span>
-<span class="w">            </span><span class="s2">&quot;curl &#39;</span><span class="si">${</span><span class="nv">sql_url</span><span class="si">}</span><span class="s2">&#39; | mysql&quot;</span>
+<span class="w">            </span><span class="s2">"curl '</span><span class="si">${</span><span class="nv">sql_url</span><span class="si">}</span><span class="s2">' | mysql"</span>
 </code></pre></div>
 </li>
 <li>
 <p>Install rsync and openssh into running Kubernetes host:</p>
-<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>-n<span class="w"> </span>code-for-philly<span class="w"> </span><span class="nb">exec</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">pod_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>--<span class="w"> </span><span class="se">\</span>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>-n<span class="w"> </span>code-for-philly<span class="w"> </span><span class="nb">exec</span><span class="w"> </span><span class="s2">"</span><span class="si">${</span><span class="nv">pod_name</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span>--<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>hab<span class="w"> </span>pkg<span class="w"> </span>install<span class="w"> </span>--binlink<span class="w"> </span>--force<span class="w"> </span>core/rsync<span class="w"> </span>core/openssh
 </code></pre></div>
 </li>
 <li>
 <p>Copy SSH key into Kubernetes host that can connect to legacy VM:</p>
-<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>-n<span class="w"> </span>code-for-philly<span class="w"> </span>cp<span class="w"> </span>.scratch/id_rsa<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">pod_name</span><span class="si">}</span><span class="s2">:/root/&quot;</span>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>-n<span class="w"> </span>code-for-philly<span class="w"> </span>cp<span class="w"> </span>.scratch/id_rsa<span class="w"> </span><span class="s2">"</span><span class="si">${</span><span class="nv">pod_name</span><span class="si">}</span><span class="s2">:/root/"</span>
 </code></pre></div>
 </li>
 <li>
 <p>User rsync to synchronize data files from legacy VM to Kubernetes host:</p>
-<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>-n<span class="w"> </span>code-for-philly<span class="w"> </span><span class="nb">exec</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">pod_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>--<span class="w"> </span><span class="se">\</span>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>-n<span class="w"> </span>code-for-philly<span class="w"> </span><span class="nb">exec</span><span class="w"> </span><span class="s2">"</span><span class="si">${</span><span class="nv">pod_name</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span>--<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>rsync<span class="w"> </span><span class="se">\</span>
-<span class="w">        </span>-e<span class="w"> </span><span class="s1">&#39;ssh -i /root/id_rsa -o &quot;StrictHostKeyChecking no&quot;&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>-e<span class="w"> </span><span class="s1">'ssh -i /root/id_rsa -o "StrictHostKeyChecking no"'</span><span class="w"> </span><span class="se">\</span>
 <span class="w">        </span>-av<span class="w"> </span><span class="se">\</span>
 <span class="w">        </span>--chown<span class="w"> </span>hab:hab<span class="w"> </span><span class="se">\</span>
-<span class="w">        </span>--exclude<span class="w"> </span><span class="s1">&#39;*.log&#39;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">        </span>--exclude<span class="w"> </span><span class="s1">&#39;git/&#39;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">        </span>--exclude<span class="w"> </span><span class="s1">&#39;media/*x*/&#39;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">        </span><span class="s1">&#39;root@poplar.phl.io:/emergence/sites/code-for-philly/site-data/&#39;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">        </span><span class="s1">&#39;/hab/svc/site/data/&#39;</span>
+<span class="w">        </span>--exclude<span class="w"> </span><span class="s1">'*.log'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--exclude<span class="w"> </span><span class="s1">'git/'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span>--exclude<span class="w"> </span><span class="s1">'media/*x*/'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span><span class="s1">'root@poplar.phl.io:/emergence/sites/code-for-philly/site-data/'</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span><span class="s1">'/hab/svc/site/data/'</span>
 </code></pre></div>
 </li>
 </ol>
@@ -1974,7 +1974,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mermaid@8.5.0/dist/mermaid.min.js"></script>
       
